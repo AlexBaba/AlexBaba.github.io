@@ -1,0 +1,82 @@
+<html>
+
+
+<body>
+
+</br>
+</br>
+
+
+<div id="cboxbutton" style="position: fixed; bottom: 8px; right: 16px; padding: 3px 20px; text-align: center; cursor: pointer; background-color: #EDF3F7; border:#C3D7E5 1px solid;border-radius: 3px; font-family: Tahoma, sans-serif; font-size: 14px; font-weight: bold"></div>
+<div id="cboxwrap" style="position: fixed; bottom: 48px; right: 16px; background: #EDF3F7; padding: 3px; border:#C3D7E5 1px solid;border-radius: 3px;"></div>
+
+<script>
+/*
+*	Cbox dynamic loader v.2
+*/
+(function () {
+	var showByDefault = true;
+	var cboxContainer = document.getElementById("cboxwrap");
+	var cboxToggleButton = document.getElementById("cboxbutton");
+	var buttonStringOpen = "Open Cbox";
+	var buttonStringClose = "Close Cbox";
+	var lsKey = "cbox:isOpen";
+
+	var cboxHTML = '<!-- BEGIN CBOX - www.cbox.ws - v4.3 -->'
+	+'<div id="cboxdiv" style="position: relative; margin: 0 auto; width: 200px; font-size: 0; line-height: 0;">'
+	+'<div style="position: relative; height: 300px; overflow: auto; overflow-y: auto; -webkit-overflow-scrolling: touch; border: 0px solid;"><iframe src="https://www7.cbox.ws/box/?boxid=803773&boxtag=cynbkn&sec=main" marginheight="0" marginwidth="0" frameborder="0" width="100%" height="100%" scrolling="auto" allowtransparency="yes" name="cboxmain7-803773" id="cboxmain7-803773"></iframe></div>'
+	+'<div style="position: relative; height: 80px; overflow: hidden; border: 0px solid; border-top: 0px;"><iframe src="https://www7.cbox.ws/box/?boxid=803773&boxtag=cynbkn&sec=form" allow="autoplay" marginheight="0" marginwidth="0" frameborder="0" width="100%" height="100%" scrolling="no" allowtransparency="yes" name="cboxform7-803773" id="cboxform7-803773"></iframe></div>'
+	+'</div>'
+	+'<!-- END CBOX -->';
+
+	var htmlInjected = false;
+	var isVisible = false;
+	var toggleCbox = function (show) {
+		
+		if (!show) {
+			cboxContainer.style.display = "none";
+			if (cboxToggleButton) {
+				cboxToggleButton.innerHTML = buttonStringOpen;
+			}
+			
+		}
+		else {
+			cboxContainer.style.display = "block";
+			if (cboxToggleButton) {
+				cboxToggleButton.innerHTML = buttonStringClose;
+			}
+		}
+		
+		if (show && !htmlInjected) {
+			cboxContainer.innerHTML = cboxHTML;
+			htmlInjected = true;
+		}
+		
+		isVisible = show;
+	}
+
+	if (localStorage && lsKey && typeof localStorage.getItem(lsKey) === "string") {
+		toggleCbox((localStorage.getItem(lsKey) === "yes"));
+	}
+	else {
+		toggleCbox(showByDefault);
+	}
+
+	if (cboxToggleButton) {
+		cboxToggleButton.onclick = function () {
+			toggleCbox(!isVisible);
+			
+			if (localStorage && lsKey) {
+				localStorage.setItem(lsKey, isVisible ? "yes" : "no");
+			}
+		}
+	}
+})();
+
+</script>	
+
+
+
+</body>
+
+</html>

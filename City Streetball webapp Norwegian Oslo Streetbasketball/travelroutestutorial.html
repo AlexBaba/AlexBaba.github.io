@@ -1,0 +1,1222 @@
+
+
+<html>
+<head>
+<title>Oslo Travelroutes Tutorial Page</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+<style>
+
+body {
+      background-image: url(./images/bakgrunn5.jpg);
+      background-attachment: fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-transform:scale(0.95);
+transform:scale(0.95);
+opacity: 1.5;
+
+}
+
+ 
+
+ .vid-container-bakgrunnsynlighet
+ {
+ 	  	height: 700px;
+		width: 115%;
+position: relative;
+right: 300px;
+ bottom: 80px;
+ 	  		background:rgba(0,0,0,0.2);
+	  text-align; left;
+
+ }
+ 
+ 
+
+
+.mapalloslocourts
+{
+width: 840px;
+height: 620px;
+position: relative;
+background:rgba(115,235,174,0.35);
+bottom: 75px;
+
+}
+
+
+.chatoverskrifter  {
+background:rgba(0,0,0,0.3);
+height: 620px;
+width: 640px;
+position: relative;
+left: 63px;
+bottom: 900px;
+
+}
+
+.backbtn {
+position: relative;
+left: 1010px;
+background:rgba(0,0,0,0.19);
+width: 250px;
+height: 130px;
+bottom: 0px;
+}
+
+.placeselectionimage {
+
+position: relative;
+bottom: 79px;
+left: 130px;
+height: 275px;
+width: 460px;
+background:rgba(0,0,0,0.19);
+
+}
+
+.backbtn:active {
+
+box-shadow: 0 5px #666;
+  transform: translateY(5px);
+}
+
+
+
+  @media (max-width: 524px) {
+   body {
+    margin: 0px;
+   }
+   .caption {
+    margin-top: 0px;
+   }
+   .vid-list-container {
+    padding-bottom: 0px;
+   }
+
+  }
+
+
+span.reference{
+				position:fixed;
+				left:10px;
+				bottom:400px;
+				font-size:14px;
+				color: white;
+			}
+			span.reference a{
+				color:white;
+				text-decoration:none;
+				margin-right:30px;
+			}
+			span.reference a:hover{
+				color:white;
+				height: 500px;
+			}
+			ul.sdt_menu{
+			color: white;
+				margin-bottom:150px;
+				
+			}
+		
+			
+			ul.sdt_menu{
+	margin:0;
+	padding:170px;
+	list-style: none;
+	font-family: "Palatino Linotype";
+	font-size:14px;
+	color: white;
+       min-height:700px;
+	width:1020px;
+	position: relative;
+	bottom: 290px;
+}
+ul.sdt_menu a{
+	text-decoration:none;
+	outline:none;
+}
+ul.sdt_menu li{
+	float:left;
+	width:350px;
+	height:300px;
+	position:relative;
+	cursor:pointer;
+	background:rgba(0,0,0,0.25);
+top: 5px;
+}
+ul.sdt_menu li > a{
+	position:absolute;
+
+	bottom:0px;
+	left:0px;
+	width:170px;
+	height:250px;
+	z-index:12;
+	
+	background:transparent url(../images/overlay.png) no-repeat bottom right;
+	-moz-box-shadow:0px 0px 2px #000 inset;
+	-webkit-box-shadow:0px 0px 2px #000 inset;
+	box-shadow:0px 0px 2px #000 inset;
+}
+ul.sdt_menu li a img{
+	border:none;
+	position:absolute;
+	width:0px;
+	height:500px;
+	bottom:180px;
+	left:85px;
+		opacity: 0.94;
+			 -webkit-filter: saturate(1.6);
+             filter: saturate(1.6);
+	z-index:500;
+
+	   transform:scale(1.2);
+    -ms-transform:scale(1.2); /* IE 9 */
+    -moz-transform:scale(1.2); /* Firefox */
+    -webkit-transform:scale(1.2); /* Safari and Chrome */
+    -o-transform:scale(1.2); /* Opera */
+	-moz-box-shadow:0px 0px 4px #000;
+	-webkit-box-shadow:0px 0px 4px #000;
+	box-shadow:0px 0px 4px #000;
+}
+ul.sdt_menu li span.sdt_wrap{
+	position:absolute;
+	top:100px;
+	left:0px;
+	width:170px;
+	height:500px;
+	z-index:15;
+}
+ul.sdt_menu li span.sdt_active{
+	position:absolute;
+	background:#5bc0de;
+	top:85px;
+	width:270px;
+	min-height:auto;
+	left:0px;
+	z-index:14;
+	-moz-box-shadow:0px 0px 4px #000 inset;
+	-webkit-box-shadow:0px 0px 4px #000 inset;
+	box-shadow:0px 0px 4px #000 inset;
+}
+
+ul.sdt_menu li span:hover {
+	
+
+}
+
+ul.sdt_menu li span span.sdt_link,
+ul.sdt_menu li span span.sdt_descr,
+ul.sdt_menu li div.sdt_box a{
+	margin-left:15px;
+	text-transform:none;
+	text-shadow:1px 1px 1px #000;
+	    opacity: 0.99;
+		
+
+}
+ul.sdt_menu li span span.sdt_link{
+	color:white;
+	font-size:24px;
+	font-weight: bold;
+	float:left;
+	clear:both;
+font-family: "Palatino Linotype";
+width: 200px;
+}
+ul.sdt_menu li span span.sdt_descr{
+	color:white;
+	float:left;
+	clear:both;
+	width:255px; /*For dumbass IE7*/
+	font-size:18px;
+	letter-spacing:1px;
+	height: auto;
+
+}
+ul.sdt_menu li div.sdt_box{
+	display:block;
+	position:absolute;
+	width:170px;
+	overflow:hidden;
+	height:670px;
+	top:85px;
+	left:0px;
+	display:none;
+	background:#C8FBCA;
+}
+ul.sdt_menu li div.sdt_box a{
+	float:left;
+	clear:both;
+	line-height:10px;
+	color:#C8FBCA;
+
+}
+ul.sdt_menu li div.sdt_box a:first-child{
+	margin-top:15px;
+}
+ul.sdt_menu li div.sdt_box a:hover{
+		background:#C8FBCA;
+
+
+}
+
+.content-transparency {
+width: 100px;
+height: 100px;
+position: relative;
+bottom: 100px;
+left: 300px;
+
+}
+
+.travelinforuter {
+
+width: 1000px;
+height: 990px;
+background:rgba(0,102,0,0.45); 
+position: relative;
+top:1100px;
+}
+
+.content {
+position: relative;
+bottom: 320px;
+}
+
+
+
+#redirect1 {
+position:relative;
+font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+font-size:19px;
+width:250px;
+height:auto;
+font-weight:bolder;
+text-align:center;
+line-height:40px;
+letter-spacing:.19em;
+background:  #fa6b85;
+color: white;
+
+
+}
+
+#redirect1:active {
+box-shadow: 0 5px #666;
+  transform: translateY(5px);
+
+}
+
+#redirect2 {
+position:relative;
+font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+font-size:19px;
+width:250px;
+height:auto;
+font-weight:bolder;
+text-align:center;
+line-height:40px;
+letter-spacing:.19em;
+background:  #fa6b85;
+color: white;
+
+
+
+}
+
+#redirect2:active {
+box-shadow: 0 5px #666;
+  transform: translateY(5px);
+
+}
+
+#redirect3 {
+position:relative;
+font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+font-size:19px;
+width:250px;
+height:auto;
+font-weight:bolder;
+text-align:center;
+line-height:40px;
+letter-spacing:.19em;
+background:  #fa6b85;
+color: white;
+
+}
+
+#redirect3:active {
+box-shadow: 0 5px #666;
+  transform: translateY(5px);
+
+}
+
+#redirect4 {
+position:relative;
+font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+font-size:19px;
+width:250px;
+height:auto;
+font-weight:bolder;
+text-align:center;
+line-height:40px;
+letter-spacing:.19em;
+background:  #fa6b85;
+color: white;
+
+
+}
+
+#redirect4:active {
+box-shadow: 0 5px #666;
+  transform: translateY(5px);
+
+}
+
+.sidemenubtns {
+background:rgba(0,0,0,0.28); 
+width: 320px;
+height: auto;
+position: relative;
+top: 1922px;
+right: 35px;
+}
+
+.menudiv {
+width: 1070px;
+height: 700px;
+position: relative;
+top:1180px;
+left: 199px;
+background:rgba(0,0,0,0.28); 
+transform:scale(0.955);
+
+}
+
+
+* {
+box-sizing:border-box;
+}
+
+.slide-container {
+width:740px;
+height:500px;
+position:absolute;
+}
+
+.left-arrow {
+width:50%;
+height:50%;
+position:relative;
+bottom:268px;
+left:700px;
+}
+
+.right-arrow {
+width:50%;
+height:50%;
+position:absolute;
+top:0;
+left:700px;
+}
+
+.left-arrow>img {
+position:relative;
+top:50%;
+transform:translateY(-50%);
+margin-left:-2px;
+opacity:0.9;
+transition:opacity 1s;
+height: 100%;
+width: 100%;
+}
+
+.right-arrow>img {
+position:relative;
+top:50%;
+transform:translateY(-50%);
+margin-left:42px;
+opacity:0.9;
+transition:opacity 1s;
+height: 100%;
+width: 100%;
+}
+
+.left-arrow>img:hover,.right-arrow>img:hover {
+cursor:pointer;
+opacity:1;
+}
+
+.dot-container {
+position:absolute;
+bottom:5px;
+left:50%;
+transform:translateX(-50%);
+}
+
+.dot {
+cursor:pointer;
+height:33px;
+width:33px;
+background-color:#F67280;
+border-radius:50%;
+display:inline-block;
+transition:background-color .6s ease;
+margin:0 2px;
+}
+
+.active,.dot:hover {
+background-color:#E8175D;
+height:47px;
+width:47px;
+}
+
+.captionText {
+width:430px;
+height:119px;
+position:relative;
+bottom:210px;
+font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+font-size:24px;
+font-weight:bolder;
+text-align:center;
+line-height:40px;
+letter-spacing:.19em;
+background:#66CCCC;
+color:white;
+opacity: 1.3;
+}
+
+.main-content,.responsive-img {
+width:100%;
+height:100%;
+}
+
+@media only screen and max-width 700px{
+.slide-container {
+width:600px;
+}
+}
+
+@media only screen and max-width 600px{
+.slide-container {
+width:500px;
+height:300px;
+}
+}
+
+@media only screen and max-width 500px{
+.slide-container {
+width:400px;
+height:250px;
+}
+
+.captionText {
+width:100px;
+height:40px;
+font-size:12px;
+line-height:40px;
+}
+}
+
+@media only screen and max-width 400px{
+.slide-container {
+width:300px;
+height:200px;
+}
+
+.captionText {
+width:90px;
+height:35px;
+font-size:10px;
+line-height:35px;
+}
+}
+
+
+</style>
+
+<div class="backbtn">
+<a href="indexmenupage.html"><img src="images/overskriftsknapperbilder/back.png" style="height: 110px" /></a>
+
+</div>
+
+</header>
+
+<body>
+
+      <br />
+
+<br />
+
+		
+<div class="travelinforuter">
+
+
+<!-- Trigger/Open The Modal -->
+<div class="content">
+
+			<ul id="sdt_menu" class="sdt_menu" style="position: relative; top: 200px; right: 70px; max-height: 700px; ">
+				<li>    <a>
+					    <img src="images/ballbaner/bislett2.jpg" height="500px" width="550px" alt=""/>
+
+						<span class="sdt_active"></span>
+						<span class="sdt_wrap" >
+							<span class="sdt_link" >Lille Bislett Idrettspark & basketball court (near Bislett Stadion, Oslo).   <br /> <br />
+ </span>
+							<span class="sdt_descr" style="min-height: 600px; min-width: 300px">Address: <br /> Dalsbergstien 17, 0170 Oslo </span>
+
+						</span>
+					</a>
+
+				</li>
+				
+
+			
+<ul id="sdt_menu" class="sdt_menu" style="position: relative; bottom: 175px; left: 50px;" >
+				<li>    <a>
+					    <img src="images/ballbaner/Grunerhagenballplass3.jpg" height="500px" width="550px" alt=""/>
+
+						<span class="sdt_active"></span>
+						<span class="sdt_wrap">
+							<span class="sdt_link">Kuba Parken (Grünerhagen Ballplass gatebasket park, Grünerløkka i Oslo) <br /> <br /> </span>  
+							<span class="sdt_descr" style="min-height: 600px; min-width: 300px">Address: <br /> Fossveien, Grünerløkka, 0551 Oslo </span>
+
+						</span>
+					</a>
+				</li>
+
+<ul id="sdt_menu" class="sdt_menu" style="position: relative; top: 175px; right: 400px;" >
+				<li>    <a>
+					    <img src="images/ballbaner/skur132.jpg" height="500px" width="550px" alt=""/>
+
+						<span class="sdt_active"></span>
+						<span class="sdt_wrap">
+							<span class="sdt_link">Skur 13. Indoor Streetbasketball court (Tjuvholmen, i Oslo). <br /> <br /> </span>  
+							<span class="sdt_descr" style="min-height: 600px; min-width: 300px">Address: <br /> Filipstadveien 3, 0250 Oslo </span>
+
+						</span>
+					</a>
+				</li>
+
+</div>
+
+			
+        <div>
+
+
+            <span class="reference">
+            </span>
+		</div>
+
+</div>
+
+
+
+<script type="text/javascript">
+
+</script>
+
+        <!-- The JavaScript -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script type="text/javascript">
+
+// t: current time, b: begInnIng value, c: change In value, d: duration
+jQuery.easing['jswing'] = jQuery.easing['swing'];
+
+jQuery.extend( jQuery.easing,
+{
+	def: 'easeOutQuad',
+	swing: function (x, t, b, c, d) {
+		//alert(jQuery.easing.default);
+		return jQuery.easing[jQuery.easing.def](x, t, b, c, d);
+	},
+	easeInQuad: function (x, t, b, c, d) {
+		return c*(t/=d)*t + b;
+	},
+	easeOutQuad: function (x, t, b, c, d) {
+		return -c *(t/=d)*(t-2) + b;
+	},
+	easeInOutQuad: function (x, t, b, c, d) {
+		if ((t/=d/2) < 1) return c/2*t*t + b;
+		return -c/2 * ((--t)*(t-2) - 1) + b;
+	},
+	easeInCubic: function (x, t, b, c, d) {
+		return c*(t/=d)*t*t + b;
+	},
+	easeOutCubic: function (x, t, b, c, d) {
+		return c*((t=t/d-1)*t*t + 1) + b;
+	},
+	easeInOutCubic: function (x, t, b, c, d) {
+		if ((t/=d/2) < 1) return c/2*t*t*t + b;
+		return c/2*((t-=2)*t*t + 2) + b;
+	},
+	easeInQuart: function (x, t, b, c, d) {
+		return c*(t/=d)*t*t*t + b;
+	},
+	easeOutQuart: function (x, t, b, c, d) {
+		return -c * ((t=t/d-1)*t*t*t - 1) + b;
+	},
+	easeInOutQuart: function (x, t, b, c, d) {
+		if ((t/=d/2) < 1) return c/2*t*t*t*t + b;
+		return -c/2 * ((t-=2)*t*t*t - 2) + b;
+	},
+	easeInQuint: function (x, t, b, c, d) {
+		return c*(t/=d)*t*t*t*t + b;
+	},
+	easeOutQuint: function (x, t, b, c, d) {
+		return c*((t=t/d-1)*t*t*t*t + 1) + b;
+	},
+	easeInOutQuint: function (x, t, b, c, d) {
+		if ((t/=d/2) < 1) return c/2*t*t*t*t*t + b;
+		return c/2*((t-=2)*t*t*t*t + 2) + b;
+	},
+	easeInSine: function (x, t, b, c, d) {
+		return -c * Math.cos(t/d * (Math.PI/2)) + c + b;
+	},
+	easeOutSine: function (x, t, b, c, d) {
+		return c * Math.sin(t/d * (Math.PI/2)) + b;
+	},
+	easeInOutSine: function (x, t, b, c, d) {
+		return -c/2 * (Math.cos(Math.PI*t/d) - 1) + b;
+	},
+	easeInExpo: function (x, t, b, c, d) {
+		return (t==0) ? b : c * Math.pow(2, 10 * (t/d - 1)) + b;
+	},
+	easeOutExpo: function (x, t, b, c, d) {
+		return (t==d) ? b+c : c * (-Math.pow(2, -10 * t/d) + 1) + b;
+	},
+	easeInOutExpo: function (x, t, b, c, d) {
+		if (t==0) return b;
+		if (t==d) return b+c;
+		if ((t/=d/2) < 1) return c/2 * Math.pow(2, 10 * (t - 1)) + b;
+		return c/2 * (-Math.pow(2, -10 * --t) + 2) + b;
+	},
+	easeInCirc: function (x, t, b, c, d) {
+		return -c * (Math.sqrt(1 - (t/=d)*t) - 1) + b;
+	},
+	easeOutCirc: function (x, t, b, c, d) {
+		return c * Math.sqrt(1 - (t=t/d-1)*t) + b;
+	},
+	easeInOutCirc: function (x, t, b, c, d) {
+		if ((t/=d/2) < 1) return -c/2 * (Math.sqrt(1 - t*t) - 1) + b;
+		return c/2 * (Math.sqrt(1 - (t-=2)*t) + 1) + b;
+	},
+	easeInElastic: function (x, t, b, c, d) {
+		var s=1.70158;var p=0;var a=c;
+		if (t==0) return b;  if ((t/=d)==1) return b+c;  if (!p) p=d*.3;
+		if (a < Math.abs(c)) { a=c; var s=p/4; }
+		else var s = p/(2*Math.PI) * Math.asin (c/a);
+		return -(a*Math.pow(2,10*(t-=1)) * Math.sin( (t*d-s)*(2*Math.PI)/p )) + b;
+	},
+	easeOutElastic: function (x, t, b, c, d) {
+		var s=1.70158;var p=0;var a=c;
+		if (t==0) return b;  if ((t/=d)==1) return b+c;  if (!p) p=d*.3;
+		if (a < Math.abs(c)) { a=c; var s=p/4; }
+		else var s = p/(2*Math.PI) * Math.asin (c/a);
+		return a*Math.pow(2,-10*t) * Math.sin( (t*d-s)*(2*Math.PI)/p ) + c + b;
+	},
+	easeInOutElastic: function (x, t, b, c, d) {
+		var s=1.70158;var p=0;var a=c;
+		if (t==0) return b;  if ((t/=d/2)==2) return b+c;  if (!p) p=d*(.3*1.5);
+		if (a < Math.abs(c)) { a=c; var s=p/4; }
+		else var s = p/(2*Math.PI) * Math.asin (c/a);
+		if (t < 1) return -.5*(a*Math.pow(2,10*(t-=1)) * Math.sin( (t*d-s)*(2*Math.PI)/p )) + b;
+		return a*Math.pow(2,-10*(t-=1)) * Math.sin( (t*d-s)*(2*Math.PI)/p )*.5 + c + b;
+	},
+	easeInBack: function (x, t, b, c, d, s) {
+		if (s == undefined) s = 1.70158;
+		return c*(t/=d)*t*((s+1)*t - s) + b;
+	},
+	easeOutBack: function (x, t, b, c, d, s) {
+		if (s == undefined) s = 1.70158;
+		return c*((t=t/d-1)*t*((s+1)*t + s) + 1) + b;
+	},
+	easeInOutBack: function (x, t, b, c, d, s) {
+		if (s == undefined) s = 1.70158; 
+		if ((t/=d/2) < 1) return c/2*(t*t*(((s*=(1.525))+1)*t - s)) + b;
+		return c/2*((t-=2)*t*(((s*=(1.525))+1)*t + s) + 2) + b;
+	},
+	easeInBounce: function (x, t, b, c, d) {
+		return c - jQuery.easing.easeOutBounce (x, d-t, 0, c, d) + b;
+	},
+	easeOutBounce: function (x, t, b, c, d) {
+		if ((t/=d) < (1/2.75)) {
+			return c*(7.5625*t*t) + b;
+		} else if (t < (2/2.75)) {
+			return c*(7.5625*(t-=(1.5/2.75))*t + .75) + b;
+		} else if (t < (2.5/2.75)) {
+			return c*(7.5625*(t-=(2.25/2.75))*t + .9375) + b;
+		} else {
+			return c*(7.5625*(t-=(2.625/2.75))*t + .984375) + b;
+		}
+	},
+	easeInOutBounce: function (x, t, b, c, d) {
+		if (t < d/2) return jQuery.easing.easeInBounce (x, t*2, 0, c, d) * .5 + b;
+		return jQuery.easing.easeOutBounce (x, t*2-d, 0, c, d) * .5 + c*.5 + b;
+	}
+});		
+		
+		
+		
+		</script>
+        <script type="text/javascript">
+            $(function() {
+			
+                $('#sdt_menu > li').bind('mouseenter',function(){
+					var $elem = $(this);
+					$elem.find('img')
+						 .stop(true)
+						 .animate({
+							'width':'509px',
+							'height':'324px',
+							'left':'0px'
+						 },800,'easeOutBack')
+						 .andSelf()
+						 .find('.sdt_wrap')
+					     .stop(true)
+						 .animate({'top':'120px'},1000,'easeOutBack')
+						 .andSelf()
+						 .find('.sdt_active')
+					     .stop(true)
+						 .animate({'height':'364px', 'width':'309px'},1000,function(){
+						var $sub_menu = $elem.find('.sdt_box');
+						if($sub_menu.length){
+							var left = '270px';
+							if($elem.parent().children().length == $elem.index()+1)
+								left = '-170px';
+							$sub_menu.show().animate({'left':left},2000);
+						}	
+					});
+				}).bind('mouseleave',function(){
+					var $elem = $(this);
+					var $sub_menu = $elem.find('.sdt_box');
+					if($sub_menu.length)
+						$sub_menu.hide().css('left','0px');
+					
+					$elem.find('.sdt_active')
+						 .stop(true)
+						 .animate({'height':'0px'},900)
+						 .andSelf().find('img')
+						 .stop(true)
+						 .animate({
+							'width':'0px',
+							'height':'0px',
+							'left':'85px'},900)
+						 .andSelf()
+						 .find('.sdt_wrap')
+						 .stop(true)
+						 .animate({'top':'25px'},900);
+				});
+            });
+        </script>
+
+<div class="w3-dropdown-hover" style="position: relative; bottom: 980px; left: 790px;">
+<img src="images/Googlemapstravelroutes/googlemaps.jpg" style="width: 549px; height: 300px; " />
+  <div class="w3-dropdown-content w3-card-4" style="width:579px; height: 1296px; background:rgba(0,0,0,0.45); color: white; font-size: 17px; transform:scale(0.95);">
+        <p> Public travelling with Google maps and Ruter (ex.). </p>
+							<iframe width="580" height="270" src="https://www.youtube.com/embed/wtXFWU4r9FQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    	<a href="https://www.google.no/maps/@59.9239573,10.7466634,14z" target="_blank"><img src="images/Googlemapstravelroutes/pcgpslocationandformobileandroid2.jpg" style="height: 65px; width: 440px;"/></a>
+				<a href="https://www.google.no/maps/@59.9239573,10.7466634,14z" target="_blank">	<img src="images/Googlemapstravelroutes/pcgpslocationandformobileandroid.jpg" style="height: 480px; width: 440px;"/></a>
+					<p> Ruter is a common public transport service on web in Norway. Where people can plan, coordinate and organize passenger trips:</p>
+			<a href="https://ruter.no/en/" target="_blank"> <img src="images/Googlemapstravelroutes/ruter.png" style="height: 250px; width: 550px;"/></a>
+
+    <div class="w3-container" >
+     
+    </div>
+  </div>
+</div>
+
+
+<br />
+
+<br />
+<br />
+<br />
+<br />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<div class="chatoverskrifter" style="position: relative; bottom: 1500px;">
+
+<img src="images/overskriftsknapperbilder/Sporttripoverskrift.png" style="height: 72px; width: 540px;" /> <br />
+<img src="images/overskriftsknapperbilder/overskrift.png" style="height:62px; width: 645px;" /> <br /><br /> 
+
+<div class="w3-dropdown-hover">
+<img src="images/overskriftsknapperbilder/Bislettbasketbaneoverskrift.png" style="height: 70px; width: 579px; " />
+  <div class="w3-dropdown-content w3-card-4" style="width:800px; height: 510px; background:rgba(0,0,0,0.43); color: white; font-size: 17px;">
+    			    <img src="images/ballbaner/bislett1.jpg" style="height: 300px; width: 250px;"/>
+	<img src="images/ballbaner/bislett3.jpg" style="width:60%; height: 300px;"/>
+    <div class="w3-container" >
+      <p>Lille Bislett Idrettspark (ved Bislett Stadion, Oslo). Dalsbergstien 17, 0170 Oslo <br /> 
+	  Public transport with closest stops (1-5 min walking distance): <br /> Sofies Plass (bus), St. Hanshaugen (bus), or Dalsbergstien (with tram).
+<br /><br />
+Nearest travel route: <br /> Bus 21 (Directon Helsfyr/Galgeberg) stops at Sofies Plass. <br /> or Bus 37 (Directon Nydalen/Helsfyr) stops at St. Hanshaugen. <br /> or Tram 17/18 (Direction Rikshospitalet/Ljabru/Sinsen-Grefsen) stops at Dalsbergstien.
+</p>
+   
+    </div>
+  </div>
+</div>
+
+ <br /> <br /> <br />
+ <div class="w3-dropdown-hover">
+
+<img src="images/overskriftsknapperbilder/Grünerhagenballplassknapp.png" style="height: 65px; width: 559px; " /> 
+
+ <div class="w3-dropdown-content w3-card-4" style="width:800px; height: 737px; background:rgba(0,0,0,0.43); color: white; font-size: 17px;">
+    			    <img src="images/ballbaner/Grunerhagenballplass.jpg" style="height: 250px; width: 350px;"/>
+					    <img src="images/ballbaner/Grunerhagenballplass3.jpg" style="height: 250px; width: 350px;"/>
+					    <img src="images/ballbaner/Grunerhagenballplass4.jpg" style="height: 250px; width: 350px;"/>
+					    <img src="images/ballbaner/Grunerhagenballplass2.jpg" style="height: 250px; width: 350px;"/>
+    <div class="w3-container" >
+      <p>Kuba parken (Grünerhagen Ballplass, Grünerløkka i Oslo). Fossveien, Grünerløkka, 0551 Oslo <br /> 
+	  Public transport with closest stops (4-10) min walking distance): <br /> Olaf Ryes Plass (tram), Schous Plass (tram), stop Telthusbakken or stop Møllerveien (with bus).
+<br /><br />
+Nearest travel route: <br /> Tram nr. 11, 12 & 13 stops at Olaf Ryes Plass. <br /> or bus nr. 54 stops at Møllerveien.
+</p>
+   
+    </div>
+  </div>
+</div>
+
+<br /> <br /> <br /> 
+ <div class="w3-dropdown-hover">
+
+<img src="images/overskriftsknapperbilder/skur13.png" style="height: 65px; width: 559px; " />
+
+ <div class="w3-dropdown-content w3-card-4" style="width:800px; height: 638px; background:rgba(0,0,0,0.43); color: white; font-size: 17px;">
+    			    <img src="images/ballbaner/skur13.jpg" style="height: 450px; width: 560px;"/>
+					 
+    <div class="w3-container" >
+      <p>Skur 13. Filipstadveien 3, 0250 Oslo <br /> 
+	  Public transport with closest stops (1 min walking distance): <br /> Tjuvholmen (bus stop).
+<br /><br />
+Nearest travel route: <br /> Bus 21 and bus 54 (direction Tjuvholmen) stops at st. Tjuvholmen.
+</p>
+
+</div>
+</div>
+</div>
+
+<br /> <br /> <br /> <br /> 
+ <div class="w3-dropdown-hover">
+
+<img src="images/overskriftsknapperbilder/Torshovparkenoverskrift.png" style="height: 65px; width: 559px; position " />
+
+ <div class="w3-dropdown-content w3-card-4" style="width:770px; height: 638px; background:rgba(0,0,0,0.43); color: white; font-size: 17px;">
+    			    <img src="images/ballbaner/lilleborgbanen.jpg" style="height: 400px; width: 560px;"/>
+					 
+    <div class="w3-container" >
+      <p>Lilleborg Basketball bane (Idrettspark ved Torshovparken, Oslo). Ole Bulls gate, Torshovparken, 0476 Oslo <br /> 
+	  Public transport with closest stops (1 min walking distance): <br /> Torshovparken (bus stop).
+<br /><br />
+Nearest travel route: <br /> Bus nr. 20 (Galgeberg / Skøyen) and bus nr. 30 (direction Nydalen /  Bygdøy) stops at Torshovparken.
+</p>
+
+</div>
+</div>
+<br />
+
+
+</div>
+
+<div id="cboxbutton" style="opacity: 1.1; position: fixed; bottom: 588px; right: 16px; padding: 3px 20px; text-align: center; cursor: pointer; background-color: #f82f53; border:#C3D7E5 1px solid;border-radius: 3px; font-family: Tahoma, sans-serif; font-size: 14px; color: white; font-weight: bold;">
+</div>
+<div id="cboxwrap" style="opacity: 1.1; position: fixed; bottom: 609px; right: 16px; background: #EDF3F7; padding: 3px; border:#C3D7E5 1px solid;border-radius: 3px;"></div>
+
+
+
+<script>
+/*
+*	Cbox dynamic loader v.2
+*/
+(function () {
+	var showByDefault = true;
+	var cboxContainer = document.getElementById("cboxwrap");
+	var cboxToggleButton = document.getElementById("cboxbutton");
+	var buttonStringOpen = "Open Communication Platform. Chat room";
+	var buttonStringClose = "Close Chat Room";
+	var lsKey = "cbox:isOpen";
+
+	var cboxHTML = '<!-- BEGIN CBOX - www.cbox.ws - v4.3 -->'
+	+'<div id="cboxdiv" style="position: relative; margin: 0 auto; width: 200px; font-size: 0; line-height: 0;">'
+	+'<div style="position: relative; height: 300px; overflow: auto; overflow-y: auto; -webkit-overflow-scrolling: touch; border: 0px solid;"><iframe src="https://www7.cbox.ws/box/?boxid=803773&boxtag=cynbkn&sec=main" marginheight="0" marginwidth="0" frameborder="0" width="100%" height="100%" scrolling="auto" allowtransparency="yes" name="cboxmain7-803773" id="cboxmain7-803773"></iframe></div>'
+	+'<div style="position: relative; height: 80px; overflow: hidden; border: 0px solid; border-top: 0px;"><iframe src="https://www7.cbox.ws/box/?boxid=803773&boxtag=cynbkn&sec=form" allow="autoplay" marginheight="0" marginwidth="0" frameborder="0" width="100%" height="100%" scrolling="no" allowtransparency="yes" name="cboxform7-803773" id="cboxform7-803773"></iframe></div>'
+	+'</div>'
+	+'<!-- END CBOX -->';
+
+	var htmlInjected = false;
+	var isVisible = false;
+	var toggleCbox = function (show) {
+		
+		if (!show) {
+			cboxContainer.style.display = "none";
+			if (cboxToggleButton) {
+				cboxToggleButton.innerHTML = buttonStringOpen;
+			}
+			
+		}
+		else {
+			cboxContainer.style.display = "block";
+			if (cboxToggleButton) {
+				cboxToggleButton.innerHTML = buttonStringClose;
+			}
+		}
+		
+		if (show && !htmlInjected) {
+			cboxContainer.innerHTML = cboxHTML;
+			htmlInjected = true;
+		}
+		
+		isVisible = show;
+	}
+
+	if (localStorage && lsKey && typeof localStorage.getItem(lsKey) === "string") {
+		toggleCbox((localStorage.getItem(lsKey) === "yes"));
+	}
+	else {
+		toggleCbox(showByDefault);
+	}
+
+	if (cboxToggleButton) {
+		cboxToggleButton.onclick = function () {
+			toggleCbox(!isVisible);
+			
+			if (localStorage && lsKey) {
+				localStorage.setItem(lsKey, isVisible ? "yes" : "no");
+			}
+		}
+	}
+})();
+
+</script>	
+
+
+<br />
+<br />
+<br />
+<div class="sidemenubtns">  
+ <a href="youtubeplaylists.html"><button id="redirect1">Streetball and Basketball Entertainment Page</button></a> <br /> 
+        <a href="aboutstreetball.html"><button id="redirect2">About. The game of Streetbasket and Basketball</button></a> <br />
+      <a href="filterlistmaps.html">  <button id="redirect3">Norwegian Oslo summer Streetbasketball. Courts Location Page</button></a> <br />
+       <a href="travelroutestutorial.html"> <button id="redirect4">Norwegian Oslo summer Streetbasketball courts. Travel Route Tutorial</button></a>
+
+</div>
+<div class="menudiv">
+<br />
+<img src="images/overskriftsknapperbilder/bakgrunnsfargebilde.jpg" height="150px" width="400px" /> 
+
+
+
+​<div class="slide-container">
+
+
+<div class="main-content"> </div>
+
+
+<div class="left-arrow"> <img src="https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color/254000/38-512.png" alt="arrow"> </div>
+<div class="right-arrow"> <img src="https://www.freeiconspng.com/uploads/blue-right-arrow-icon-7.png" alt="arrow"></div>
+
+<div class="dot-container"> </div>
+
+<div class="captionText"></div>
+
+</div>
+
+<br />
+
+
+
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+
+<script>
+
+$(document).ready(function(){
+
+//add image links below
+
+var images= [];
+images[0]= 'images/Bakgrunner/Entertainmentvideospage.jpg';
+images[1]= 'images/Bakgrunner/streetballinfowhatis.jpg';
+images[2]= 'images/Bakgrunner/norwegiansummerstreetbasketballOslocitycourtslocationpage.jpg';
+images[3]= 'images/Bakgrunner/norwegiansummerstreetbasketballOslocitycourtstravelroutetutorialpage.jpg';
+
+//add caption text
+
+var capTexts= [];
+capTexts[0]= 'Streetball and Basketball Entertainment Page';
+capTexts[1]= 'About. The game of Streetbasket and Basketball';
+capTexts[2]= 'Norwegian Oslo summer Streetbasketball. Courts Location Page';
+capTexts[3]= 'Norwegian Oslo summer Streetbasketball courts. Travel Route Tutorial';
+
+
+//3000 miliseconds=3 seconds
+//set time 
+
+var pausebetweenimages=11000;
+
+var count=0;
+var imageCount= images.length-1;
+
+//creating navigation dots
+
+var navDots= [];
+
+for(var i=0; i<imageCount+1; i++)
+{
+navDots[i]='<div class="dot"></div>';
+$('.dot-container').append(navDots[i]);
+}
+
+$('.main-content').html('<img src=' + images[count] +'>');
+
+//adding .responsive-img class to set image's width and height 100%
+
+$('.main-content > img').addClass('responsive-img');
+
+//adding .active class to current navigation dot's index
+
+$( '.dot' ).eq(count).addClass('active');
+
+//animating caption text
+
+$('.captionText').animate({
+'left': '1px',
+'bottom': '251px',
+'opacity': '0.92'
+}, 500);
+$('.captionText').text(capTexts[count]);
+
+//fucntion that will run a certain time intervals
+
+timingRun = setInterval(function(){ sliderTiming();}, pausebetweenimages); 
+
+function sliderTiming ()
+{
+$( '.dot' ).eq(count).removeClass('active');
+count++;
+
+if(count>imageCount)
+{
+count=0;
+}
+
+//fadein and fadeout effect
+
+$('.main-content').fadeOut(100,function () {
+$('.main-content').html('<img src=' + images[count] +'>');
+$('.main-content > img').addClass('responsive-img');
+$( '.dot' ).eq(count).addClass('active');
+$('.main-content').fadeIn(500);
+
+captextAnim_Responsive();
+});
+}
+
+
+$('.right-arrow>img').click(function(){
+$( '.dot' ).eq(count).removeClass('active');
+count++;
+if(count>imageCount)
+{
+count=0;
+}
+$('.main-content').fadeOut(100, function () {
+$('.main-content').html('<img src=' + images[count] +'>');
+$('.main-content > img').addClass('responsive-img');
+$( '.dot' ).eq(count).addClass('active');
+$('.main-content').fadeIn(500);
+
+captextAnim_Responsive();
+}); 
+resetTiming();
+});
+
+$('.left-arrow>img').click(function(){
+$( '.dot' ).eq(count).removeClass('active');
+count--;
+if(count<0)
+{
+count=imageCount;
+}
+$('.main-content').fadeOut(100, function () {
+$('.main-content').html('<img src=' + images[count] +'>');
+$('.main-content > img').addClass('responsive-img');
+$( '.dot' ).eq(count).addClass('active');
+$('.main-content').fadeIn(500);
+
+captextAnim_Responsive();
+});
+resetTiming();
+});
+
+$('.dot').click(function () {
+$( '.dot' ).eq(count).removeClass('active');
+count= $(this).index();
+$('.main-content').fadeOut(100,function () {
+$('.main-content').html('<img src=' + images[count] +'>');
+$('.main-content > img').addClass('responsive-img');
+$( '.dot' ).eq(count).addClass('active');
+$('.main-content').fadeIn(500);
+
+captextAnim_Responsive();
+});
+resetTiming();
+});
+
+//reset the time interval
+
+function resetTiming() {
+clearInterval(timingRun);
+timingRun = setInterval(function() { sliderTiming(); },pausebetweenimages);
+}
+
+//animating caption text with responsiveness
+
+function captextAnim_Responsive(){
+if ($(window).width() <= 500)
+{
+$('.captionText').css('opacity', '0');
+$('.captionText').css('left', '0'); 
+$('.captionText').text(capTexts[count]);
+$('.captionText').animate({
+'left': '1px',
+'bottom': '251px',
+'opacity': '0.92'
+}, 500); 
+} 
+
+else {
+$('.captionText').css('opacity', '0');
+$('.captionText').css('left', '0'); 
+$('.captionText').text(capTexts[count]);
+$('.captionText').animate({
+'left': '1px',
+'bottom': '251px',
+'opacity': '0.92'
+}, 500);
+} 
+}
+
+});
+
+</script>
+
+<br />
+<br />
+
+</body>
+</html>

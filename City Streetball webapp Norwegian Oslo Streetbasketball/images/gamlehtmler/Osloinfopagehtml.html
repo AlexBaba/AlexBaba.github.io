@@ -1,0 +1,349 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width=30%,height=110%, initial-scale=0.5, user-scalable = yes" />
+
+  <style>
+            html, body {
+              background-image: url(" Pictures/oslopatternhtmlbakgrunn2.jpg");
+               background-repeat:repeat;
+         
+            }
+</style>
+</head>
+<body>
+ <style>
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: rgb(23, 71, 176);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+            </style>
+
+
+ <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:1200,x:0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:-0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:-0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,y:0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,y:-0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,y:-0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,y:0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:0.3,$Cols:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,y:0.3,$Rows:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,y:0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,y:0.3,$Cols:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,y:-0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:0.3,$Rows:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:-0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$SlideOut:true,$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,$Delay:20,$Clip:3,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,$Delay:20,$Clip:3,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,$Delay:20,$Clip:12,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,$Delay:20,$Clip:12,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2}
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $ThumbnailNavigatorOptions: {
+                $Class: $JssorThumbnailNavigator$,
+                $Cols: 10,
+                $SpacingX: 8,
+                $SpacingY: 8,
+                $Align: 360
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*responsive code begin*/
+            /*you can remove responsive code if you don't want the slider scales while window resizing*/
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 800);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            /*responsive code end*/
+        });
+    </script>
+    <style>
+        /* jssor slider arrow navigator skin 05 css */
+        /*
+        .jssora05l                  (normal)
+        .jssora05r                  (normal)
+        .jssora05l:hover            (normal mouseover)
+        .jssora05r:hover            (normal mouseover)
+        .jssora05l.jssora05ldn      (mousedown)
+        .jssora05r.jssora05rdn      (mousedown)
+        .jssora05l.jssora05lds      (disabled)
+        .jssora05r.jssora05rds      (disabled)
+        */
+        .jssora05l, .jssora05r {
+            display: block;
+            position: left;
+            /* size of arrow element */
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            background: url('img/a17.png') no-repeat;
+            overflow: hidden;
+        }
+        .jssora05l { background-position: -10px -40px; }
+        .jssora05r { background-position: -70px -40px; }
+        .jssora05l:hover { background-position: -130px -40px; }
+        .jssora05r:hover { background-position: -190px -40px; }
+        .jssora05l.jssora05ldn { background-position: -250px -40px; }
+        .jssora05r.jssora05rdn { background-position: -310px -40px; }
+        .jssora05l.jssora05lds { background-position: -10px -40px; opacity: .3; pointer-events: none; }
+        .jssora05r.jssora05rds { background-position: -70px -40px; opacity: .3; pointer-events: none; }
+        /* jssor slider thumbnail navigator skin 01 css *//*.jssort01 .p            (normal).jssort01 .p:hover      (normal mouseover).jssort01 .p.pav        (active).jssort01 .p.pdn        (mousedown)*/.jssort01 .p {    position: absolute;    top: 0;    left: 0;    width: 72px;    height: 72px;}.jssort01 .t {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;    border: none;}.jssort01 .w {    position: absolute;    top: 0px;    left: 0px;    width: 100%;    height: 100%;}.jssort01 .c {    position: absolute;    top: 0px;    left: 0px;    width: 68px;    height: 68px;    border: #000 2px solid;    box-sizing: content-box;    background: url('img/t01.png') -800px -800px no-repeat;    _background: none;}.jssort01 .pav .c {    top: 2px;    _top: 0px;    left: 2px;    _left: 0px;    width: 68px;    height: 68px;    border: #000 0px solid;    _border: #fff 2px solid;    background-position: 50% 50%;}.jssort01 .p:hover .c {    top: 0px;    left: 0px;    width: 70px;    height: 70px;    border: #fff 1px solid;    background-position: 50% 50%;}.jssort01 .p.pdn .c {    background-position: 50% 50%;    width: 68px;    height: 68px;    border: #000 2px solid;}* html .jssort01 .c, * html .jssort01 .pdn .c, * html .jssort01 .pav .c {    /* ie quirks mode adjust */    width /**/: 72px;    height /**/: 72px;}
+        .auto-style73 {
+            width: 378px;
+            height: 209px;
+        }
+        .auto-style74 {
+            width: 384px;
+            height: 233px;
+        }
+    </style>
+   
+        <!-- Thumbnail Navigator -->
+        <div data-u="thumbnavigator" class="jssort01" style="position:absolute;left:0px;bottom:0px;width:800px;height:100px;" data-autocenter="1">
+            <!-- Thumbnail Item Skin Begin -->
+            <div data-u="slides" style="cursor: default;">
+                <div data-u="prototype" class="p">
+                    <div class="w">
+                        <div data-u="thumbnailtemplate" class="t"></div>
+                    </div>
+                    <div class="c"></div>
+                </div>
+            </div>
+            <!-- Thumbnail Item Skin End -->
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora05l" style="top:158px;left:8px;width:40px;height:40px;"></span>
+        <span data-u="arrowright" class="jssora05r" style="top:158px;right:8px;width:40px;height:40px;"></span>
+    </div>
+    <!-- #endregion Jssor Slider End -->
+
+        <br />
+       
+       
+    </div>
+           
+       
+            <!-- #region Jssor Slider Begin -->
+<!-- Jssor Slider Maker -->
+<!-- This is deep minimized code which works independently. -->
+<script type="text/javascript">
+(function(f,g,c,j,d,l,k){/*! Jssor */
+new(function(){});var e={qd:function(a){return-c.cos(a*c.PI)/2+.5},od:function(a){return a},gd:function(a){return-a*(a-2)}};var b=new function(){var h=this,Ab=/\S+/g,F=1,yb=2,fb=3,eb=4,jb=5,G,r=0,i=0,s=0,X=0,z=0,I=navigator,ob=I.appName,o=I.userAgent,p=parseFloat;function Ib(){if(!G){G={pe:"ontouchstart"in f||"createTouch"in g};var a;if(I.pointerEnabled||(a=I.msPointerEnabled))G.jc=a?"msTouchAction":"touchAction"}return G}function v(j){if(!r){r=-1;if(ob=="Microsoft Internet Explorer"&&!!f.attachEvent&&!!f.ActiveXObject){var e=o.indexOf("MSIE");r=F;s=p(o.substring(e+5,o.indexOf(";",e)));/*@cc_on X=@_jscript_version@*/;i=g.documentMode||s}else if(ob=="Netscape"&&!!f.addEventListener){var d=o.indexOf("Firefox"),b=o.indexOf("Safari"),h=o.indexOf("Chrome"),c=o.indexOf("AppleWebKit");if(d>=0){r=yb;i=p(o.substring(d+8))}else if(b>=0){var k=o.substring(0,b).lastIndexOf("/");r=h>=0?eb:fb;i=p(o.substring(k+1,b))}else{var a=/Trident\/.*rv:([0-9]{1,}[\.0-9]{0,})/i.exec(o);if(a){r=F;i=s=p(a[1])}}if(c>=0)z=p(o.substring(c+12))}else{var a=/(opera)(?:.*version|)[ \/]([\w.]+)/i.exec(o);if(a){r=jb;i=p(a[2])}}}return j==r}function q(){return v(F)}function Q(){return q()&&(i<6||g.compatMode=="BackCompat")}function db(){return v(fb)}function ib(){return v(jb)}function vb(){return db()&&z>534&&z<535}function J(){v();return z>537||i>42||r==F&&i>=11}function O(){return q()&&i<9}function wb(a){var b,c;return function(f){if(!b){b=d;var e=a.substr(0,1).toUpperCase()+a.substr(1);n([a].concat(["WebKit","ms","Moz","O","webkit"]),function(g,d){var b=a;if(d)b=g+e;if(f.style[b]!=k)return c=b})}return c}}function ub(b){var a;return function(c){a=a||wb(b)(c)||b;return a}}var K=ub("transform");function nb(a){return{}.toString.call(a)}var kb={};n(["Boolean","Number","String","Function","Array","Date","RegExp","Object"],function(a){kb["[object "+a+"]"]=a.toLowerCase()});function n(b,d){var a,c;if(nb(b)=="[object Array]"){for(a=0;a<b.length;a++)if(c=d(b[a],a,b))return c}else for(a in b)if(c=d(b[a],a,b))return c}function C(a){return a==j?String(a):kb[nb(a)]||"object"}function lb(a){for(var b in a)return d}function A(a){try{return C(a)=="object"&&!a.nodeType&&a!=a.window&&(!a.constructor||{}.hasOwnProperty.call(a.constructor.prototype,"isPrototypeOf"))}catch(b){}}function u(a,b){return{x:a,y:b}}function rb(b,a){setTimeout(b,a||0)}function H(b,d,c){var a=!b||b=="inherit"?"":b;n(d,function(c){var b=c.exec(a);if(b){var d=a.substr(0,b.index),e=a.substr(b.index+b[0].length+1,a.length-1);a=d+e}});a=c+(!a.indexOf(" ")?"":" ")+a;return a}function tb(b,a){if(i<9)b.style.filter=a}h.oe=Ib;h.kc=q;h.Rd=db;h.ke=J;h.je=O;wb("transform");h.rc=function(){return i};h.tc=rb;function Y(a){a.constructor===Y.caller&&a.vc&&a.vc.apply(a,Y.caller.arguments)}h.vc=Y;h.ub=function(a){if(h.fe(a))a=g.getElementById(a);return a};function t(a){return a||f.event}h.zc=t;h.Lb=function(b){b=t(b);var a=b.target||b.srcElement||g;if(a.nodeType==3)a=h.Ac(a);return a};h.sc=function(a){a=t(a);return{x:a.pageX||a.clientX||0,y:a.pageY||a.clientY||0}};function D(c,d,a){if(a!==k)c.style[d]=a==k?"":a;else{var b=c.currentStyle||c.style;a=b[d];if(a==""&&f.getComputedStyle){b=c.ownerDocument.defaultView.getComputedStyle(c,j);b&&(a=b.getPropertyValue(d)||b[d])}return a}}function ab(b,c,a,d){if(a!==k){if(a==j)a="";else d&&(a+="px");D(b,c,a)}else return p(D(b,c))}function m(c,a){var d=a?ab:D,b;if(a&4)b=ub(c);return function(e,f){return d(e,b?b(e):c,f,a&2)}}function Db(b){if(q()&&s<9){var a=/opacity=([^)]*)/.exec(b.style.filter||"");return a?p(a[1])/100:1}else return p(b.style.opacity||"1")}function Fb(b,a,f){if(q()&&s<9){var h=b.style.filter||"",i=new RegExp(/[\s]*alpha\([^\)]*\)/g),e=c.round(100*a),d="";if(e<100||f)d="alpha(opacity="+e+") ";var g=H(h,[i],d);tb(b,g)}else b.style.opacity=a==1?"":c.round(a*100)/100}var L={Q:["rotate"],L:["rotateX"],J:["rotateY"],xb:["skewX"],yb:["skewY"]};if(!J())L=B(L,{o:["scaleX",2],p:["scaleY",2],I:["translateZ",1]});function M(d,a){var c="";if(a){if(q()&&i&&i<10){delete a.L;delete a.J;delete a.I}b.e(a,function(d,b){var a=L[b];if(a){var e=a[1]||0;if(N[b]!=d)c+=" "+a[0]+"("+d+(["deg","px",""])[e]+")"}});if(J()){if(a.P||a.U||a.I)c+=" translate3d("+(a.P||0)+"px,"+(a.U||0)+"px,"+(a.I||0)+"px)";if(a.o==k)a.o=1;if(a.p==k)a.p=1;if(a.o!=1||a.p!=1)c+=" scale3d("+a.o+", "+a.p+", 1)"}}d.style[K(d)]=c}h.mc=m("transformOrigin",4);h.Vd=m("backfaceVisibility",4);h.Ud=m("transformStyle",4);h.Td=m("perspective",6);h.ye=m("perspectiveOrigin",4);h.ge=function(a,b){if(q()&&s<9||s<10&&Q())a.style.zoom=b==1?"":b;else{var c=K(a),f="scale("+b+")",e=a.style[c],g=new RegExp(/[\s]*scale\(.*?\)/g),d=H(e,[g],f);a.style[c]=d}};h.uc=function(b,a){return function(c){c=t(c);var e=c.type,d=c.relatedTarget||(e=="mouseout"?c.toElement:c.fromElement);(!d||d!==a&&!h.ze(a,d))&&b(c)}};h.a=function(a,d,b,c){a=h.ub(a);if(a.addEventListener){d=="mousewheel"&&a.addEventListener("DOMMouseScroll",b,c);a.addEventListener(d,b,c)}else if(a.attachEvent){a.attachEvent("on"+d,b);c&&a.setCapture&&a.setCapture()}};h.z=function(a,c,d,b){a=h.ub(a);if(a.removeEventListener){c=="mousewheel"&&a.removeEventListener("DOMMouseScroll",d,b);a.removeEventListener(c,d,b)}else if(a.detachEvent){a.detachEvent("on"+c,d);b&&a.releaseCapture&&a.releaseCapture()}};h.Ab=function(a){a=t(a);a.preventDefault&&a.preventDefault();a.cancel=d;a.returnValue=l};h.Ee=function(a){a=t(a);a.stopPropagation&&a.stopPropagation();a.cancelBubble=d};h.T=function(d,c){var a=[].slice.call(arguments,2),b=function(){var b=a.concat([].slice.call(arguments,0));return c.apply(d,b)};return b};h.Db=function(d,c){for(var b=[],a=d.firstChild;a;a=a.nextSibling)(c||a.nodeType==1)&&b.push(a);return b};function mb(a,c,e,b){b=b||"u";for(a=a?a.firstChild:j;a;a=a.nextSibling)if(a.nodeType==1){if(U(a,b)==c)return a;if(!e){var d=mb(a,c,e,b);if(d)return d}}}h.A=mb;function gb(a,c,d){for(a=a?a.firstChild:j;a;a=a.nextSibling)if(a.nodeType==1){if(a.tagName==c)return a;if(!d){var b=gb(a,c,d);if(b)return b}}}h.Qd=gb;function B(){var e=arguments,d,c,b,a,g=1&e[0],f=1+g;d=e[f-1]||{};for(;f<e.length;f++)if(c=e[f])for(b in c){a=c[b];if(a!==k){a=c[b];var h=d[b];d[b]=g&&(A(h)||A(a))?B(g,{},h,a):a}}return d}h.lb=B;function Z(f,g){var d={},c,a,b;for(c in f){a=f[c];b=g[c];if(a!==b){var e;if(A(a)&&A(b)){a=Z(a,b);e=!lb(a)}!e&&(d[c]=a)}}return d}h.nc=function(a){return C(a)=="function"};h.fe=function(a){return C(a)=="string"};h.rd=function(a){return!isNaN(p(a))&&isFinite(a)};h.e=n;function R(a){return g.createElement(a)}h.Fb=function(){return R("DIV")};h.pc=function(){};function V(b,c,a){if(a==k)return b.getAttribute(c);b.setAttribute(c,a)}function U(a,b){return V(a,b)||V(a,"data-"+b)}h.B=V;h.g=U;function x(b,a){if(a==k)return b.className;b.className=a}h.xc=x;function qb(b){var a={};n(b,function(b){if(b!=k)a[b]=b});return a}function sb(b,a){return b.match(a||Ab)}function P(b,a){return qb(sb(b||"",a))}h.nd=sb;function bb(b,c){var a="";n(c,function(c){a&&(a+=b);a+=c});return a}function E(a,c,b){x(a,bb(" ",B(Z(P(x(a)),P(c)),P(b))))}h.Ac=function(a){return a.parentNode};h.H=function(a){h.F(a,"none")};h.W=function(a,b){h.F(a,b?"none":"")};h.kd=function(b,a){b.removeAttribute(a)};h.id=function(){return q()&&i<10};h.hd=function(d,a){if(a)d.style.clip="rect("+c.round(a.i||a.m||0)+"px "+c.round(a.q)+"px "+c.round(a.s)+"px "+c.round(a.j||a.n||0)+"px)";else if(a!==k){var g=d.style.cssText,f=[new RegExp(/[\s]*clip: rect\(.*?\)[;]?/i),new RegExp(/[\s]*cliptop: .*?[;]?/i),new RegExp(/[\s]*clipright: .*?[;]?/i),new RegExp(/[\s]*clipbottom: .*?[;]?/i),new RegExp(/[\s]*clipleft: .*?[;]?/i)],e=H(g,f,"");b.fc(d,e)}};h.E=function(){return+new Date};h.V=function(b,a){b.appendChild(a)};h.gc=function(b,a,c){(c||a.parentNode).insertBefore(b,a)};h.oc=function(b,a){a=a||b.parentNode;a&&a.removeChild(b)};h.Id=function(a,b){n(a,function(a){h.oc(a,b)})};h.Dc=function(a){h.Id(h.Db(a,d),a)};h.Hd=function(a,b){var c=h.Ac(a);b&1&&h.D(a,(h.k(c)-h.k(a))/2);b&2&&h.C(a,(h.l(c)-h.l(a))/2)};h.Ad=function(b,a){return parseInt(b,a||10)};h.zd=p;h.ze=function(b,a){var c=g.body;while(a&&b!==a&&c!==a)try{a=a.parentNode}catch(d){return l}return b===a};function W(d,c,b){var a=d.cloneNode(!c);!b&&h.kd(a,"id");return a}h.jb=W;h.ib=function(e,f){var a=new Image;function b(e,d){h.z(a,"load",b);h.z(a,"abort",c);h.z(a,"error",c);f&&f(a,d)}function c(a){b(a,d)}if(ib()&&i<11.6||!e)b(!e);else{h.a(a,"load",b);h.a(a,"abort",c);h.a(a,"error",c);a.src=e}};h.xd=function(d,a,e){var c=d.length+1;function b(b){c--;if(a&&b&&b.src==a.src)a=b;!c&&e&&e(a)}n(d,function(a){h.ib(a.src,b)});b()};function Gb(a){var l=this,p="",r=["av","pv","ds","dn"],e=[],q,j=0,f=0,d=0;function i(){E(a,q,e[d||j||f&2||f]);b.G(a,"pointer-events",d?"none":"")}function c(){j=0;i();h.z(g,"mouseup",c);h.z(g,"touchend",c);h.z(g,"touchcancel",c)}function o(a){if(d)h.Ab(a);else{j=4;i();h.a(g,"mouseup",c);h.a(g,"touchend",c);h.a(g,"touchcancel",c)}}l.wb=function(a){if(a===k)return!d;d=a?0:3;i()};l.ab=a=h.ub(a);var m=b.nd(x(a));if(m)p=m.shift();n(r,function(a){e.push(p+a)});q=bb(" ",e);e.unshift("");h.a(a,"mousedown",o);h.a(a,"touchstart",o)}h.yc=function(a){return new Gb(a)};h.G=D;h.tb=m("overflow");h.C=m("top",2);h.D=m("left",2);h.k=m("width",2);h.l=m("height",2);h.qc=m("marginLeft",2);h.Ec=m("marginTop",2);h.v=m("position");h.F=m("display");h.u=m("zIndex",1);h.Pb=function(b,a,c){if(a!=k)Fb(b,a,c);else return Db(b)};h.fc=function(a,b){if(b!=k)a.style.cssText=b;else return a.style.cssText};var T={gb:h.Pb,i:h.C,j:h.D,qb:h.k,Cb:h.l,fb:h.v,Re:h.F,eb:h.u};function w(f,l){var e=O(),b=J(),d=vb(),g=K(f);function i(b,d,a){var e=b.bb(u(-d/2,-a/2)),f=b.bb(u(d/2,-a/2)),g=b.bb(u(d/2,a/2)),h=b.bb(u(-d/2,a/2));b.bb(u(300,300));return u(c.min(e.x,f.x,g.x,h.x)+d/2,c.min(e.y,f.y,g.y,h.y)+a/2)}function a(d,a){a=a||{};var n=a.I||0,p=(a.L||0)%360,q=(a.J||0)%360,u=(a.Q||0)%360,l=a.o,m=a.p,f=a.Se;if(l==k)l=1;if(m==k)m=1;if(f==k)f=1;if(e){n=0;p=0;q=0;f=0}var c=new Cb(a.P,a.U,n);c.L(p);c.J(q);c.md(u);c.ld(a.xb,a.yb);c.dd(l,m,f);if(b){c.db(a.n,a.m);d.style[g]=c.Jd()}else if(!X||X<9){var o="",j={x:0,y:0};if(a.K)j=i(c,a.K,a.Z);h.Ec(d,j.y);h.qc(d,j.x);o=c.yd();var s=d.style.filter,t=new RegExp(/[\s]*progid:DXImageTransform\.Microsoft\.Matrix\([^\)]*\)/g),r=H(s,[t],o);tb(d,r)}}w=function(e,c){c=c||{};var g=c.n,i=c.m,f;n(T,function(a,b){f=c[b];f!==k&&a(e,f)});h.hd(e,c.c);if(!b){g!=k&&h.D(e,(c.bd||0)+g);i!=k&&h.C(e,(c.ad||0)+i)}if(c.vd)if(d)rb(h.T(j,M,e,c));else a(e,c)};h.vb=M;if(d)h.vb=w;if(e)h.vb=a;else if(!b)a=M;h.M=w;w(f,l)}h.vb=w;h.M=w;function Cb(i,k,o){var d=this,b=[1,0,0,0,0,1,0,0,0,0,1,0,i||0,k||0,o||0,1],h=c.sin,g=c.cos,l=c.tan;function f(a){return a*c.PI/180}function n(a,b){return{x:a,y:b}}function m(c,e,l,m,o,r,t,u,w,z,A,C,E,b,f,k,a,g,i,n,p,q,s,v,x,y,B,D,F,d,h,j){return[c*a+e*p+l*x+m*F,c*g+e*q+l*y+m*d,c*i+e*s+l*B+m*h,c*n+e*v+l*D+m*j,o*a+r*p+t*x+u*F,o*g+r*q+t*y+u*d,o*i+r*s+t*B+u*h,o*n+r*v+t*D+u*j,w*a+z*p+A*x+C*F,w*g+z*q+A*y+C*d,w*i+z*s+A*B+C*h,w*n+z*v+A*D+C*j,E*a+b*p+f*x+k*F,E*g+b*q+f*y+k*d,E*i+b*s+f*B+k*h,E*n+b*v+f*D+k*j]}function e(c,a){return m.apply(j,(a||b).concat(c))}d.dd=function(a,c,d){if(a!=1||c!=1||d!=1)b=e([a,0,0,0,0,c,0,0,0,0,d,0,0,0,0,1])};d.db=function(a,c,d){b[12]+=a||0;b[13]+=c||0;b[14]+=d||0};d.L=function(c){if(c){a=f(c);var d=g(a),i=h(a);b=e([1,0,0,0,0,d,i,0,0,-i,d,0,0,0,0,1])}};d.J=function(c){if(c){a=f(c);var d=g(a),i=h(a);b=e([d,0,-i,0,0,1,0,0,i,0,d,0,0,0,0,1])}};d.md=function(c){if(c){a=f(c);var d=g(a),i=h(a);b=e([d,i,0,0,-i,d,0,0,0,0,1,0,0,0,0,1])}};d.ld=function(a,c){if(a||c){i=f(a);k=f(c);b=e([1,l(k),0,0,l(i),1,0,0,0,0,1,0,0,0,0,1])}};d.bb=function(c){var a=e(b,[1,0,0,0,0,1,0,0,0,0,1,0,c.x,c.y,0,1]);return n(a[12],a[13])};d.Jd=function(){return"matrix3d("+b.join(",")+")"};d.yd=function(){return"progid:DXImageTransform.Microsoft.Matrix(M11="+b[0]+", M12="+b[4]+", M21="+b[1]+", M22="+b[5]+", SizingMethod='auto expand')"}}new function(){var a=this;function b(d,g){for(var j=d[0].length,i=d.length,h=g[0].length,f=[],c=0;c<i;c++)for(var k=f[c]=[],b=0;b<h;b++){for(var e=0,a=0;a<j;a++)e+=d[c][a]*g[a][b];k[b]=e}return f}a.o=function(b,c){return a.Oc(b,c,0)};a.p=function(b,c){return a.Oc(b,0,c)};a.Oc=function(a,c,d){return b(a,[[c,0],[0,d]])};a.bb=function(d,c){var a=b(d,[[c.x],[c.y]]);return u(a[0][0],a[1][0])}};var N={bd:0,ad:0,n:0,m:0,Y:1,o:1,p:1,Q:0,L:0,J:0,P:0,U:0,I:0,xb:0,yb:0};h.wd=function(a){var c=a||{};if(a)if(b.nc(a))c={Jb:c};else if(b.nc(a.c))c.c={Jb:a.c};return c};h.Bd=function(l,m,x,q,z,A,n){var a=m;if(l){a={};for(var g in m){var B=A[g]||1,w=z[g]||[0,1],f=(x-w[0])/w[1];f=c.min(c.max(f,0),1);f=f*B;var u=c.floor(f);if(f!=u)f-=u;var h=q.Jb||e.qd,i,C=l[g],o=m[g];if(b.rd(o)){h=q[g]||h;var y=h(f);i=C+o*y}else{i=b.lb({zb:{}},l[g]);var v=q[g]||{};b.e(o.zb||o,function(d,a){h=v[a]||v.Jb||h;var c=h(f),b=d*c;i.zb[a]=b;i[a]+=b})}a[g]=i}var t=b.e(m,function(b,a){return N[a]!=k});t&&b.e(N,function(c,b){if(a[b]==k&&l[b]!==k)a[b]=l[b]});if(t){if(a.Y)a.o=a.p=a.Y;a.K=n.K;a.Z=n.Z;a.vd=d}}if(m.c&&n.db){var p=a.c.zb,s=(p.i||0)+(p.s||0),r=(p.j||0)+(p.q||0);a.j=(a.j||0)+r;a.i=(a.i||0)+s;a.c.j-=r;a.c.q-=r;a.c.i-=s;a.c.s-=s}if(a.c&&b.id()&&!a.c.i&&!a.c.j&&!a.c.m&&!a.c.n&&a.c.q==n.K&&a.c.s==n.Z)a.c=j;return a}};function n(){var a=this,d=[];function i(a,b){d.push({Ub:a,Kb:b})}function h(a,c){b.e(d,function(b,e){b.Ub==a&&b.Kb===c&&d.splice(e,1)})}a.cb=a.addEventListener=i;a.removeEventListener=h;a.f=function(a){var c=[].slice.call(arguments,1);b.e(d,function(b){b.Ub==a&&b.Kb.apply(f,c)})}}var m=function(z,C,g,K,N,M){z=z||0;var a=this,q,n,o,u,A=0,G,H,F,B,y=0,i=0,m=0,D,k,h,e,p,J,w=[],x;function P(a){h+=a;e+=a;k+=a;i+=a;m+=a;y+=a}function t(o){var f=o;if(p&&(f>=e||f<=h&&!J))f=((f-h)%p+p)%p+h;if(!D||u||i!=f){var j=c.min(f,e);j=c.max(j,h);if(!D||u||j!=m){if(M){var l=(j-k)/(C||1);if(g.Od)l=1-l;var n=b.Bd(N,M,l,G,F,H,g);if(x)b.e(n,function(b,a){x[a]&&x[a](K,b)});else b.M(K,n)}a.bc(m-k,j-k);m=j;b.e(w,function(b,c){var a=o<i?w[w.length-c-1]:b;a.N(m-y)});var r=i,q=m;i=f;D=d;a.Gb(r,q)}}}function E(a,b,d){b&&a.Yb(e);if(!d){h=c.min(h,a.Qc()+y);e=c.max(e,a.Hb()+y)}w.push(a)}var r=f.requestAnimationFrame||f.webkitRequestAnimationFrame||f.mozRequestAnimationFrame||f.msRequestAnimationFrame;if(b.Rd()&&b.rc()<7)r=j;r=r||function(a){b.tc(a,g.Rc)};function I(){if(q){var d=b.E(),e=c.min(d-A,g.Sc),a=i+e*o;A=d;if(a*o>=n*o)a=n;t(a);if(!u&&a*o>=n*o)L(B);else r(I)}}function s(f,g,j){if(!q){q=d;u=j;B=g;f=c.max(f,h);f=c.min(f,e);n=f;o=n<i?-1:1;a.Tc();A=b.E();r(I)}}function L(b){if(q){u=q=B=l;a.Uc();b&&b()}}a.Vc=function(a,b,c){s(a?i+a:e,b,c)};a.Wc=s;a.X=L;a.sd=function(a){s(a)};a.O=function(){return i};a.lc=function(){return n};a.ob=function(){return m};a.N=t;a.db=function(a){t(i+a)};a.Kc=function(){return q};a.Fd=function(a){p=a};a.Yb=P;a.Jc=function(a,b){E(a,0,b)};a.cc=function(a){E(a,1)};a.Qc=function(){return h};a.Hb=function(){return e};a.Gb=a.Tc=a.Uc=a.bc=b.pc;a.Ob=b.E();g=b.lb({Rc:16,Sc:50},g);p=g.Qb;J=g.Pd;x=g.pd;h=k=z;e=z+C;H=g.Nd||{};F=g.Ld||{};G=b.wd(g.hb)};new(function(){});var i=function(p,fc){var h=this;function Bc(){var a=this;m.call(a,-1e8,2e8);a.ne=function(){var b=a.ob(),d=c.floor(b),f=t(d),e=b-c.floor(b);return{R:f,qe:d,fb:e}};a.Gb=function(b,a){var e=c.floor(a);if(e!=a&&a>b)e++;Tb(e,d);h.f(i.re,t(a),t(b),a,b)}}function Ac(){var a=this;m.call(a,0,0,{Qb:r});b.e(C,function(b){D&1&&b.Fd(r);a.cc(b);b.Yb(kb/bc)})}function zc(){var a=this,b=Ub.ab;m.call(a,-1,2,{hb:e.od,pd:{fb:Zb},Qb:r},b,{fb:1},{fb:-2});a.Rb=b}function mc(o,n){var b=this,e,f,g,k,c;m.call(b,-1e8,2e8,{Sc:100});b.Tc=function(){M=d;R=j;h.f(i.se,t(w.O()),w.O())};b.Uc=function(){M=l;k=l;var a=w.ne();h.f(i.te,t(w.O()),w.O());!a.fb&&Dc(a.qe,s)};b.Gb=function(i,h){var b;if(k)b=c;else{b=f;if(g){var d=h/g;b=a.ue(d)*(f-e)+e}}w.N(b)};b.rb=function(a,d,c,h){e=a;f=d;g=c;w.N(a);b.N(0);b.Wc(c,h)};b.ve=function(a){k=d;c=a;b.Vc(a,j,d)};b.Sd=function(a){c=a};w=new Bc;w.Jc(o);w.Jc(n)}function oc(){var c=this,a=Xb();b.u(a,0);b.G(a,"pointerEvents","none");c.ab=a;c.sb=function(){b.H(a);b.Dc(a)}}function xc(o,f){var e=this,q,M,v,k,y=[],x,B,W,H,S,F,g,w,p;m.call(e,-u,u+1,{});function E(a){q&&q.cd();T(o,a,0);F=d;q=new I.S(o,I,b.zd(b.g(o,"idle"))||lc);q.N(0)}function Z(){q.Ob<I.Ob&&E()}function O(p,r,o){if(!H){H=d;if(k&&o){var g=o.width,c=o.height,n=g,m=c;if(g&&c&&a.kb){if(a.kb&3&&(!(a.kb&4)||g>K||c>J)){var j=l,q=K/J*c/g;if(a.kb&1)j=q>1;else if(a.kb&2)j=q<1;n=j?g*J/c:K;m=j?J:c*K/g}b.k(k,n);b.l(k,m);b.C(k,(J-m)/2);b.D(k,(K-n)/2)}b.v(k,"absolute");h.f(i.ie,f)}}b.H(r);p&&p(e)}function Y(b,c,d,g){if(g==R&&s==f&&N)if(!Cc){var a=t(b);A.we(a,f,c,e,d);c.he();U.Yb(a-U.Qc()-1);U.N(a);z.rb(b,b,0)}}function bb(b){if(b==R&&s==f){if(!g){var a=j;if(A)if(A.R==f)a=A.me();else A.sb();Z();g=new vc(o,f,a,q);g.fd(p)}!g.Kc()&&g.Sb()}}function G(d,h,l){if(d==f){if(d!=h)C[h]&&C[h].ed();else!l&&g&&g.de();p&&p.wb();var m=R=b.E();e.ib(b.T(j,bb,m))}else{var k=c.min(f,d),i=c.max(f,d),o=c.min(i-k,k+r-i),n=u+a.ce-1;(!S||o<=n)&&e.ib()}}function db(){if(s==f&&g){g.X();p&&p.be();p&&p.ae();g.Yc()}}function eb(){s==f&&g&&g.X()}function ab(a){!P&&h.f(i.Zd,f,a)}function Q(){p=w.pInstance;g&&g.fd(p)}e.ib=function(c,a){a=a||v;if(y.length&&!H){b.W(a);if(!W){W=d;h.f(i.Xd,f);b.e(y,function(a){if(!b.B(a,"src")){a.src=b.g(a,"src2");b.F(a,a["display-origin"])}})}b.xd(y,k,b.T(j,O,c,a))}else O(c,a)};e.Wd=function(){var i=f;if(a.Gc<0)i-=r;var d=i+a.Gc*tc;if(D&2)d=t(d);if(!(D&1)&&!ib)d=c.max(0,c.min(d,r-u));if(d!=f){if(A){var g=A.ee(r);if(g){var k=R=b.E(),h=C[t(d)];return h.ib(b.T(j,Y,d,h,g,k),v)}}cb(d)}else if(a.nb){e.ed();G(f,f)}};e.Ib=function(){G(f,f,d)};e.ed=function(){p&&p.be();p&&p.ae();e.Hc();g&&g.xe();g=j;E()};e.he=function(){b.H(o)};e.Hc=function(){b.W(o)};e.He=function(){p&&p.wb()};function T(a,c,e){if(b.B(a,"jssor-slider"))return;if(!F){if(a.tagName=="IMG"){y.push(a);if(!b.B(a,"src")){S=d;a["display-origin"]=b.F(a);b.H(a)}}b.u(a,(b.u(a)||0)+1);b.Ec(a,0);b.qc(a,0)}var f=b.Db(a);b.e(f,function(f){var h=f.tagName,i=b.g(f,"u");if(i=="player"&&!w){w=f;if(w.pInstance)Q();else b.a(w,"dataavailable",Q)}if(i=="caption"){if(c){b.mc(f,b.g(f,"to"));b.Vd(f,b.g(f,"bf"));b.g(f,"3d")&&b.Ud(f,"preserve-3d")}else if(!b.kc()){var g=b.jb(f,l,d);b.gc(g,f,a);b.oc(f,a);f=g;c=d}}else if(!F&&!e&&!k){if(h=="A"){if(b.g(f,"u")=="image")k=b.Qd(f,"IMG");else k=b.A(f,"image",d);if(k){x=f;b.F(x,"block");b.M(x,V);B=b.jb(x,d);b.v(x,"relative");b.Pb(B,0);b.G(B,"backgroundColor","#000")}}else if(h=="IMG"&&b.g(f,"u")=="image")k=f;if(k){k.border=0;b.M(k,V)}}T(f,c,e+1)})}e.bc=function(c,b){var a=u-b;Zb(M,a)};e.R=f;n.call(e);b.Td(o,b.g(o,"p"));b.ye(o,b.g(o,"po"));var L=b.A(o,"thumb",d);if(L){b.jb(L);b.H(L)}b.W(o);v=b.jb(gb);b.u(v,1e3);b.a(o,"click",ab);E(d);e.le=k;e.Ic=B;e.Rb=M=o;b.V(M,v);h.cb(203,G);h.cb(28,eb);h.cb(24,db)}function vc(y,f,p,q){var a=this,n=0,u=0,g,j,e,c,k,t,r,o=C[f];m.call(a,0,0);function v(){b.Dc(L);cc&&k&&o.Ic&&b.V(L,o.Ic);b.W(L,!k&&o.le)}function w(){a.Sb()}function x(b){r=b;a.X();a.Sb()}a.Sb=function(){var b=a.ob();if(!B&&!M&&!r&&s==f){if(!b){if(g&&!k){k=d;a.Yc(d);h.f(i.Ie,f,n,u,g,c)}v()}var l,p=i.Fc;if(b!=c)if(b==e)l=c;else if(b==j)l=e;else if(!b)l=j;else l=a.lc();h.f(p,f,b,n,j,e,c);var m=N&&(!E||F);if(b==c)(e!=c&&!(E&12)||m)&&o.Wd();else(m||b!=e)&&a.Wc(l,w)}};a.de=function(){e==c&&e==a.ob()&&a.N(j)};a.xe=function(){A&&A.R==f&&A.sb();var b=a.ob();b<c&&h.f(i.Fc,f,-b-1,n,j,e,c)};a.Yc=function(a){p&&b.tb(lb,a&&p.Bc.Le?"":"hidden")};a.bc=function(b,a){if(k&&a>=g){k=l;v();o.Hc();A.sb();h.f(i.Ge,f,n,u,g,c)}h.f(i.De,f,a,n,j,e,c)};a.fd=function(a){if(a&&!t){t=a;a.cb($JssorPlayer$.Kd,x)}};p&&a.cc(p);g=a.Hb();a.cc(q);j=g+q.Lc;e=g+q.Mc;c=a.Hb()}function Kb(a,c,d){b.D(a,c);b.C(a,d)}function Zb(c,b){var a=x>0?x:fb,d=zb*b*(a&1),e=Ab*b*(a>>1&1);Kb(c,d,e)}function Pb(){qb=M;Ib=z.lc();G=w.O()}function gc(){Pb();if(B||!F&&E&12){z.X();h.f(i.Ce)}}function ec(f){if(!B&&(F||!(E&12))&&!z.Kc()){var d=w.O(),b=c.ceil(G);if(f&&c.abs(H)>=a.Nc){b=c.ceil(d);b+=jb}if(!(D&1))b=c.min(r-u,c.max(b,0));var e=c.abs(b-d);e=1-c.pow(1-e,5);if(!P&&qb)z.sd(Ib);else if(d==b){tb.He();tb.Ib()}else z.rb(d,b,e*Vb)}}function Hb(a){!b.g(b.Lb(a),"nodrag")&&b.Ab(a)}function rc(a){Yb(a,1)}function Yb(a,c){a=b.zc(a);var k=b.Lb(a);if(!O&&!b.g(k,"nodrag")&&sc()&&(!c||a.touches.length==1)){B=d;yb=l;R=j;b.a(g,c?"touchmove":"mousemove",Bb);b.E();P=0;gc();if(!qb)x=0;if(c){var f=a.touches[0];ub=f.clientX;vb=f.clientY}else{var e=b.sc(a);ub=e.x;vb=e.y}H=0;hb=0;jb=0;h.f(i.Be,t(G),G,a)}}function Bb(e){if(B){e=b.zc(e);var f;if(e.type!="mousemove"){var l=e.touches[0];f={x:l.clientX,y:l.clientY}}else f=b.sc(e);if(f){var j=f.x-ub,k=f.y-vb;if(c.floor(G)!=G)x=x||fb&O;if((j||k)&&!x){if(O==3)if(c.abs(k)>c.abs(j))x=2;else x=1;else x=O;if(ob&&x==1&&c.abs(k)-c.abs(j)>3)yb=d}if(x){var a=k,i=Ab;if(x==1){a=j;i=zb}if(!(D&1)){if(a>0){var g=i*s,h=a-g;if(h>0)a=g+c.sqrt(h)*5}if(a<0){var g=i*(r-u-s),h=-a-g;if(h>0)a=-g-c.sqrt(h)*5}}if(H-hb<-2)jb=0;else if(H-hb>2)jb=-1;hb=H;H=a;sb=G-H/i/(Y||1);if(H&&x&&!yb){b.Ab(e);if(!M)z.ve(sb);else z.Sd(sb)}}}}}function bb(){qc();if(B){B=l;b.E();b.z(g,"mousemove",Bb);b.z(g,"touchmove",Bb);P=H;z.X();var a=w.O();h.f(i.Fe,t(a),a,t(G),G);E&12&&Pb();ec(d)}}function jc(c){if(P){b.Ee(c);var a=b.Lb(c);while(a&&v!==a){a.tagName=="A"&&b.Ab(c);try{a=a.parentNode}catch(d){break}}}}function Jb(a){C[s];s=t(a);tb=C[s];Tb(a);return s}function Dc(a,b){x=0;Jb(a);h.f(i.Ae,t(a),b)}function Tb(a,c){wb=a;b.e(S,function(b){b.Zb(t(a),a,c)})}function sc(){var b=i.Pc||0,a=X;if(ob)a&1&&(a&=1);i.Pc|=a;return O=a&~b}function qc(){if(O){i.Pc&=~X;O=0}}function Xb(){var a=b.Fb();b.M(a,V);b.v(a,"absolute");return a}function t(a){return(a%r+r)%r}function kc(b,d){if(d)if(!D){b=c.min(c.max(b+wb,0),r-u);d=l}else if(D&2){b=t(b+wb);d=l}cb(b,a.Xb,d)}function xb(){b.e(S,function(a){a.Wb(a.Bb.Ke<=F)})}function hc(){if(!F){F=1;xb();if(!B){E&12&&ec();E&3&&C[s].Ib()}}}function Ec(){if(F){F=0;xb();B||!(E&12)||gc()}}function ic(){V={qb:K,Cb:J,i:0,j:0};b.e(T,function(a){b.M(a,V);b.v(a,"absolute");b.tb(a,"hidden");b.H(a)});b.M(gb,V)}function ab(b,a){cb(b,a,d)}function cb(g,f,j){if(Rb&&(!B&&(F||!(E&12))||a.Xc)){M=d;B=l;z.X();if(f==k)f=Vb;var e=Cb.ob(),b=g;if(j){b=e+g;if(g>0)b=c.ceil(b);else b=c.floor(b)}if(D&2)b=t(b);if(!(D&1))b=c.max(0,c.min(b,r-u));var i=(b-e)%r;b=e+i;var h=e==b?0:f*c.abs(i);h=c.min(h,f*u*1.5);z.rb(e,b,h||1)}}h.Vc=function(){if(!N){N=d;C[s]&&C[s].Ib()}};function W(){return b.k(y||p)}function nb(){return b.l(y||p)}h.K=W;h.Z=nb;function Eb(c,d){if(c==k)return b.k(p);if(!y){var a=b.Fb(g);b.xc(a,b.xc(p));b.fc(a,b.fc(p));b.F(a,"block");b.v(a,"relative");b.C(a,0);b.D(a,0);b.tb(a,"visible");y=b.Fb(g);b.v(y,"absolute");b.C(y,0);b.D(y,0);b.k(y,b.k(p));b.l(y,b.l(p));b.mc(y,"0 0");b.V(y,a);var h=b.Db(p);b.V(p,y);b.G(p,"backgroundImage","");b.e(h,function(c){b.V(b.g(c,"noscale")?p:a,c);b.g(c,"autocenter")&&Lb.push(c)})}Y=c/(d?b.l:b.k)(y);b.ge(y,Y);var f=d?Y*W():c,e=d?c:Y*nb();b.k(p,f);b.l(p,e);b.e(Lb,function(a){var c=b.Ad(b.g(a,"autocenter"));b.Hd(a,c)})}h.Yd=Eb;n.call(h);h.ab=p=b.ub(p);var a=b.lb({kb:0,ce:1,Vb:1,dc:0,ec:l,nb:1,pb:d,Xc:d,Gc:1,hc:3e3,ic:1,Xb:500,ue:e.gd,Nc:20,Zc:0,mb:1,Cc:0,td:1,Eb:1,ac:1},fc);a.pb=a.pb&&b.ke();if(a.jd!=k)a.hc=a.jd;if(a.ud!=k)a.Cc=a.ud;var fb=a.Eb&3,tc=(a.Eb&4)/-4||1,mb=a.Je,I=b.lb({S:q,pb:a.pb},a.Qe);I.Nb=I.Nb||I.Pe;var Fb=a.Oe,Z=a.Md,eb=a.Ne,Q=!a.td,y,v=b.A(p,"slides",Q),gb=b.A(p,"loading",Q)||b.Fb(g),Nb=b.A(p,"navigator",Q),dc=b.A(p,"arrowleft",Q),ac=b.A(p,"arrowright",Q),Mb=b.A(p,"thumbnavigator",Q),pc=b.k(v),nc=b.l(v),V,T=[],uc=b.Db(v);b.e(uc,function(a){if(a.tagName=="DIV"&&!b.g(a,"u"))T.push(a);else b.je()&&b.u(a,(b.u(a)||0)+1)});var s=-1,wb,tb,r=T.length,K=a.Dd||pc,J=a.Cd||nc,Wb=a.Zc,zb=K+Wb,Ab=J+Wb,bc=fb&1?zb:Ab,u=c.min(a.mb,r),lb,x,O,yb,S=[],Qb,Sb,Ob,cc,Cc,N,E=a.ic,lc=a.hc,Vb=a.Xb,rb,ib,kb,Rb=u<r,D=Rb?a.nb:0,X,P,F=1,M,B,R,ub=0,vb=0,H,hb,jb,Cb,w,U,z,Ub=new oc,Y,Lb=[];if(r){if(a.pb)Kb=function(a,c,d){b.vb(a,{P:c,U:d})};N=a.ec;h.Bb=fc;ic();b.B(p,"jssor-slider",d);b.u(v,b.u(v)||0);b.v(v,"absolute");lb=b.jb(v,d);b.gc(lb,v);if(mb){cc=mb.Me;rb=mb.S;ib=u==1&&r>1&&rb&&(!b.kc()||b.rc()>=8)}kb=ib||u>=r||!(D&1)?0:a.Cc;X=(u>1||kb?fb:-1)&a.ac;var Gb=v,C=[],A,L,Db=b.oe(),ob=Db.pe,G,qb,Ib,sb;Db.jc&&b.G(Gb,Db.jc,([j,"pan-y","pan-x","none"])[X]||"");U=new zc;if(ib)A=new rb(Ub,K,J,mb,ob);b.V(lb,U.Rb);b.tb(v,"hidden");L=Xb();b.G(L,"backgroundColor","#000");b.Pb(L,0);b.gc(L,Gb.firstChild,Gb);for(var db=0;db<T.length;db++){var wc=T[db],yc=new xc(wc,db);C.push(yc)}b.H(gb);Cb=new Ac;z=new mc(Cb,U);b.a(v,"click",jc,d);b.a(p,"mouseout",b.uc(hc,p));b.a(p,"mouseover",b.uc(Ec,p));if(X){b.a(v,"mousedown",Yb);b.a(v,"touchstart",rc);b.a(v,"dragstart",Hb);b.a(v,"selectstart",Hb);b.a(g,"mouseup",bb);b.a(g,"touchend",bb);b.a(g,"touchcancel",bb);b.a(f,"blur",bb)}E&=ob?10:5;if(Nb&&Fb){Qb=new Fb.S(Nb,Fb,W(),nb());S.push(Qb)}if(Z&&dc&&ac){Z.nb=D;Z.mb=u;Sb=new Z.S(dc,ac,Z,W(),nb());S.push(Sb)}if(Mb&&eb){eb.dc=a.dc;Ob=new eb.S(Mb,eb);S.push(Ob)}b.e(S,function(a){a.Tb(r,C,gb);a.cb(o.wc,kc)});b.G(p,"visibility","visible");Eb(W());xb();a.Vb&&b.a(g,"keydown",function(b){if(b.keyCode==37)ab(-a.Vb);else b.keyCode==39&&ab(a.Vb)});var pb=a.dc;if(!(D&1))pb=c.max(0,c.min(pb,r-u));z.rb(pb,pb,0)}};i.Zd=21;i.Be=22;i.Fe=23;i.se=24;i.te=25;i.Xd=26;i.ie=27;i.Ce=28;i.re=202;i.Ae=203;i.Ie=206;i.Ge=207;i.De=208;i.Fc=209;var o={wc:1};var r=function(a,g,h){var c=this;n.call(c);var r,e,f,i;b.k(a);b.l(a);var p,m;function k(a){c.f(o.wc,a,d)}function t(c){b.W(a,c);b.W(g,c)}function s(){p.wb(h.nb||e>0);m.wb(h.nb||e<r-h.mb)}c.Zb=function(b,a,c){if(c)e=a;else{e=b;s()}};c.Wb=t;var q;c.Tb=function(c){r=c;e=0;if(!q){b.a(a,"click",b.T(j,k,-i));b.a(g,"click",b.T(j,k,i));p=b.yc(a);m=b.yc(g);q=d}};c.Bb=f=b.lb({Ed:1},h);i=f.Ed;if(f.dd==l){b.B(a,"noscale",d);b.B(g,"noscale",d)}if(f.Mb){b.B(a,"autocenter",f.Mb);b.B(g,"autocenter",f.Mb)}};function q(e,d,c){var a=this;m.call(a,0,c);a.cd=b.pc;a.Lc=0;a.Mc=c}jssor_2_slider_init=function(){var g={ec:d,ac:2,Eb:2,Md:{S:r}},e=new i("jssor_2",g);function a(){var b=e.ab.parentNode.clientWidth;if(b){b=c.min(b,600);e.Yd(b)}else f.setTimeout(a,30)}a();b.a(f,"load",a);b.a(f,"resize",a);b.a(f,"orientationchange",a)}})(window,document,Math,null,true,false)
+</script>
+<style>
+.jssora08l,.jssora08r{display:block;position:absolute;width:50px;height:50px;cursor:pointer;background:url('forsidevertikalslidernederst/a08.png') no-repeat;overflow:hidden;opacity:.4;filter:alpha(opacity=40)}.jssora08l{background-position:-5px -35px}.jssora08r{background-position:-65px -35px}.jssora08l:hover{background-position:-5px -35px;opacity:.8;filter:alpha(opacity=80)}.jssora08r:hover{background-position:-65px -35px;opacity:.8;filter:alpha(opacity=80)}.jssora08l.jssora08ldn{background-position:-5px -35px;opacity:.3;filter:alpha(opacity=30)}.jssora08r.jssora08rdn{background-position:-65px -35px;opacity:.3;filter:alpha(opacity=30)}.jssora08l.jssora08lds{background-position:-5px -35px;opacity:.3;pointer-events:none}.jssora08r.jssora08rds{background-position:-65px -35px;opacity:.3;pointer-events:none}
+    .auto-style75 {
+        position: left;
+        top: 0px;
+        left: 0px;
+        width: 926px;
+        height: 640px;
+        overflow: hidden;
+        visibility: hidden;
+    }
+    .auto-style76 {
+        display: block;
+        position: absolute;
+        width: 88px;
+        height: 71px;
+        cursor: pointer;
+        overflow: hidden;
+        opacity: .4;
+        filter: alpha(opacity=40);
+        bottom: 82px;
+        right: 22px;
+        background: url('forsidevertikalslidernederst/a08.png') no-repeat -40px -20px;
+    }
+    .auto-style77 {
+        cursor: default;
+        position: left;
+        top: 0px;
+        left: 0px;
+        width: 1014px;
+        height: 660px;
+        overflow:visible;
+    }
+    .auto-style79 {
+        color: #000066;
+        font-size: x-large;
+    }
+    .auto-style80 {
+        color: #000066;
+    }
+    .auto-style81 {
+        width: 306px;
+        height: 133px;
+    }
+    .auto-style82 {
+        width: 419px;
+        height: 252px;
+    }
+    .auto-style84 {
+        width: 419px;
+        height: 95px;
+    }
+    .auto-style85 {
+        width: 800px;
+        height: 74px;
+    }
+    .auto-style86 {
+        width: 126px;
+        height: 158px;
+    }
+    .auto-style87 {
+        width: 306px;
+        height: 151px;
+    }
+</style>
+<div id="jssor_2" style="margin: 0 auto; " class="auto-style75">
+<!-- Loading Screen -->
+<div data-u="loading" style="position: left; top: 0px; left: 0px;">
+<div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 60%; height: 60%;"></div>
+<div style="position:left;display:block;background:url('forsidevertikalslidernederst/loading.gif') no-repeat center center;top:0px;left:0px;width:60%;height:60%;"></div>
+</div>
+<div data-u="slides" class="auto-style77">
+<a data-u="any" href="http://www.jssor.com" style="display:none"></a>
+<div data-p="112.50">
+<img data-u="image" src="forsidevertikalslidernederst/Oslo1.jpg" />
+</div>
+<div data-p="112.50" style="display: none;">
+<img data-u="image" src="forsidevertikalslidernederst/Oslo2.jpg" />
+</div>
+<div data-p="112.50" style="display: none;">
+<img data-u="image" src="forsidevertikalslidernederst/Oslo3.jpg" />
+</div>
+<div data-p="112.50" style="display: none;">
+<img data-u="image" src="forsidevertikalslidernederst/Oslo4.JPG" />
+</div>
+<div data-p="112.50" style="display: none;">
+<img data-u="image" src="forsidevertikalslidernederst/Oslo5.jpg" />
+</div>
+<div data-p="112.50" style="display: none;" size:"200%">
+<img data-u="image" src="forsidevertikalslidernederst/Oslo6.jpg" />
+</div>
+<div data-p="112.50" style="display: none;" size:"200%">
+<img data-u="image" src="forsidevertikalslidernederst/Oslo7grunerlokka.jpg" />
+</div>
+    <div data-p="112.50" style="display: none;" size:"200%">
+<img data-u="image" src="forsidevertikalslidernederst/Oslo8grunerlokka.jpg" />
+</div>
+    <div data-p="112.50" style="display: none;" size:"200%">
+<img data-u="image" src="forsidevertikalslidernederst/Oslo10.jpg" />
+</div>
+       <div data-p="112.50" style="display: none;" size:"200%">
+<img data-u="image" src="forsidevertikalslidernederst/Oslo11.jpg" />
+</div>
+       <div data-p="112.50" style="display: none;" size:"200%">
+<img data-u="image" src="forsidevertikalslidernederst/Oslo12.jpg" />
+</div>
+       <div data-p="112.50" style="display: none;" size:"200%">
+<img data-u="image" src="forsidevertikalslidernederst/Oslo13.jpg" />
+</div>
+       <div data-p="112.50" style="display: none;" size:"200%">
+<img data-u="image" src="forsidevertikalslidernederst/Oslo14.jpg" />
+</div>
+       <div data-p="112.50" style="display: none;" size:"200%">
+<img data-u="image" src="forsidevertikalslidernederst/Oslo15.jpg" />
+</div>
+       <div data-p="112.50" style="display: none;" size:"200%">
+<img data-u="image" src="forsidevertikalslidernederst/Oslo16.jpg" />
+</div>
+       <div data-p="112.50" style="display: none;" size:"200%">
+<img data-u="image" src="forsidevertikalslidernederst/Oslo17.jpg" />
+</div>
+       <div data-p="112.50" style="display: none;" size:"200%">
+<img data-u="image" src="forsidevertikalslidernederst/Oslo18.jpg" />
+</div>
+
+       <div data-p="112.50" style="display: none;" size:"200%">
+<img data-u="image" src="forsidevertikalslidernederst/Oslo19.gif" />
+</div>
+       <div data-p="112.50" style="display: none;" size:"200%">
+<img data-u="image" src="forsidevertikalslidernederst/Oslo20.jpg" />
+</div>
+       <div data-p="112.50" style="display: none;" size:"200%">
+<img data-u="image" src="forsidevertikalslidernederst/Oslo21.jpg" />
+</div>
+
+ <div data-p="112.50" style="display: none;" size:"200%">
+<img data-u="image" src="img/indexslideshow/1.jpg" />
+</div>
+
+ <div data-p="112.50" style="display: none;" size:"200%">
+<img data-u="image" src="img/indexslideshow/2.jpg" />
+</div>
+
+ <div data-p="112.50" style="display: none;" size:"200%">
+<img data-u="image" src="img/indexslideshow/3.jpg" />
+</div>
+
+<div data-p="112.50" style="display: none;" size:"200%">
+<img data-u="image" src="img/indexslideshow/5.jpg" />
+</div>
+
+<div data-p="112.50" style="display: none;" size:"200%">
+<img data-u="image" src="img/indexslideshow/7.jpg" />
+</div>
+
+<div data-p="112.50" style="display: none;" size:"200%">
+<img data-u="image" src="img/indexslideshow/8.jpg" />
+</div>
+
+<div data-p="112.50" style="display: none;" size:"200%">
+<img data-u="image" src="img/indexslideshow/9.jpg" />
+</div>
+
+</div>
+<!-- Arrow Navigator -->
+<span data-u="arrowleft" class="jssora08l" style="top:8px;left:8px;width:50px;height:50px;" data-autocenter="1"></span>
+<span data-u="arrowright" class="auto-style76" data-autocenter="1"></span>
+</div>
+<script type="text/javascript">jssor_2_slider_init();</script>
+<!-- #endregion Jssor Slider End -->
+
+
+
+</body>
+</html>
