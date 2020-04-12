@@ -20,7 +20,7 @@ background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
 margin: auto;
             padding: 20px;
             border: 1px solid #888;
-            width: auto;
+            width: 700px;
 			height: auto;
 			color: white;
 			font-size: 22px;
@@ -34,6 +34,8 @@ margin: auto;
 			
 				position: relative;
 			left: 900px;
+		   width: 800px;
+
 			
 		}
 		
@@ -121,7 +123,7 @@ font-weight: bold;
             padding-top: 100px; /* Location of the box */
            left: 700px;
             top: 0;
-            width: 170%; /* Full width */
+            width: 120%; /* Full width */
             height: 100%; /* Full height */
             overflow: auto; /* Enable scroll if needed */
             background-color: rgb(0,0,0); /* Fallback color */
@@ -134,7 +136,7 @@ background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
 margin: auto;
             padding: 20px;
             border: 1px solid #888;
-            width: auto;
+            width: 700px;
 			height: auto;
 			color: white;
 			font-size: 22px;
@@ -148,7 +150,8 @@ margin: auto;
 			
 				position: relative;
 			left: 900px;
-			
+			            width: 800px;
+
 		}
 		
 		      .modal-content2 {
