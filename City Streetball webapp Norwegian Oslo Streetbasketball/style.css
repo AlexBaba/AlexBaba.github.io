@@ -5,9 +5,9 @@
             position: fixed; /* Stay in place */
             z-index: 1; /* Sit on top */
             padding-top: 100px; /* Location of the box */
-            right: 400px;
+            right: 400;
             top: 0;
-            width: 100%; /* Full width */
+            width: 200%; /* Full width */
             height: 100%; /* Full height */
             overflow: auto; /* Enable scroll if needed */
             background-color: rgb(0,0,0); /* Fallback color */
@@ -113,9 +113,9 @@ font-weight: bold;
             position: fixed; /* Stay in place */
             z-index: 1; /* Sit on top */
             padding-top: 100px; /* Location of the box */
-           right: 400px;
+           right: 400;
             top: 0;
-            width: 120%; /* Full width */
+            width: 200%; /* Full width */
             height: 100%; /* Full height */
             overflow: auto; /* Enable scroll if needed */
             background-color: rgb(0,0,0); /* Fallback color */
@@ -128,12 +128,12 @@ background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
 margin: auto;
             padding: 20px;
             border: 1px solid #888;
-            width: 700px;
+            min-width: 900px;
 			height: auto;
 			color: white;
 			font-size: 22px;
 			position: relative;
-			left: 700px;
+			left: 900px;
 
         }
 		
