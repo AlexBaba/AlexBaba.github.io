@@ -2,12 +2,12 @@
   
     .modal {
             display: none; /* Hidden by default */
-            position: relative; /* Stay in place */
+            position: fixed; /* Stay in place */
             z-index: 1; /* Sit on top */
             padding-top: 100px; /* Location of the box */
-            left: 800px;
+            right: 400px;
             top: 0;
-            width: 130%; /* Full width */
+            width: 100%; /* Full width */
             height: 100%; /* Full height */
             overflow: auto; /* Enable scroll if needed */
             background-color: rgb(0,0,0); /* Fallback color */
@@ -20,24 +20,16 @@ background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
 margin: auto;
             padding: 20px;
             border: 1px solid #888;
-            width: 700px;
+            width: 900px;
 			height: auto;
 			color: white;
 			font-size: 22px;
 			position: relative;
-			left: 800px;
+			left: 1100px;
 
         }
 		
-		.modal modal_multi {
-			
-			
-				position: relative;
-			left: 900px;
-		   width: 800px;
-
-			
-		}
+	
 		
 		      .modal-content2 {
 background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
@@ -118,10 +110,10 @@ font-weight: bold;
 @media only screen and (min-width: 480px) {
     .modal {
             display: none; /* Hidden by default */
-            position: relative; /* Stay in place */
+            position: fixed; /* Stay in place */
             z-index: 1; /* Sit on top */
             padding-top: 100px; /* Location of the box */
-           left: 700px;
+           right: 400px;
             top: 0;
             width: 120%; /* Full width */
             height: 100%; /* Full height */
