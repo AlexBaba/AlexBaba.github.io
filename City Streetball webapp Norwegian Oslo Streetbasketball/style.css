@@ -5,7 +5,7 @@
             position: relative; /* Stay in place */
             z-index: 1; /* Sit on top */
             padding-top: 100px; /* Location of the box */
-            left: 600px;
+            left: 800px;
             top: 0;
             width: 130%; /* Full width */
             height: 100%; /* Full height */
@@ -25,7 +25,7 @@ margin: auto;
 			color: white;
 			font-size: 22px;
 			position: relative;
-			left: 500px;
+			left: 800px;
 
         }
 		
@@ -119,9 +119,9 @@ font-weight: bold;
             position: relative; /* Stay in place */
             z-index: 1; /* Sit on top */
             padding-top: 100px; /* Location of the box */
-           left: 100px;
+           left: 700px;
             top: 0;
-            width: 150%; /* Full width */
+            width: 170%; /* Full width */
             height: 100%; /* Full height */
             overflow: auto; /* Enable scroll if needed */
             background-color: rgb(0,0,0); /* Fallback color */
@@ -139,7 +139,7 @@ margin: auto;
 			color: white;
 			font-size: 22px;
 			position: relative;
-			left: 500px;
+			left: 700px;
 
         }
 		
