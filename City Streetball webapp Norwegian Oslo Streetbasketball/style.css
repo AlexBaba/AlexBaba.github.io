@@ -2,10 +2,10 @@
   
     .modal {
             display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
+            position: relative; /* Stay in place */
             z-index: 1; /* Sit on top */
             padding-top: 100px; /* Location of the box */
-            left: 0;
+            left: 600px;
             top: 0;
             width: 100%; /* Full width */
             height: 100%; /* Full height */
@@ -116,10 +116,10 @@ font-weight: bold;
 @media only screen and (min-width: 480px) {
     .modal {
             display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
+            position: relative; /* Stay in place */
             z-index: 1; /* Sit on top */
             padding-top: 100px; /* Location of the box */
-            left: 0;
+           left: 600px;
             top: 0;
             width: 100%; /* Full width */
             height: 100%; /* Full height */
