@@ -1,0 +1,1070 @@
+<html>
+
+
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=0.7, user-scalable=yes" />
+
+<title> Basketball Entertainment</title>
+<style>
+
+body {
+   background-image: url("images/Bakgrunner/background23.jpg");
+      background-attachment: fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+transform:scale(0.93);
+opacity: 1.2;
+
+}
+
+@media only screen and (min-width: 320px) {
+  .body {
+
+background-repeat:repeat;
+}
+}
+
+@media only screen and (min-width: 480px) {
+  .body {
+  
+  background-repeat:repeat;
+  }
+  }
+
+.backbtn {
+position: relative;
+left: 910px;
+background:rgba(37, 116, 169,0.22);
+width: 290px;
+height: 130px;
+top: 400px;
+}
+
+.backbtn:active {
+
+box-shadow: 0 5px #666;
+  transform: translateY(5px);
+}
+
+.videos {
+width: 880px;
+height: auto;
+align: center;
+background:rgba(37, 116, 169,,0.1);
+position: relative;
+bottom: 120px;
+
+
+}
+
+.image {
+align: center;
+position: relative;
+top: 400px;
+max-width: auto;
+background:rgba(37, 116, 169,0.2);
+
+}
+
+p {
+color: white;
+font-size: 22px;
+background:rgba(0,0,0,0.2);
+}
+
+.videotransparency {
+width: 651px;
+height: auto;
+opacity: 0.955;
+}
+
+.bodydiv {
+background:rgba(37, 116, 169,0.1);
+bottom: 549px;
+position: relative;
+width: 1385px;
+height: auto;
+left: 3px;
+}
+
+.rightsidediv
+{
+position: relative;
+height: 540px;
+width: 480px;
+background:rgba(0, 0, 0, 0.20);
+top: 1575px;
+left: 886px;
+}
+
+
+
+
+
+
+
+* {
+box-sizing:border-box;
+}
+
+.slide-container {
+width:740px;
+height:500px;
+position:relative;
+}
+
+.left-arrow {
+width:50%;
+height:50%;
+position:relative;
+bottom:268px;
+left:700px;
+}
+
+.right-arrow {
+width:50%;
+height:50%;
+position:absolute;
+top:0;
+left:700px;
+}
+
+.left-arrow>img {
+position:relative;
+top:50%;
+transform:translateY(-50%);
+margin-left:-2px;
+opacity:0.9;
+transition:opacity 1s;
+height: 100%;
+width: 100%;
+}
+
+.right-arrow>img {
+position:relative;
+top:50%;
+transform:translateY(-50%);
+margin-left:42px;
+opacity:0.9;
+transition:opacity 1s;
+height: 100%;
+width: 100%;
+}
+
+.left-arrow>img:hover,.right-arrow>img:hover {
+cursor:pointer;
+opacity:1;
+}
+
+.dot-container {
+position:absolute;
+bottom:5px;
+left:50%;
+transform:translateX(-50%);
+}
+
+.dot {
+cursor:pointer;
+height:33px;
+width:33px;
+background-color:#F67280;
+border-radius:50%;
+display:inline-block;
+transition:background-color .6s ease;
+margin:0 2px;
+}
+
+.active .dot:hover {
+background-color:#E8175D;
+height:47px;
+width:47px;
+}
+
+.captionText {
+width:430px;
+height:119px;
+position:relative;
+bottom:290px;
+font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+font-size:24px;
+font-weight:bolder;
+text-align:center;
+line-height:40px;
+letter-spacing:.19em;
+background:#66CCCC;
+color:white;
+opacity: 1.3;
+}
+
+.main-content,.responsive-img {
+width:100%;
+height:100%;
+}
+
+@media only screen and max-width 700px{
+.slide-container {
+width:600px;
+}
+}
+
+@media only screen and max-width 600px{
+.slide-container {
+width:500px;
+height:300px;
+}
+}
+
+@media only screen and max-width 500px{
+.slide-container {
+width:400px;
+height:250px;
+}
+
+.captionText {
+width:100px;
+height:40px;
+font-size:12px;
+line-height:40px;
+}
+}
+
+@media only screen and max-width 400px{
+.slide-container {
+width:300px;
+height:200px;
+}
+
+.captionText {
+width:90px;
+height:35px;
+font-size:10px;
+line-height:35px;
+}
+}
+
+
+#redirect1 {
+position:relative;
+font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+font-size:19px;
+width:250px;
+height:auto;
+font-weight:bolder;
+text-align:center;
+line-height:40px;
+letter-spacing:.19em;
+background:  #fa6b85;
+color: white;
+
+
+}
+
+#redirect1:active {
+box-shadow: 0 5px #666;
+  transform: translateY(5px);
+
+}
+
+#redirect2 {
+position:relative;
+font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+font-size:19px;
+width:250px;
+height:auto;
+font-weight:bolder;
+text-align:center;
+line-height:40px;
+letter-spacing:.19em;
+background:  #fa6b85;
+color: white;
+
+
+
+}
+
+#redirect2:active {
+box-shadow: 0 5px #666;
+  transform: translateY(5px);
+
+}
+
+#redirect3 {
+position:relative;
+font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+font-size:19px;
+width:250px;
+height:auto;
+font-weight:bolder;
+text-align:center;
+line-height:40px;
+letter-spacing:.19em;
+background:  #fa6b85;
+color: white;
+
+}
+
+#redirect3:active {
+box-shadow: 0 5px #666;
+  transform: translateY(5px);
+
+}
+
+#redirect4 {
+position:relative;
+font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+font-size:19px;
+width:250px;
+height:auto;
+font-weight:bolder;
+text-align:center;
+line-height:40px;
+letter-spacing:.19em;
+background:  #fa6b85;
+color: white;
+
+
+}
+
+#redirect4:active {
+box-shadow: 0 5px #666;
+  transform: translateY(5px);
+
+}
+
+.sidemenubtns {
+background:rgba(0,0,0,0.28); 
+width: 320px;
+height: auto;
+position: relative;
+bottom: 522px;
+right: 35px;
+}
+
+.menudiv {
+width: 1070px;
+height: 700px;
+position: relative;
+bottom:1260px;
+left: 199px;
+background:rgba(0,0,0,0.28); 
+transform:scale(0.955);
+
+}
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font: 100%/1.618 'Lato', sans-serif;
+  font-weight: 400;
+  color: #444;
+  text-rendering: optimizeLegibility;
+}
+
+#mobile {
+  width: 370px;
+  min-height: auto;
+  background: #fff;
+  border-width: 100px 20px;
+  border-color: #33322f;
+  border-style: solid;
+  border-radius: 30px;
+  margin: 30px auto 0;
+}
+
+label {
+  display: block;
+  padding: 12px 6px;
+}
+label:hover {
+  cursor: pointer;
+}
+
+.intro {
+  padding: 10px;
+}
+
+h1 {
+  color: #9b9b9b;
+  font-weight: 700;
+  font-size: 2.5em;
+}
+
+h2 {
+  color: #bbb;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+.button {
+  background: #eb278d;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  margin: 0 0 40px 0;
+}
+table #plan tr:nth-child(odd) {
+  background: #f6f5f5;
+}
+table .current {
+  background: rgba(238, 46, 146, 0.2);
+}
+table tr {
+  position: relative;
+  width: 100%;
+}
+table tr.feat:nth-child(4n+3) {
+  background: #f6f5f5;
+}
+table tr.sub, table tr.total {
+  font-weight: 700;
+  background: #dce2e3 !important;
+}
+table .feat:hover {
+  cursor: pointer;
+}
+table .desc {
+  display: none;
+  background-color: rgba(71, 130, 255, 0.25);
+}
+table .desc td:first-child {
+  padding: 15px;
+  text-align: left;
+}
+table th {
+  background: #eb278d;
+  width: 32%;
+  color: #fff;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+table th div {
+  height: 46px;
+  padding: 8px 0 0 0;
+}
+table th:first-child {
+  width: 35%;
+  border-left: none;
+}
+table th:hover {
+  cursor: pointer;
+}
+table th .icons {
+  top: 0px;
+  left: 4px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+table th ul {
+  width: 100%;
+  background-color: rgba(71, 130, 255, 0.25);
+  display: none;
+}
+table th ul li {
+  padding: 10px 0;
+}
+table th ul li:hover {
+  background: #eb278d;
+}
+table td {
+  padding: 12px 6px;
+  font-size: 0.94em;
+  vertical-align: middle;
+}
+table td:first-child {
+  text-align: right;
+}
+table td.color {
+  background: rgba(150, 150, 150, 0.5);
+}
+
+.icons {
+  font-size: 1em;
+  line-height: 1em;
+}
+
+p {
+  background: rgba(71, 130, 255, 0.1);
+    background-color: rgba(71, 130, 255, 0.5);
+
+color: white;
+}
+
+
+</style>
+
+<body>
+<div class="bodydiv">
+</br>
+<div class="backbtn">
+<a href="indexmenupage.html"><img src="images/overskriftsknapperbilder/back.png" style="height: 110px" /></a>
+
+</div>
+
+</br>
+</br>
+<div class="image"><img src="images/Bakgrunner/Bakgrunn22wheretowatchbasketballgames.jpg" width="600px" height="530px" align="top"</img> </div>
+<div class="rightsidediv">
+
+
+<div class="videotransparency"> 
+
+
+</div>
+
+
+</div>
+</br>
+<div class="videos" align="left">
+</br>
+<p>Online sports games and Basketball Livestreams websites:</p>
+
+</br>
+</br>
+</br>
+
+<div class="image">
+</div>
+<div class="videotransparency"> 
+<div id="mobile">
+  <div class="intro">
+    <hgroup>
+      <h1>Watch sports matches, sport games and basketball games online
+</h1>
+      <h2>Live p2p streaming sites</h2>
+	
+	 <img src="https://i3.wp.com/www.digitbin.com/content/uploads/Sites-to-Stream-Live-Sports-600x400.jpg" width="305" height="210"></img>
+    </hgroup>
+	  <br />
+    <p></p> 
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th><div class="heading">Website
+        <span class="icons">&or;</span></div>
+          <ul>
+       <li>livesport24.net</li>
+             <li>stream2watchtv.org</li>
+             <li>sportrar.tv</li>
+			<li>firstsrowsports.tv</li>
+          </ul>
+        </th>
+        <th><div class="heading">Site
+          <span class="icons">&or;</span></div>
+          <ul>
+    
+          </ul>
+        </th>
+      </tr>
+    </thead>
+    <tbody id="plan">
+      <tr>
+        <td>Sites links:</td>
+        <td class="current"></td>
+        <td></td>
+        <td class="hidden"></td>
+      </tr>
+      <tr>
+        <td style="background-color: rgba(0, 100, 255, 0.5);"><a style="color: white;" href="http://livesport24.net/#source-3" target="_blank">Livesport24.net  </a></td>
+        <td class="current"><span class="icons">&mdash;</span></td>
+        <td><span class="icons">&#10003;</span></td>
+        <td class="hidden"><span class="icons">&#x2713;</span></td>
+      </tr>
+      <tr class="sub">
+        <td></td>
+        <td class="current"></td>
+        <td></td>
+        <td class="hidden"></td>
+      </tr>
+	   <tr>
+        <td style="background-color: rgba(0, 100, 255, 0.5);"><a style="color: white;" href="http://stream2watchtv.org/" target="_blank">Stream2watchtv.org  </a></td>
+        <td class="current"><span class="icons">&mdash;</span></td>
+        <td><span class="icons">&#10003;</span></td>
+        <td class="hidden"><span class="icons">&#x2713;</span></td>
+      </tr>
+	  <tr class="sub">
+        <td></td>
+        <td class="current"></td>
+        <td></td>
+        <td class="hidden"></td>
+      </tr>
+	   <tr>
+        <td style="background-color: rgba(0, 100, 255, 0.5);"><a style="color: white;" href="https://www.sportrar.tv/" target="_blank">Sportrar.tv</a></td>
+        <td class="current"><span class="icons">&mdash;</span></td>
+        <td><span class="icons">&#10003;</span></td>
+        <td class="hidden"><span class="icons">&#x2713;</span></td>
+      </tr>
+	  
+	   <tr class="sub">
+        <td></td>
+        <td class="current"></td>
+        <td></td>
+        <td class="hidden"></td>
+      </tr>
+	   <tr>
+        <td style="background-color: rgba(0, 100, 255, 0.5);"><a style="color: white;" href="http://bosscast.eu/" target="_blank">bosscast.eu</a></td>
+        <td class="current"><span class="icons">&mdash;</span></td>
+        <td><span class="icons">&#10003;</span></td>
+        <td class="hidden"><span class="icons">&#x2713;</span></td>
+      </tr>
+	  
+	  	   <tr class="sub">
+        <td></td>
+        <td class="current"></td>
+        <td></td>
+        <td class="hidden"></td>
+      </tr>
+	   <tr>
+        <td style="background-color: rgba(0, 100, 255, 0.5);"><a style="color: white;" href="http://bosscast.eu/" target="_blank">bosscast.eu</a></td>
+        <td class="current"><span class="icons">&mdash;</span></td>
+        <td><span class="icons">&#10003;</span></td>
+        <td class="hidden"><span class="icons">&#x2713;</span></td>
+      </tr>
+	  
+	  
+	  <tr class="sub">
+        <td></td>
+        <td class="current"></td>
+        <td></td>
+        <td class="hidden"></td>
+      </tr>
+	   <tr>
+        <td style="background-color: rgba(0, 100, 255, 0.5);"><a style="color: white;" href="http://vipboxe.com/" target="_blank">vipboxe.com</a></td>
+        <td class="current"><span class="icons">&mdash;</span></td>
+        <td><span class="icons">&#10003;</span></td>
+        <td class="hidden"><span class="icons">&#x2713;</span></td>
+      </tr>
+	  
+	  
+	  
+	   <tr class="sub">
+        <td></td>
+        <td class="current"></td>
+        <td></td>
+        <td class="hidden"></td>
+      </tr>
+	   <tr>
+        <td style="background-color: rgba(0, 100, 255, 0.5);"><a style="color: white;" href="https://firstsrowsports.tv/" target="_blank">firstsrowsports.tv</a></td>
+        <td class="current"><span class="icons">&mdash;</span></td>
+        <td><span class="icons">&#10003;</span></td>
+        <td class="hidden"><span class="icons">&#x2713;</span></td>
+      </tr>
+	  
+	
+    </tbody>
+    <tbody id="feature">
+      <tr class="feat">
+        <td>About Sport streaming<br></td>
+        <td class="current"><span class="icons">&mdash;</span></td>
+        <td></td>
+        <td class="hidden"></td>
+      </tr>
+      <tr class="desc">
+        <td colspan="3">
+		
+<p>Above is presented a small list of sites that provide and give updates on  upcoming matches, past matches, current live games, live streams and so much more to ensure sports fans are up to speed with what is happening when. Helps keeping up with  favorite sports regardless of time and location from anywhere in the world. Basketball, Football, NFL, Rugby, Cricket, Boxing, MMA and much more. From game schedules to current live games to sporting news, nothing can be missed with sports streaming sites. Here are some of these sport streaming sites that play a huge role in keeping sports fans up to date with what is happening in the sporting world. Live online TV also offers users access to live sports streams without the need of signing up. You can install an ad blocker on the browser (ex. Chrome) for removing ads, all popups and commercials while watching the sport sites, shown in tutorial videos below.
+    </p>   <iframe width="250" height="300" src="https://www.youtube.com/embed/W-fRd3oHBtQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+	 <iframe width="250" height="300" src="https://www.youtube.com/embed/o4cOhDaUzns" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	 <iframe width="250" height="300" src="https://www.youtube.com/embed/RN04ix2OvGg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	
+	</td>
+     
+	  
+	  </tr>
+       
+    <tfoot>
+  </table>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  
+  <script>
+  $('.heading').each(function(){
+  var $content = $(this).closest('thead').find('ul');
+  $(this).click(function(e){
+    e.preventDefault();
+    $content.not(':animated').slideToggle();
+  });
+});
+
+$('.feat td:first-child').each(function(){
+  var $content = $(this).closest('table').find('.desc');
+  $(this).click(function(e){
+    e.preventDefault();
+    $content.not(':animated').slideToggle();
+  });
+});
+
+$("input[type='checkbox']").click(function() {
+  if($(this).prop('checked'))
+    $(this).closest('td').addClass('color');
+  else
+    $(this).closest('td').removeClass('color');
+});
+  
+  </script>
+
+
+
+
+
+</div>
+</br>
+</br>
+
+</br>
+</br>
+
+
+<br/>
+
+</p>
+
+</div>
+<br/>
+
+
+</div>
+
+<br/>
+<br/>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<div class="sidemenubtns">  
+ <a href="youtubeplaylists.html"><button id="redirect1">Streetball and Basketball Entertainment Page</button></a> <br /> 
+        <a href="aboutstreetball.html"><button id="redirect2">About. The game of Streetbasket and Basketball</button></a> <br />
+      <a href="filterlistmaps.html">  <button id="redirect3">Norwegian Oslo summer Streetbasketball. Courts Location Page</button></a> <br />
+       <a href="travelroutestutorial.html"> <button id="redirect4">Norwegian Oslo summer Streetbasketball courts. Travel Route Tutorial</button></a>
+
+</div>
+
+<div class="menudiv">
+<br />
+<img src="images/overskriftsknapperbilder/bakgrunnsfargebilde.jpg" height="150px" width="400px" /> 
+
+
+
+​<div class="slide-container">
+
+
+<div class="main-content"> </div>
+
+
+<div class="left-arrow"> <img src="https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color/254000/38-512.png" alt="arrow"> </div>
+<div class="right-arrow"> <img src="https://www.freeiconspng.com/uploads/blue-right-arrow-icon-7.png" alt="arrow"></div>
+
+<div class="dot-container"> </div>
+
+<div class="captionText"></div>
+
+</div>
+
+
+
+
+
+</div>
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+
+<script type="application/javascript">
+
+$(document).ready(function(){
+
+//add image links below
+
+var images= [];
+images[0]= 'images/Bakgrunner/Entertainmentvideospage.jpg';
+images[1]= 'images/Bakgrunner/streetballinfowhatis.jpg';
+images[2]= 'images/Bakgrunner/norwegiansummerstreetbasketballOslocitycourtslocationpage.jpg';
+images[3]= 'images/Bakgrunner/norwegiansummerstreetbasketballOslocitycourtstravelroutetutorialpage.jpg';
+
+//add caption text
+
+var capTexts= [];
+capTexts[0]= 'Streetball and Basketball Entertainment Page';
+capTexts[1]= 'About. The game of Streetbasket and Basketball';
+capTexts[2]= 'Norwegian Oslo summer Streetbasketball. Courts Location Page';
+capTexts[3]= 'Norwegian Oslo summer Streetbasketball courts. Travel Route Tutorial';
+
+
+//3000 miliseconds=3 seconds
+//set time 
+
+var pausebetweenimages=11000;
+
+var count=0;
+var imageCount= images.length-1;
+
+//creating navigation dots
+
+var navDots= [];
+
+for(var i=0; i<imageCount+1; i++)
+{
+navDots[i]='<div class="dot"></div>';
+$('.dot-container').append(navDots[i]);
+}
+
+$('.main-content').html('<img src=' + images[count] +'>');
+
+//adding .responsive-img class to set image's width and height 100%
+
+$('.main-content > img').addClass('responsive-img');
+
+//adding .active class to current navigation dot's index
+
+$( '.dot' ).eq(count).addClass('active');
+
+//animating caption text
+
+$('.captionText').animate({
+'left': '1px',
+'bottom': '250px',
+'opacity': '0.92'
+}, 500);
+$('.captionText').text(capTexts[count]);
+
+//fucntion that will run a certain time intervals
+
+timingRun = setInterval(function(){ sliderTiming();}, pausebetweenimages); 
+
+function sliderTiming ()
+{
+$( '.dot' ).eq(count).removeClass('active');
+count++;
+
+if(count>imageCount)
+{
+count=0;
+}
+
+//fadein and fadeout effect
+
+$('.main-content').fadeOut(100,function () {
+$('.main-content').html('<img src=' + images[count] +'>');
+$('.main-content > img').addClass('responsive-img');
+$( '.dot' ).eq(count).addClass('active');
+$('.main-content').fadeIn(500);
+
+captextAnim_Responsive();
+});
+}
+
+
+$('.right-arrow>img').click(function(){
+$( '.dot' ).eq(count).removeClass('active');
+count++;
+if(count>imageCount)
+{
+count=0;
+}
+$('.main-content').fadeOut(100, function () {
+$('.main-content').html('<img src=' + images[count] +'>');
+$('.main-content > img').addClass('responsive-img');
+$( '.dot' ).eq(count).addClass('active');
+$('.main-content').fadeIn(500);
+
+captextAnim_Responsive();
+}); 
+resetTiming();
+});
+
+$('.left-arrow>img').click(function(){
+$( '.dot' ).eq(count).removeClass('active');
+count--;
+if(count<0)
+{
+count=imageCount;
+}
+$('.main-content').fadeOut(100, function () {
+$('.main-content').html('<img src=' + images[count] +'>');
+$('.main-content > img').addClass('responsive-img');
+$( '.dot' ).eq(count).addClass('active');
+$('.main-content').fadeIn(500);
+
+captextAnim_Responsive();
+});
+resetTiming();
+});
+
+$('.dot').click(function () {
+$( '.dot' ).eq(count).removeClass('active');
+count= $(this).index();
+$('.main-content').fadeOut(100,function () {
+$('.main-content').html('<img src=' + images[count] +'>');
+$('.main-content > img').addClass('responsive-img');
+$( '.dot' ).eq(count).addClass('active');
+$('.main-content').fadeIn(500);
+
+captextAnim_Responsive();
+});
+resetTiming();
+});
+
+//reset the time interval
+
+function resetTiming() {
+clearInterval(timingRun);
+timingRun = setInterval(function() { sliderTiming(); },pausebetweenimages);
+}
+
+//animating caption text with responsiveness
+
+function captextAnim_Responsive(){
+if ($(window).width() <= 500)
+{
+$('.captionText').css('opacity', '0');
+$('.captionText').css('left', '0'); 
+$('.captionText').text(capTexts[count]);
+$('.captionText').animate({
+'left': '1px',
+'bottom': '250px',
+'opacity': '0.92'
+}, 500); 
+} 
+
+else {
+$('.captionText').css('opacity', '0');
+$('.captionText').css('left', '0'); 
+$('.captionText').text(capTexts[count]);
+$('.captionText').animate({
+'left': '1px',
+'bottom': '250px',
+'opacity': '0.92'
+}, 500);
+} 
+}
+
+});
+
+</script>
+
+<br />
+
+
+</body>
+
+</html>
