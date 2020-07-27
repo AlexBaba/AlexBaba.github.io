@@ -1,0 +1,286 @@
+/*---------------*/
+/***** Milo *****/
+/*---------------*/
+figure.effect-milo {
+	background: #2e5d5a;
+}
+
+figure.effect-milo img {
+	width: -webkit-calc(100% + 100px);
+	width: calc(100% + 100px);
+	opacity: 1;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-50px,-45px,-40px) scale(0.9);
+	transform: translate3d(-30px,0,0) scale(1.12);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+figure.effect-milo:hover img {
+	opacity: 0.5;
+	-webkit-transform: translate3d(0,0,0) scale(1);
+	transform: translate3d(0,0,0) scale(1);
+}
+
+figure.effect-milo h2 {
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 1em 1.2em;
+}
+
+figure.effect-milo .position {
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 3.4em 1.8em;
+}
+
+figure.effect-milo hr {
+	width: 210px;
+	text-align: left;
+	position: absolute;
+	top: 120px;
+	left: 35px;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-milo:hover hr {
+	opacity: 0;
+	-webkit-transform: translate3d(0,100px,0);
+	transform: translate3d(0,100px,0);
+	
+}
+
+figure.effect-milo p {
+	margin-top: 70px !important;
+	padding: 0 0 0 10px;
+	width: 50%;	
+	font-style: italic;
+	border-left: 2px solid #fff;
+	text-align: left;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,-40px,0);
+	transform: translate3d(0.-40px,0);
+}
+
+figure.effect-milo:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-milo #icons {
+  margin-top: 5px;
+  margin-left: -10px;
+  font-size: 29px;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0.0,0);
+}
+
+figure.effect-milo:hover #icons {
+	-webkit-transform: translate3d(0,40px,0);
+	transform: translate3d(0,40px,0);
+}
+
+/*---------------------*/
+/***** BASE EFFECT *****/
+/*---------------------*/
+*, *:after, *:before { border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+
+a {
+	color: #4f7f90;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover, a:focus {
+	color: #39545e;
+}
+
+section {
+	padding: 1em;
+	text-align: center;
+}
+
+.grid {
+	overflow: hidden;
+	margin: 15% auto 0;
+	padding: 0 0 0 0;
+	width: 100%;
+	list-style: none;
+	text-align: center;
+  min-width: 700px;
+  position: relative;
+  bottom: 295px;
+}
+
+/* Common style */
+.grid figure {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	overflow: hidden;
+	margin: -0.135em;
+	width: 700px;
+	height: 400px;
+	background: #0f1c27;
+	text-align: center;
+	cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	opacity: 1;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	font-size: 1.5em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 98.5%;
+}
+
+/*---------------*/
+/***** Icons *****/
+/*---------------*/
+.icon {
+	opacity: 0.7;
+	-webkit-transition: all 0.3s ease;                  
+    -moz-transition: all 0.3s ease;                 
+    -o-transition: all 0.3s ease;   
+    -ms-transition: all 0.3s ease;          
+    transition: all 0.3s ease;
+}
+
+.icon:hover {
+	opacity: 1;
+}
+
+#icons .icon {
+  float: left;
+  padding: 6px;
+  border: 2px #fff solid;
+  padding: 1px 7px 2px 7px;
+  margin-left: 10px;
+}
+
+/* :before psuedo-selector inserts and styles icon */
+.typcn:before {
+  font-family: 'typicons';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: .9em;
+  height: .9em;
+  font-size: .9em;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.fa {font-size: .8em;}
+.fa-envelope {position: relative; top:-1px; }
+
+/* Responsive - ongoing work */
+@media screen and (max-width: 500px) {
+  h2 {font-size: 20px;}
+  figure.effect-milo .position {
+	position: absolute;
+   font-size: 14px;
+	left: 0;
+	top: 0;
+}
+
+figure.effect-milo hr {
+	width: 150px;
+	text-align: left;
+	position: absolute;
+	top: 70px;
+	left: 25px;
+}
+  figure.effect-milo p {
+	margin-top: 40px !important;
+	padding: 0 0 0 10px;
+   margin-left: -15px;
+}
+  figure.effect-milo #icons {
+  margin-top: -50px;
+  margin-left: -25px;
+  font-size: 18px;
+}
+  figure.effect-milo:hover #icons {
+	-webkit-transform: translate3d(0,70px,0);
+	transform: translate3d(0,70px,0);
+}
+  #icons .icon {
+  float: left;
+  border: 2px #fff solid;
+  padding: 0px 5px 2px 6px;
+}
+  .typcn:before {
+   width: .8em;
+  height: 0;
+  font-size: .9em;
+  }
+}
