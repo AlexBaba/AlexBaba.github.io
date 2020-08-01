@@ -9,14 +9,28 @@
 <style>
 body{ background-image: url("images/streetbilder/bakgrunnlogin.jpg");
   transform: scale(1.0);
-    background-position: center; background-repeat:repeat; 
-	background-size:100%; 
-	 -webkit-background-size: 100%;
-   -moz-background-size: 100%;
-  -o-background-size: 100%;
-	
-	
+	background-size: cover; 
+	 -webkit-background-size: cover;
+   -moz-background-size: cover;
+  -o-background-size: cover;
+
 	}
+	
+	@media screen and (min-width:140px) and (max-width:580px), 
+   screen and (min-device-width:140px) and (max-device-width:580px)
+{
+body{ background-image: url("images/streetbilder/bakgrunnlogin.jpg");
+  transform: scale(1.0);
+	background-size: 100% 100%; 
+	 -webkit-background-size: 100% 100%;
+   -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+
+	}
+
+}	
+	
+	
     input
 	{ 
 	width:330px; 
