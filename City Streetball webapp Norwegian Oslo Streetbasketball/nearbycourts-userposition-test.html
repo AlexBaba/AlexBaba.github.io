@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title></title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-cL_SxwzrA11R1h7GQxNH_QkTSRJ44mU&libraries=geometry,places&amp;ext=.js"></script>
+
+  <style id="compiled-css" type="text/css">
+   
+#map-canvas {
+ right: 10px;
+  height: 530px;
+  width: 700px;
+  margin: 0px;;
+  padding: 0px;
+  color: #1E90FF;
+  font-size: bold;
+  	font-family: "Calibri";
+
+}
+
+    /* EOS */
+  </style>
+
+  <script id="insert"></script>
+
+
+<style>
+
+.display-court{
+    background-color: rgba(63,94,251, 0.6);
+    left: 42px;
+    margin: 0;
+    padding: 15px;
+    position: absolute;
+    top: 50px;
+    opacity: 0.95;
+	max-width: 500px;
+	max-height: 400px;
+	font-family: "Calibri";
+	
+}
+
+
+.display-court h3 {
+		color: white;
+font-size: 22px;
+font-family: "Calibri";
+	
+}
+
+.display-court p {
+color: white;
+font-family: "Calibri";
+
+}
+
+.btnMylocation{
+background-image: linear-gradient(to top, #a18cd1 30%, #fbc2eb 100%);
+ width: 60%;
+   box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+    transition: 0.5s;
+  flex: 1 1 auto;
+
+	margin: auto;
+border-style: groove;
+	height: auto;
+	margin-top: 25px;
+	cursor: pointer;
+	font-size: 22px;
+	font-family: "WorkSans-Regular";
+		color: white;
+
+}
+
+
+</style>
+</head>
+<body>
+<div class="display-court">
+        <img src="images/icons/nearbycourts.jpg">
+
+        <h3>Nearby outdoor Basketball Court Parks Finder (Outdoor streetbasket parks in Oslo, Norway)</h3>
+		<p>Places with popular summer City Parks, larger streetbasket Courts & Meeting places with Pickup Games. + Other & smaller Outdoor basket Courts, for Shooting & Individual Practice </p>
+    <button onclick="getLocation()" id="btnMylocation" class="btnMylocation">Get your location & Find nearby bball courts</button>
+<div id="map-canvas"></div>
+
+</div>
+
+    <script type="text/javascript">//<![CDATA[
+
+
+var x = document.getElementById("map-canvas");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  var latx = position.coords.latitude;
+  var lonx = position.coords.longitude;
+  var resultx = new google.maps.LatLng(latx, lonx);
+  var locations = [
+    ['Grünerhagen ballplass, Kubaparken (Grünerløkka i Oslo, Norway)', 59.923147, 10.754822, 0],
+    ['Lille Bislett Idrettspark (ved Bislett Stadion, Oslo)', 59.912037, 10.750012, 1],
+	 ['Lilleborg Basketball bane (Idrettspark ved Torshovparken, Oslo)', 59.933641, 10.768498, 1],
+	  ['Tøyenparken Caltexløkka Basketballbane (ved Tøyen, Oslo)', 59.91628, 10.77803, 1],
+	  	   ['Huk Strand Basketballbane (ved Bygdøy, Oslo)', 59.89603, 10.67621, 1],
+	   ['Indoor winter Street Basketball Court, Skur 13 (Tjuvholmen, Oslo)', 59.909885, 10.721203, 1], 
+	    ['Sagene basketballbane (Arkitekt Rivertz plass)', 59.93478, 10.75085, 1],
+		 ['Basketbane (Dronning Astrids gate ved Majorstuen)', 59.92612, 10.72289, 1],
+		  ['Mauritz Hansens gate, liten Basketballbane (ved Bislett, Oslo)', 59.9213, 10.73147, 1],
+		   ['Utendørs basketballbane ved Engebråten skole (Kjelsås, Oslo)', 59.95936, 10.77485, 1],
+		    ['Jordal Utendørs Basketballbane (Jordal, Oslo)', 59.9084, 10.78407, 1],
+			 ['Løren idrettspark, Økern / Hasle Basketballbane', 59.93621, 10.80175, 1],
+    ['Your location', position.coords.latitude, position.coords.longitude],
+  ];
+
+
+
+  var map = new google.maps.Map(document.getElementById('map-canvas'), {
+    center: {
+      lat: position.coords.latitude,
+      lng: position.coords.longitude
+    },
+    zoom: 11,
+    scrollwheel: false,
+	 center: resultx,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  });
+
+  var infowindow = new google.maps.InfoWindow();
+
+  var marker, i;
+
+  for (i = 0; i < locations.length; i++) {
+    marker = new google.maps.Marker({
+      position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+      disableAutoPan: true,
+      map: map
+	  
+
+    });
+
+    google.maps.event.addListener(marker, 'click', (function(marker, i) {
+      return function() {
+        infowindow.setContent(locations[i][0]);
+        infowindow.open(map, marker);
+      }
+    })(marker, i));
+  }
+
+
+
+}
+
+
+
+  //]]></script>
+
+  <script>
+    // tell the embed parent frame the height of the content
+    if (window.parent && window.parent.parent){
+      window.parent.parent.postMessage(["resultsFrame", {
+        height: document.body.getBoundingClientRect().height,
+        slug: "e6d7onyg"
+      }], "*")
+    }
+
+    // always overwrite window.name, in case users try to set it manually
+    window.name = "result"
+  </script>
+
+
+</body>
+</html>
