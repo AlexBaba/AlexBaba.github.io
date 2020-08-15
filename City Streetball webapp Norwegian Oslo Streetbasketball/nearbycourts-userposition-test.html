@@ -129,7 +129,8 @@ function showPosition(position) {
     ['Your location', position.coords.latitude, position.coords.longitude],
   ];
 
-
+     x.innerHTML = "Latitude: " + position.coords.latitude +
+    "<br>Longitude: " + position.coords.longitude;
 
   var map = new google.maps.Map(document.getElementById('map-canvas'), {
     center: {
