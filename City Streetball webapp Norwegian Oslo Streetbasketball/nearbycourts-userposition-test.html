@@ -44,7 +44,7 @@
     top: 50px;
     opacity: 0.95;
 	max-width: 420px;
-	max-height: 400px;
+	max-height: 445px;
 	font-family: "Calibri";
 	
 }
@@ -64,8 +64,8 @@ font-family: "Calibri";
 }
 
 .btnMylocation{
-background-image: linear-gradient(to top, #a18cd1 30%, #fbc2eb 100%);
- width: 60%;
+background-image: linear-gradient(to left, lime 28px, red 77%, cyan);
+ width: 70%;
    box-shadow: 0 0 20px #eee;
   border-radius: 10px;
     transition: 0.5s;
@@ -74,10 +74,10 @@ background-image: linear-gradient(to top, #a18cd1 30%, #fbc2eb 100%);
 	margin: auto;
 border-style: groove;
 	height: auto;
-	margin-top: 25px;
+	margin-top: 5px;
 	cursor: pointer;
-	font-size: 22px;
-	font-family: "WorkSans-Regular";
+	font-size: 28px;
+	font-family: "Calibri";
 		color: white;
 
 }
@@ -103,8 +103,11 @@ var x = document.getElementById("map-canvas");
 
 function getLocation() {
   if (navigator.geolocation) {
-    navigator.geolocation.watchPosition(showPosition);
-  } else {
+    navigator.geolocation.watchPosition(showPosition, error, options);
+  
+  
+  } 
+  else {
     x.innerHTML = "Geolocation is not supported by this browser.";
   }
 }
@@ -117,16 +120,16 @@ function showPosition(position) {
   var locations = [
     ['Grünerhagen ballplass, Kubaparken (Grünerløkka i Oslo, Norway)', 59.923147, 10.754822, 0],
     ['Lille Bislett Idrettspark (ved Bislett Stadion, Oslo)', 59.912037, 10.750012, 1],
-	 ['Lilleborg Basketball bane (Idrettspark ved Torshovparken, Oslo)', 59.933641, 10.768498, 1],
-	  ['Tøyenparken Caltexløkka Basketballbane (ved Tøyen, Oslo)', 59.91628, 10.77803, 1],
-	  	   ['Huk Strand Basketballbane (ved Bygdøy, Oslo)', 59.89603, 10.67621, 1],
-	   ['Indoor winter Street Basketball Court, Skur 13 (Tjuvholmen, Oslo)', 59.909885, 10.721203, 1], 
-	    ['Sagene basketballbane (Arkitekt Rivertz plass)', 59.93478, 10.75085, 1],
-		 ['Basketbane (Dronning Astrids gate ved Majorstuen)', 59.92612, 10.72289, 1],
-		  ['Mauritz Hansens gate, liten Basketballbane (ved Bislett, Oslo)', 59.9213, 10.73147, 1],
-		   ['Utendørs basketballbane ved Engebråten skole (Kjelsås, Oslo)', 59.95936, 10.77485, 1],
-		    ['Jordal Utendørs Basketballbane (Jordal, Oslo)', 59.9084, 10.78407, 1],
-			 ['Løren idrettspark, Økern / Hasle Basketballbane', 59.93621, 10.80175, 1],
+	 ['Lilleborg Basketball bane (Idrettspark ved Torshovparken, Oslo)', 59.933641, 10.768498, 2],
+	  ['Tøyenparken Caltexløkka Basketballbane (ved Tøyen, Oslo)', 59.91628, 10.77803, 3],
+	  	   ['Huk Strand Basketballbane (ved Bygdøy, Oslo)', 59.89603, 10.67621, 4],
+	   ['Indoor winter Street Basketball Court, Skur 13 (Tjuvholmen, Oslo)', 59.909885, 10.721203, 5], 
+	    ['Sagene basketballbane (Arkitekt Rivertz plass)', 59.93478, 10.75085, 6],
+		 ['Basketbane (Dronning Astrids gate ved Majorstuen)', 59.92612, 10.72289, 7],
+		  ['Mauritz Hansens gate, liten Basketballbane (ved Bislett, Oslo)', 59.9213, 10.73147, 8],
+		   ['Utendørs basketballbane ved Engebråten skole (Kjelsås, Oslo)', 59.95936, 10.77485, 9],
+		    ['Jordal Utendørs Basketballbane (Jordal, Oslo)', 59.9084, 10.78407, 10],
+			 ['Løren idrettspark, Økern / Hasle Basketballbane', 59.93621, 10.80175, 11],
     ['Your location', position.coords.latitude, position.coords.longitude],
   ];
 
@@ -167,6 +170,18 @@ function showPosition(position) {
 
 
 }
+
+function error(err) {
+  console.warn('ERROR(' + err.code + '): ' + err.message);
+};
+
+
+
+options = {
+  enableHighAccuracy: true,
+  timeout: 60000,
+  maximumAge: 60000
+};
 
 
 
