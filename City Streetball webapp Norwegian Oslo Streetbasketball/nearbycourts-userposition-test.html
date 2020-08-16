@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
       <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-cL_SxwzrA11R1h7GQxNH_QkTSRJ44mU&libraries=geometry,places&amp;ext=.js"></script>
 
@@ -17,8 +17,8 @@
    
 #map-canvas {
  right: 10px;
-  height: 530px;
-  width: 700px;
+  height: 650px;
+  width: 1000px;
   margin: 0px;;
   padding: 0px;
   color: #1E90FF;
@@ -43,7 +43,7 @@
     position: absolute;
     top: 50px;
     opacity: 0.95;
-	max-width: 500px;
+	max-width: 420px;
 	max-height: 400px;
 	font-family: "Calibri";
 	
@@ -110,6 +110,7 @@ function getLocation() {
 }
 
 function showPosition(position) {
+ 
   var latx = position.coords.latitude;
   var lonx = position.coords.longitude;
   var resultx = new google.maps.LatLng(latx, lonx);
@@ -129,15 +130,14 @@ function showPosition(position) {
     ['Your location', position.coords.latitude, position.coords.longitude],
   ];
 
-     x.innerHTML = "Latitude: " + position.coords.latitude +
-    "<br>Longitude: " + position.coords.longitude;
+   
 
   var map = new google.maps.Map(document.getElementById('map-canvas'), {
     center: {
       lat: position.coords.latitude,
       lng: position.coords.longitude
     },
-    zoom: 11,
+    zoom: 13,
     scrollwheel: false,
 	 center: resultx,
     mapTypeId: google.maps.MapTypeId.ROADMAP
