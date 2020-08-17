@@ -118,19 +118,19 @@ function showPosition(position) {
   var lonx = position.coords.longitude;
   var resultx = new google.maps.LatLng(latx, lonx);
   var locations = [
-    ['Grünerhagen ballplass, Kubaparken (Grünerløkka i Oslo, Norway)', 59.923147, 10.754822, 0, 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'],
-    ['Lille Bislett Idrettspark (ved Bislett Stadion, Oslo)', 59.912037, 10.750012, 1, 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'],
-	 ['Lilleborg Basketball bane (Idrettspark ved Torshovparken, Oslo)', 59.933641, 10.768498, 2, 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'],
-	  ['Tøyenparken Caltexløkka Basketballbane (ved Tøyen, Oslo)', 59.91628, 10.77803, 3, 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'],
-	  	   ['Huk Strand Basketballbane (ved Bygdøy, Oslo)', 59.89603, 10.67621, 4, 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'],
-	   ['Indoor winter Street Basketball Court, Skur 13 (Tjuvholmen, Oslo)', 59.909885, 10.721203, 5, 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'], 
-	    ['Sagene basketballbane (Arkitekt Rivertz plass)', 59.93478, 10.75085, 6, 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'],
-		 ['Basketbane (Dronning Astrids gate ved Majorstuen)', 59.92612, 10.72289, 7, 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'],
-		  ['Mauritz Hansens gate, liten Basketballbane (ved Bislett, Oslo)', 59.9213, 10.73147, 8, 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'],
-		   ['Utendørs basketballbane ved Engebråten skole (Kjelsås, Oslo)', 59.95936, 10.77485, 9, 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'],
-		    ['Jordal Utendørs Basketballbane (Jordal, Oslo)', 59.9084, 10.78407, 10, 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'],
-			 ['Løren idrettspark, Økern / Hasle Basketballbane', 59.93621, 10.80175, 11, 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'],
-    ['Your location', position.coords.latitude, position.coords.longitude, 12, 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'],
+    ['Grünerhagen ballplass, Kubaparken (Grünerløkka i Oslo, Norway)', 59.923147, 10.754822, 0],
+    ['Lille Bislett Idrettspark (ved Bislett Stadion, Oslo)', 59.912037, 10.750012, 1],
+	 ['Lilleborg Basketball bane (Idrettspark ved Torshovparken, Oslo)', 59.933641, 10.768498, 2],
+	  ['Tøyenparken Caltexløkka Basketballbane (ved Tøyen, Oslo)', 59.91628, 10.77803, 3],
+	  	   ['Huk Strand Basketballbane (ved Bygdøy, Oslo)', 59.89603, 10.67621, 4],
+	   ['Indoor winter Street Basketball Court, Skur 13 (Tjuvholmen, Oslo)', 59.909885, 10.721203, 5], 
+	    ['Sagene basketballbane (Arkitekt Rivertz plass)', 59.93478, 10.75085, 6],
+		 ['Basketbane (Dronning Astrids gate ved Majorstuen)', 59.92612, 10.72289, 7],
+		  ['Mauritz Hansens gate, liten Basketballbane (ved Bislett, Oslo)', 59.9213, 10.73147, 8],
+		   ['Utendørs basketballbane ved Engebråten skole (Kjelsås, Oslo)', 59.95936, 10.77485, 9],
+		    ['Jordal Utendørs Basketballbane (Jordal, Oslo)', 59.9084, 10.78407, 10],
+			 ['Løren idrettspark, Økern / Hasle Basketballbane', 59.93621, 10.80175, 11],
+    ['Your location', position.coords.latitude, position.coords.longitude],
   ];
 
    
@@ -143,8 +143,7 @@ function showPosition(position) {
     zoom: 13,
     scrollwheel: false,
 	 center: resultx,
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
-	
+    mapTypeId: google.maps.MapTypeId.ROADMAP
   });
 
   var infowindow = new google.maps.InfoWindow();
@@ -155,8 +154,9 @@ function showPosition(position) {
     marker = new google.maps.Marker({
       position: new google.maps.LatLng(locations[i][1], locations[i][2]),
       disableAutoPan: true,
-      map: map,
-	  icon: locations[i][4]
+      map: map
+	  
+
     });
 
     google.maps.event.addListener(marker, 'click', (function(marker, i) {
