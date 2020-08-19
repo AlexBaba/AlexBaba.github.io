@@ -6,7 +6,8 @@
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta name="robots" content="noindex, nofollow">
   <meta name="googlebot" content="noindex, nofollow">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+<meta name="viewport" content="width=device-width, initial-scale=0.7, user-scalable=yes" />
 
 
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -14,6 +15,8 @@
       <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-cL_SxwzrA11R1h7GQxNH_QkTSRJ44mU&libraries=geometry,places&amp;ext=.js"></script>
 
   <style id="compiled-css" type="text/css">
+   
+ 
    
 #map-canvas {
  right: 10px;
@@ -34,6 +37,39 @@
 
 
 <style>
+
+  body {
+      background-image: url(./images/Bakgrunner/bakgrunn24.jpg);
+      background-attachment: fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+  -o-background-size: cover;
+   background-size: 100%;
+height: 100%;
+width: 100%;
+  -webkit-transform:scale(0.95);
+transform:scale(0.95);
+opacity: 1.5;
+
+}
+
+@media screen and (min-width:140px) and (max-width:580px), 
+   screen and (min-device-width:140px) and (max-device-width:580px)
+{
+body {
+      background-image: url(./images/Bakgrunner/bakgrunn24.jpg);
+   -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+opacity: 1.1;
+height: 100%;
+width: 100%;
+transform:scale(0.95);
+
+}
+
+}
 
 .display-court{
     background-color: rgba(63,94,251, 0.6);
@@ -83,9 +119,33 @@ border-style: groove;
 }
 
 
+
+.backbtn:active {
+
+box-shadow: 0 5px #666;
+  transform: translateY(5px);
+}
+
+
+.backbtn {
+position: relative;
+left: 1010px;
+background:rgba(0,0,0,0.19);
+width: 250px;
+height: 130px;
+bottom: 0px;
+}
+
 </style>
 </head>
 <body>
+
+<div class="backbtn">
+<a href="http://alexbaba.github.io/City%20Streetball%20webapp%20Norwegian%20Oslo%20Streetbasketball/indexmenupage.html"><img src="images/overskriftsknapperbilder/back.png" style="height: 110px" /></a>
+
+</div>
+
+
 <div class="display-court">
         <img src="images/icons/nearbycourts.jpg">
 
