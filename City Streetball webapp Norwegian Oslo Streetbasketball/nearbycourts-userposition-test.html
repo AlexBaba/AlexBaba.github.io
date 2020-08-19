@@ -110,7 +110,11 @@ function getLocation() {
   else {
     x.innerHTML = "Geolocation is not supported by this browser.";
   }
+  
+   
 }
+
+window.setInterval(function() {showPosition()}, 200000);
 
 function showPosition(position) {
  
@@ -165,6 +169,8 @@ function showPosition(position) {
 
   var marker, i;
 
+
+
   for (i = 0; i < locations.length; i++) {
     marker = new google.maps.Marker({
       position: new google.maps.LatLng(locations[i][1], locations[i][2]),
@@ -186,8 +192,8 @@ function showPosition(position) {
   }
 
 
-
 }
+
 
 function error(err) {
   console.warn('ERROR(' + err.code + '): ' + err.message);
