@@ -136,6 +136,208 @@ height: 130px;
 bottom: 0px;
 }
 
+.sidemenubtns {
+background:rgba(0,0,0,0.28); 
+width: 320px;
+height: auto;
+position: relative;
+top: 1922px;
+right: 35px;
+}
+
+.menudiv {
+width: 1070px;
+height: 700px;
+position: relative;
+top:1180px;
+left: 199px;
+background:rgba(0,0,0,0.28); 
+transform:scale(0.955);
+
+}
+
+
+
+
+.slide-container {
+width:740px;
+height:500px;
+position:absolute;
+}
+
+
+
+#redirect1 {
+position:relative;
+font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+font-size:19px;
+width:250px;
+height:auto;
+font-weight:bolder;
+text-align:center;
+line-height:40px;
+letter-spacing:.19em;
+background:  #fa6b85;
+color: white;
+
+
+}
+
+#redirect1:active {
+box-shadow: 0 5px #666;
+  transform: translateY(5px);
+
+}
+
+#redirect2 {
+position:relative;
+font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+font-size:19px;
+width:250px;
+height:auto;
+font-weight:bolder;
+text-align:center;
+line-height:40px;
+letter-spacing:.19em;
+background:  #fa6b85;
+color: white;
+
+
+
+}
+
+#redirect2:active {
+box-shadow: 0 5px #666;
+  transform: translateY(5px);
+
+}
+
+#redirect3 {
+position:relative;
+font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+font-size:19px;
+width:250px;
+height:auto;
+font-weight:bolder;
+text-align:center;
+line-height:40px;
+letter-spacing:.19em;
+background:  #fa6b85;
+color: white;
+
+}
+
+#redirect3:active {
+box-shadow: 0 5px #666;
+  transform: translateY(5px);
+
+}
+
+#redirect4 {
+position:relative;
+font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+font-size:19px;
+width:250px;
+height:auto;
+font-weight:bolder;
+text-align:center;
+line-height:40px;
+letter-spacing:.19em;
+background:  #fa6b85;
+color: white;
+
+
+}
+
+#redirect4:active {
+box-shadow: 0 5px #666;
+  transform: translateY(5px);
+
+}
+
+
+.left-arrow {
+width:50%;
+height:50%;
+position:relative;
+bottom:268px;
+left:700px;
+}
+
+.right-arrow {
+width:50%;
+height:50%;
+position:absolute;
+top:0;
+left:700px;
+}
+
+.left-arrow>img {
+position:relative;
+top:50%;
+transform:translateY(-50%);
+margin-left:-2px;
+opacity:0.9;
+transition:opacity 1s;
+height: 100%;
+width: 100%;
+}
+
+.right-arrow>img {
+position:relative;
+top:50%;
+transform:translateY(-50%);
+margin-left:42px;
+opacity:0.9;
+transition:opacity 1s;
+height: 100%;
+width: 100%;
+}
+
+.left-arrow>img:hover,.right-arrow>img:hover {
+cursor:pointer;
+opacity:1;
+}
+
+.dot-container {
+position:absolute;
+bottom:5px;
+left:50%;
+transform:translateX(-50%);
+}
+
+.dot {
+cursor:pointer;
+height:33px;
+width:33px;
+background-color:#F67280;
+border-radius:50%;
+display:inline-block;
+transition:background-color .6s ease;
+margin:0 2px;
+}
+
+.active,.dot:hover {
+background-color:#E8175D;
+height:47px;
+width:47px;
+}
+
+.captionText {
+width:430px;
+height:119px;
+position:relative;
+bottom:210px;
+font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+font-size:24px;
+font-weight:bolder;
+text-align:center;
+line-height:40px;
+letter-spacing:.19em;
+background:#66CCCC;
+color:white;
+opacity: 1.3
+
 </style>
 </head>
 <body>
@@ -257,7 +459,7 @@ function initMap() {
 
 setInterval(function(){ 
     initMap()    
-}, 90000);  
+}, 150000);  
 
 
 function onError(error) {
@@ -281,6 +483,224 @@ function onError(error) {
     // always overwrite window.name, in case users try to set it manually
     window.name = "result"
   </script>
+
+
+<br />
+<br />
+<div class="sidemenubtns">  
+ <a href="youtubeplaylists.html"><button id="redirect1">Streetball and Basketball Entertainment Page</button></a> <br /> 
+        <a href="aboutstreetball.html"><button id="redirect2">About. The game of Streetbasket and Basketball</button></a> <br />
+      <a href="filterlistmaps.html">  <button id="redirect3">Norwegian Oslo summer Streetbasketball. Courts Location Page</button></a> <br />
+       <a href="travelroutestutorial.html"> <button id="redirect4">Norwegian Oslo summer Streetbasketball courts. Travel Route Tutorial</button></a>
+
+</div>
+<div class="menudiv">
+<br />
+<img src="images/overskriftsknapperbilder/bakgrunnsfargebilde.jpg" height="150px" width="400px" /> 
+
+
+
+​<div class="slide-container">
+
+
+<div class="main-content"> </div>
+
+
+<div class="left-arrow"> <img src="https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color/254000/38-512.png" alt="arrow"> </div>
+<div class="right-arrow"> <img src="https://www.freeiconspng.com/uploads/blue-right-arrow-icon-7.png" alt="arrow"></div>
+
+<div class="dot-container"> </div>
+
+<div class="captionText"></div>
+
+</div>
+
+<br />
+
+
+
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+
+<script>
+
+$(document).ready(function(){
+
+//add image links below
+
+var images= [];
+images[0]= 'images/Bakgrunner/Entertainmentvideospage.jpg';
+images[1]= 'images/Bakgrunner/streetballinfowhatis.jpg';
+images[2]= 'images/Bakgrunner/norwegiansummerstreetbasketballOslocitycourtslocationpage.jpg';
+images[3]= 'images/Bakgrunner/norwegiansummerstreetbasketballOslocitycourtstravelroutetutorialpage.jpg';
+
+//add caption text
+
+var capTexts= [];
+capTexts[0]= 'Streetball and Basketball Entertainment Page';
+capTexts[1]= 'About. The game of Streetbasket and Basketball';
+capTexts[2]= 'Norwegian Oslo summer Streetbasketball. Courts Location Page';
+capTexts[3]= 'Norwegian Oslo summer Streetbasketball courts. Travel Route Tutorial';
+
+
+//3000 miliseconds=3 seconds
+//set time 
+
+var pausebetweenimages=11000;
+
+var count=0;
+var imageCount= images.length-1;
+
+//creating navigation dots
+
+var navDots= [];
+
+for(var i=0; i<imageCount+1; i++)
+{
+navDots[i]='<div class="dot"></div>';
+$('.dot-container').append(navDots[i]);
+}
+
+$('.main-content').html('<img src=' + images[count] +'>');
+
+//adding .responsive-img class to set image's width and height 100%
+
+$('.main-content > img').addClass('responsive-img');
+
+//adding .active class to current navigation dot's index
+
+$( '.dot' ).eq(count).addClass('active');
+
+//animating caption text
+
+$('.captionText').animate({
+'left': '1px',
+'bottom': '251px',
+'opacity': '0.92'
+}, 500);
+$('.captionText').text(capTexts[count]);
+
+//fucntion that will run a certain time intervals
+
+timingRun = setInterval(function(){ sliderTiming();}, pausebetweenimages); 
+
+function sliderTiming ()
+{
+$( '.dot' ).eq(count).removeClass('active');
+count++;
+
+if(count>imageCount)
+{
+count=0;
+}
+
+//fadein and fadeout effect
+
+$('.main-content').fadeOut(100,function () {
+$('.main-content').html('<img src=' + images[count] +'>');
+$('.main-content > img').addClass('responsive-img');
+$( '.dot' ).eq(count).addClass('active');
+$('.main-content').fadeIn(500);
+
+captextAnim_Responsive();
+});
+}
+
+
+$('.right-arrow>img').click(function(){
+$( '.dot' ).eq(count).removeClass('active');
+count++;
+if(count>imageCount)
+{
+count=0;
+}
+$('.main-content').fadeOut(100, function () {
+$('.main-content').html('<img src=' + images[count] +'>');
+$('.main-content > img').addClass('responsive-img');
+$( '.dot' ).eq(count).addClass('active');
+$('.main-content').fadeIn(500);
+
+captextAnim_Responsive();
+}); 
+resetTiming();
+});
+
+$('.left-arrow>img').click(function(){
+$( '.dot' ).eq(count).removeClass('active');
+count--;
+if(count<0)
+{
+count=imageCount;
+}
+$('.main-content').fadeOut(100, function () {
+$('.main-content').html('<img src=' + images[count] +'>');
+$('.main-content > img').addClass('responsive-img');
+$( '.dot' ).eq(count).addClass('active');
+$('.main-content').fadeIn(500);
+
+captextAnim_Responsive();
+});
+resetTiming();
+});
+
+$('.dot').click(function () {
+$( '.dot' ).eq(count).removeClass('active');
+count= $(this).index();
+$('.main-content').fadeOut(100,function () {
+$('.main-content').html('<img src=' + images[count] +'>');
+$('.main-content > img').addClass('responsive-img');
+$( '.dot' ).eq(count).addClass('active');
+$('.main-content').fadeIn(500);
+
+captextAnim_Responsive();
+});
+resetTiming();
+});
+
+//reset the time interval
+
+function resetTiming() {
+clearInterval(timingRun);
+timingRun = setInterval(function() { sliderTiming(); },pausebetweenimages);
+}
+
+//animating caption text with responsiveness
+
+function captextAnim_Responsive(){
+if ($(window).width() <= 500)
+{
+$('.captionText').css('opacity', '0');
+$('.captionText').css('left', '0'); 
+$('.captionText').text(capTexts[count]);
+$('.captionText').animate({
+'left': '1px',
+'bottom': '251px',
+'opacity': '0.92'
+}, 500); 
+} 
+
+else {
+$('.captionText').css('opacity', '0');
+$('.captionText').css('left', '0'); 
+$('.captionText').text(capTexts[count]);
+$('.captionText').animate({
+'left': '1px',
+'bottom': '251px',
+'opacity': '0.92'
+}, 500);
+} 
+}
+
+});
+
+</script>
 
 
 </body>
