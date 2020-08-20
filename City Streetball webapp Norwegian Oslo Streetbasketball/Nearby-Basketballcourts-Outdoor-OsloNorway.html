@@ -151,7 +151,7 @@ bottom: 0px;
 
         <h3>Nearby outdoor Basketball Court Parks Finder (Outdoor streetbasket parks in Oslo, Norway)</h3>
 		<p>Places with popular summer City Parks, Larger Streetbasketball Courts & meeting places with Pickup Games. + Other & smaller Outdoor basket Courts, for Shooting & Individual Practice </p>
-    <button onclick="getLocation()" id="btnMylocation" class="btnMylocation">Get your location & Find nearby bball courts</button>
+    <button onclick="initMap()" id="btnMylocation" class="btnMylocation">Get your location & Find nearby bball courts</button>
 <div id="map-canvas"></div>
 
 </div>
@@ -161,26 +161,32 @@ bottom: 0px;
 
 var x = document.getElementById("map-canvas");
 
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.watchPosition(showPosition, error, options);
-  
-  
-  } 
-  else {
-    x.innerHTML = "Geolocation is not supported by this browser.";
-  }
-  
-   
-}
 
-window.setInterval(function() {getLocation()}, 250000);
+function initMap() {
 
-function showPosition(position) {
- 
-  var latx = position.coords.latitude;
+
+    navigator.geolocation.watchPosition(function(position) {
+
+
+
+
+    var latx = position.coords.latitude;
   var lonx = position.coords.longitude;
-  var resultx = new google.maps.LatLng(latx, lonx);
+    var resultx = new google.maps.LatLng(latx, lonx);
+  var map = new google.maps.Map(document.getElementById('map-canvas'), {
+    center: {
+      lat: position.coords.latitude,
+      lng: position.coords.longitude
+    },
+    zoom: 13,
+    scrollwheel: false,
+	 center: resultx,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+	
+  }); 
+  
+  
+    
   var locations = [
     ['Grünerhagen ballplass, Kubaparken (Grünerløkka i Oslo, Norway)', 59.923147, 10.754822, 0, 'http://maps.google.com/mapfiles/ms/icons/red-dot.png', 'https://1.bp.blogspot.com/-fGoilFTTL1E/XzufrzF9xOI/AAAAAAAADv8/BxqeIudGFFEcQg0OZxUx-s2oRM6Zi5cJwCLcBGAsYHQ/s640/Kubaparken.jpg'], 
     ['Lille Bislett Idrettspark (ved Bislett Stadion, Oslo)', 59.912037, 10.750012, 1, 'http://maps.google.com/mapfiles/ms/icons/red-dot.png', 'https://1.bp.blogspot.com/-vvc2xqkGquo/XzufrjRtaWI/AAAAAAAADv0/eD-WSe6oAgkDzvjQvn1zzLCWZCE3KGG7gCLcBGAsYHQ/w496-h340/bislettbane.jpg'], 
@@ -194,7 +200,7 @@ function showPosition(position) {
 		   ['Utendørs basketballbane ved Engebråten skole (Kjelsås, Oslo)', 59.95936, 10.77485, 9, 'http://maps.google.com/mapfiles/ms/icons/red-dot.png', 'https://1.bp.blogspot.com/-9rgmebmUVTI/XzufsfOD5aI/AAAAAAAADwI/BZ0D2gU-MVUJplcnZWWw2rfdrmCU8QlKQCLcBGAsYHQ/s0/lilleborgbanen.jpg'], 
 		    ['Jordal Utendørs Basketballbane (Jordal, Oslo)', 59.9084, 10.78407, 10, 'http://maps.google.com/mapfiles/ms/icons/red-dot.png',  'https://1.bp.blogspot.com/-9rgmebmUVTI/XzufsfOD5aI/AAAAAAAADwI/BZ0D2gU-MVUJplcnZWWw2rfdrmCU8QlKQCLcBGAsYHQ/s0/lilleborgbanen.jpg'], 
 			 ['Løren idrettspark, Økern / Hasle Basketballbane', 59.93621, 10.80175, 11, 'http://maps.google.com/mapfiles/ms/icons/red-dot.png', 'https://1.bp.blogspot.com/-9rgmebmUVTI/XzufsfOD5aI/AAAAAAAADwI/BZ0D2gU-MVUJplcnZWWw2rfdrmCU8QlKQCLcBGAsYHQ/s0/lilleborgbanen.jpg'], 
-    ['Your location', position.coords.latitude, position.coords.longitude, 12, 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'], 
+    ['Your location', latx, lonx, 12, 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'], 
   ];
 
    var locationimages = [
@@ -213,18 +219,7 @@ function showPosition(position) {
     ['https://techcrunch.com/wp-content/uploads/2018/05/tinder-location.png'],
   ];
 
-  var map = new google.maps.Map(document.getElementById('map-canvas'), {
-    center: {
-      lat: position.coords.latitude,
-      lng: position.coords.longitude
-    },
-    zoom: 14,
-    scrollwheel: false,
-	 center: resultx,
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
-	
-  });
-
+  
   var infowindow = new google.maps.InfoWindow();
 
   var marker, i;
@@ -250,22 +245,25 @@ function showPosition(position) {
       }
     })(marker, i));
   }
+  
+});
+  
+
+  
+  
+  
+  }
 
 
+setInterval(function(){ 
+    initMap()    
+}, 90000);  
+
+
+function onError(error) {
+  console.log('ERROR(' + error.code + '): ' + error.message);
 }
 
-
-function error(err) {
-  console.warn('ERROR(' + err.code + '): ' + err.message);
-};
-
-
-
-options = {
-  enableHighAccuracy: true,
-  timeout: 6000000,
-  maximumAge: 5000
-};
 
 
 
