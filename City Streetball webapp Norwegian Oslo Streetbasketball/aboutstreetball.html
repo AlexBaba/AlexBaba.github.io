@@ -8,6 +8,7 @@
 
   <link rel="stylesheet" href="./style.css">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
 
 </head>
@@ -1088,7 +1089,213 @@ height: 500px;
 position: relative;
 top: 560px;
 }
+
+
+
+
+
+
+
+
+
+
+.slider{
+	  box-sizing: border-box;
+
+  position: relative;
+  overflow: hidden;
+  height: 670px;
+  width: 830px;
+  left: 0px;
+  top: 20px;
+
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.slide.current {
+  opacity: 1;
+}
+
+ .slide .content {
+  position: relative;
+  top: 110px;
+max-height: 560px;
+
+  width: 870px;
+  max-height: auto;
+  color: white;
+  padding: 35px;
+  right: 200px;
+}
+
+ .slide  .content h1 {
+
+min-width: 700px;
+  font-size: 32px;
+   position: relative;
+  bottom: 100px;
+right: 300px;
+
+  background:rgba(0,0,0,0.1); 
+
+
+}
+
+
+ .slide .content p {
+    margin-left: 10px;
+max-height: 500px;
+  font-size: 19px;
+  position: relative;
+right: 990px;
+  bottom: -25px;
+  min-width:700px;
+  background:rgba(0,0,0,0.4); 
+
+}
+
+.slide.current .content {
+  /* Content of current slide */
+  opacity: 1;
+  transform: translateX(600px);
+  /* all- opacity/transform with 0.3s delay*/
+  transition: all 0.3s ease-in-out 0.2s;
+}
+
+button#next {
+  position: relative;
+bottom: 700px;
+  left: 689px;
+}
+button#prev {
+  position: relative;
+  bottom: 700px;
+  right: 15px;
+}
+
+.buttons button {
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 13px 15px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.buttons button:hover {
+  background-color: white;
+  color: #333;
+}
+
+@media(max-width: 500px) {
+  .slide .content{
+    bottom: -300px;
+    left:0;
+    width: 100%;
+  }
+  
+  .slide.current .content{
+    transform: translateY(-300px);
+  }
+}
+
+
+/* Backgorund Images */
+ 
+.slide:first-child {
+
+  background: url('images/basketcoachingtips/basketballcoachingtips0.jpg') no-repeat
+    center top/cover;
+}
+.slide:nth-child(2) {
+  background: url('images/basketcoachingtips/basketballcoachingtips1.jpg') no-repeat
+    center top/cover;
+}
+.slide:nth-child(3) {
+  background: url('images/basketcoachingtips/basketballcoachingtips4.jpg') no-repeat
+    center top/cover;
+}
+
+
+
+.slide:nth-child(4) {
+  background: url('images/basketcoachingtips/basketballcoachingtips25.jpg') no-repeat
+    center top/cover;
+}
+
+
+.slide:nth-child(5) {
+  background: url('images/basketcoachingtips/basketballcoachingtips24.jpg') no-repeat
+    center top/cover;
+}
+
+.slide:nth-child(6) {
+  background: url('images/basketcoachingtips/basketballcoachingtips17.jpg') no-repeat
+    center top/cover;
+}
+
+.slide:nth-child(7) {
+  background: url('images/basketcoachingtips/basketballcoachingtips19.jpg') no-repeat
+    center top/cover;
+}
+
+.slide:nth-child(8) {
+  background: url('images/basketcoachingtips/basketballcoachingtips21.jpg') no-repeat
+    center top/cover;
+}
+
+.slide:nth-child(9) {
+  background: url('images/basketcoachingtips/basketballcoachingtips26.jpg') no-repeat
+    center top/cover;
+}
+
+.slide:nth-child(10) {
+  background: url('images/basketcoachingtips/basketballcoachingtips23.jpg') no-repeat
+    center top/cover;
+}
+
+.slide:nth-child(11) {
+  background: url('images/basketcoachingtips/basketballcoachingtips27.jpg') no-repeat
+    center top/cover;
+}
+
+.slide:nth-child(12) {
+  background: url('images/basketcoachingtips/basketballcoachingtips28.jpg') no-repeat
+    center top/cover;
+}
+
+.slide:nth-child(13) {
+  background: url('images/basketcoachingtips/basketballcoachingtips29.jpg') no-repeat
+    center top/cover;
+}
+
+.slide:nth-child(14) {
+  background: url('images/basketcoachingtips/basketballcoachingtips31.jpg') no-repeat
+    center top/cover;
+} 
+.slide:nth-child(15)  {
+  background: url('images/basketcoachingtips/basketballcoachingtips8.jpg') no-repeat
+    center center/cover;
+}
+
+.slide:nth-child(16)  {
+  background: url('images/basketcoachingtips/basketballcoachingtips2.jpg') no-repeat
+    center center/cover;
+}
+
 </style>
+
+
 
 <div class="backbtn">
 <a href="indexmenupage.html"><img src="images/overskriftsknapperbilder/back.png" style="height: 110px" /></a>
@@ -1108,7 +1315,8 @@ top: 560px;
 		    <button class="myBtn_multi">Basic rules of the Streetbasket game</button>
 
 
-	
+			    <button class="myBtn_multi">Basketball Training Talk Tips, and Secrets of Improving</button>
+
 	
 	<button class="myBtn_multi">Pickup Basketball training and benefits</button>
 
@@ -1174,6 +1382,365 @@ At the beginning of the game and after each made basket, play begins at the top 
 		 </p>
 
 	   </div>
+
+    </div>
+	
+	
+	
+		    <!-- The Modal -->
+    <div class="modal modal_multi">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close close_multi">×</span>
+   <div class="slider">
+       <div class="slide current">
+           <div class="content">
+               <h1></h1>
+   
+           </div>
+       </div>
+       <div class="slide">
+            <div class="content">
+                <h1>Basketball Training Hints, and Secrets</h1>
+                 <p>Effective basketball training is essential for all players.
+
+Whether you're a young player still learning the game, a college athlete attempting to turn pro, or a coach looking to help out their team, you should always be on the search for new basketball training tips to improve your game.
+
+Forward we want to share 37 important basketball training tips that will help you develop skills and elevate your game to the next level.</p>
+            </div>
+        </div>
+       <div class="slide">
+            <div class="content">
+                <h1 style="postition: relative; bottom: 180px;">1. Always Have a Workout Plan</h1>
+                 <p>There is nothing more important than having a plan of what you want to accomplish every time you step in the gym or the streetcourt.
+<br />
+This requires that you've spent time evaluating your strengths and weaknesses and you understand what areas of your game you should be focusing on.
+<br />
+​What shooting drills do you want to use? 
+​How many shots do you want to take? 
+​Do you need to work on your ball handling? 
+The answers to all these questions should be clear to anyone who looks at the workout you have planned for the day.
+<br />
+Players can list their workouts on an electronic device like their phone or iPad, or be 'old school' by using traditional printed out paper with a pen to track your results (which I prefer).
+Having a plan will allow you to stick to a schedule and be efficient.
+You know exactly what to do and you go in and do it.</p>
+            </div>
+        </div>
+       <div class="slide">
+            <div class="content">
+                 <h1 style="postition: relative; bottom: 180px;">2. Treat your workouts like appointments</h1>
+                 <p>Similar to how people schedule doctors appointments and work commitments, players must be schedule their basketball training workouts too.
+
+Because if you don't schedule them, they probably won't happen.
+
+Schedule your basketball workouts into your calendar at the start of the week and then hold yourself accountable to going to them.
+<br />
+How many times have you planned on working out, but other things came up.
+
+
+​You lose track of time while playing video games...<br />
+And then by the time you look at the clock, it's too late to work out so you just forget about it and say "Oh well. I'll do it tomorrow".
+
+This can't happen if you want to develop as a basketball player.
+You have to make workouts a priority if you want to be successful.</p>
+            </div>
+        </div>
+		<div class="slide">
+            <div class="content">
+                 <h1 style="postition: relative; bottom: 210px;">3. Shooting is one of the important skills in the game</h1>
+                 <p>Players must understand this.
+
+When you're in the gym, a lot of your workout time must be spent developing your ability to shoot the basketball.
+
+Every other skill is secondary to shooting.
+
+
+To give yourself the best chance for success, focus on shooting.
+
+Your goal should always be to become the best shooter to improve.
+
+
+<br />
+Your goal should be 1,500 made shots per week.
+​Elite Shooter = 1,500 made shots per week
+​Great Shooter = 1,000 made shots per week 
+​Poor Shooter = 500 made shots per week 
+
+<br />
+Let’s be real about the numbers to see how much time 1,500 shots a week takes…
+If player makes 1 game-shot every fifteen seconds (4 made shots per minute).<br />
+Good - 500 made shots would take 125 minutes = 2 hours and 5 minutes.
+Great - 1000 made shots would take 250 minutes = 4 hours and 10 minutes.<br />
+Elite-1,500 made shots=6 hours,15 minutes.
+
+
+</p>
+            </div>
+        </div>
+		
+		<div class="slide">
+            <div class="content">
+               <h1 style="postition: relative; bottom: 210px;">4. Perfect your shooting technique</h1>
+                 <p>It is important for all players to develop a fundamentally sound, consistent, and repeatable shot.
+
+And the sooner a player can develop this, the better.
+<br />
+It's much faster and easier for players to improve when they're using correct shooting technique.
+<br />
+Here are the 10 steps for a player to follow: <br />
+​ Shot preparation.
+​ Hand placement on the ball.
+ ​Balanced base.
+​ Feet direction (the turn).
+​ Consistent shot pocket.
+​ Eyes on target.
+​ Wrinkle the wrist.
+​ Elbow under the basketball.
+​ Balance hand.
+​ Rhythm shot + follow through.
+ For a more in-depth look into each of the steps in the video below on how to shoot a basketball example​​​.
+<br/><img src="images/basketcoachingtips/shootingaball.jpg" width="540px" height`="100px"></img>
+</p> 
+            </div>
+
+        </div>
+
+			<div class="slide">
+            <div class="content">
+                 <h1 style="postition: relative; bottom: 180px;">Always train at a game speed</h1>
+                 <p>One of the biggest mistakes a player can make during workouts is only putting in 50% effort when practicing.
+
+Instead of sprinting around the court, they jog.
+
+Instead of raising up on each shot, they barely leave the ground.
+
+Being able to shoot casually and being able to shoot after running off a screen and then jumping up high into the air to avoid the defender blocking your shot are completely different skills.
+ <br />
+
+If you want to improve your in-game shooting, you need to be practicing game shots at game speed.</p>
+            </div>
+        </div>
+		
+       <div class="slide">
+            <div class="content">
+                <h1 style="postition: relative; bottom: 180px;">Work on your shot fake</h1>
+                 <p>The key points of a shot fake you need to remember:
+ <br /> <br />
+a. Stay low - If the defender jumps on the shot fake, the offensive player needs to be low to explode past them and attack the rim.
+ <br /> <br />
+b. Raise the basketball to eye level - Any higher and the offensive player will take too long to make the most of their advantage.
+ <br /> <br />
+c. Eyes on the rim - To really sell the shot fake, players need to look at the rim. Defenders will often watch the eyes of their opponent.
+ <br /> <br />
+Once the defender takes the bait, the offensive player can either take one dribble to the left or right and shoot or they can attack the hoop.
+ <br />
+Commit to working on your shot fake and improving it.​</p>
+            </div>
+        </div>
+       <div class="slide">
+            <div class="content">
+                 <h1 style="postition: relative; bottom: 180px;">Develop a variety of finishes at the rim</h1>
+                 <p>Once you become a lethal outside shooter, opposition players are going to be forced to defend you closer to prevent the outside shot.
+
+It will also be far more likely that they'll jump on your shot fakes.
+
+This is when you need to attack the rim.
+ 
+Being able to explode past your opponent and then finish at the rim with a variety of moves is crucial to be a complete scorer.
+ <br /> 
+Here are 7 finishing moves all players should be working on:
+ <br /> <br />
+​Regular layups (overhand) <br />
+​Finger Roll (underhand) <br />
+​Floaters <br />
+​Off-foot layups (example: right foot jump, right foot shot) <br />
+​Euro step <br />
+​Reverse layups <br />
+​Jump stop layups. </p>
+            </div>
+        </div>
+		 <div class="slide">
+            <div class="content">
+               <h1 style="postition: relative; bottom: 180px;">Don't forget about defense</h1>
+                 <p>LBecoming one of the best defenders on your team is a smart way for any player to stand out and increase their court time.
+
+How many players really want to improve defensively?
+ <br />
+Not many.
+ <br />
+The best way to improve your one-on-one defense is to compete against a live opponent. Preferably someone better than you.
+
+Here's what to focus on:
+ <br />
+​Staying down in defensive stance.  <br />
+​One arm's length away from your opponent.  <br />
+​Contain them. Don't allow them to get past.  <br />
+​Force them into a difficult shot.  <br />
+Very few players are committed enough to focus on defense - be different.</p>
+            </div>
+        </div>
+			 <div class="slide">
+            <div class="content">
+               <h1 style="postition: relative; bottom: 210px;">Become a beast in the low post</h1>
+                 <p>Being able to catch the basketball in the low post and the score with a variety of moves is a lost art in today's game.
+
+<br />
+
+It just doesn't happen much anymore.
+
+Usually kids are too busy shooting off-balance three-pointers.
+
+Just as players aren't practicing scoring in the low post, then players aren't learning how to defend the low post either...
+<br />
+This gives players who are willing to commit time to developing their post moves a big advantage over the competition.
+
+Here are the post moves I recommend working on:
+
+​Jump hook <br />
+​Up and under <br />
+​Drop step <br />
+​Face up shot <br />
+To be clear, all players (1 - 5) should be working on these low post moves. Not just the tall players who usually hang around the rim.
+<br />
+You never know who's going to have a mismatch against a smaller or weaker opponent. All players must be prepared to take advantage in the low post.</p>
+            </div>
+        </div>
+		
+			 <div class="slide">
+            <div class="content">
+            <h1 style="postition: relative; bottom: 180px;">Improve your level of fitness</h1>
+                 <p>Another fantastic way to improve your basketball training is to incorporate conditioning (sprints, bodyweight exercises) into every workout.
+<br />
+This is important for several reasons, but the one we'll talk about now is the importance of improving your fitness.
+<br />
+Improving your level of fitness will dramatically improve every single area of your game.
+<br />
+You'll be less fatigued while shooting, you'll be able to sprint back harder on defense, free-throws will be easier, much better defense, etc.
+<br />
+It's difficult to be a great player when you're fatigued...
+<br />
+When players are tired, they make mistakes.
+<br />
+And a player who makes mistakes and poor decisions isn't the kind of player that coaches want on the court at the end of games.
+<br />
+Add conditioning to the workuots.</p>
+            </div>
+        </div>
+		
+			 <div class="slide">
+            <div class="content">
+                <h1 style="postition: relative; bottom: 220px;">Become Ambidexterous</h1>
+                 <p>Apart from shooting, the best players are able to perform all basketball skills equally well with both hands.
+
+​They can pass with left and right. <br />
+​They can block with left and right. <br />
+​They can dribble with left and right. <br />
+​They can finish with left and right. <br />
+I've watched many young players dominate the game with their preferred hand at a young age. Many are so dominant that they don't even bother working on their opposite hand.
+
+And here's what happens:
+
+When they get to the next level, defenses get smarter.
+
+You'll often hear a coach yell out to 'force him left' which can effectively shut down the player because they don't have the left hand dribbling skills to attack that direction.
+
+It's important to work on both hands so that players are able to take advantage of anything that the defense gives them.
+<img src="images/basketcoachingtips/basketballcoachingtips31.jpg" width="500px" height`="80px"></img>
+</p>
+            </div>
+        </div>
+		
+		
+			 <div class="slide">
+            <div class="content">
+              <h1 style="postition: relative; bottom: 180px;">Improve your ability of ballhandling</h1>
+                 <p>While dribbling is without a doubt the most overused skill in basketball, it is still important to spend time on developing.
+
+This is true for players at all five positions -- not just the guards.
+
+The last few years have shown us that having a tall player who can rebound at a high rate and then immediately push the basketball down the floor is invaluable to a team; so encourage everyone to improve!
+ 
+There are several ways to improve your ball-handling:
+
+1. Compete against live defenders:
+<br />
+ Whether it's 5-on-5 or 1-on-1, playing against live defenders is the best way to improve your ball-handling. 
+The benefit of live competition is that it forces you to learn how to be creative and effective in game-like situations. 
+
+
+2. Full-Court Dribbling:
+<br />
+ If you have a full court available to practice (or a driveway), you can use the entire floor to work on different dribbling moves:
+​ Crossovers,
+hesitation dribble, behind-the-back, & through-the-legs</p>
+            </div>
+        </div>
+		
+		
+			 <div class="slide">
+            <div class="content">
+          <h1 style="postition: relative; bottom: 210px;">Play more 1-on-1</h1>
+                 <p>Competing one-on-one is by far one of the best ways to improve your basketball ability.
+<br />
+This is especially true if you're competing against players who are currently better than you.
+<br />
+Offensively, players learn how to create shot opportunities for themselves and score using a variety of moves.
+<br />
+Defensively, players must learn how to play solid on-ball defense as there is no help defense to back them up if the offensive player gets past them.
+
+
+You can vary the games more to start from different positions on the floor ex. 
+<br />
+
+​On the wing <br />
+
+​In the corner <br />
+
+​In the low post <br />
+
+​From the elbow <br />
+
+​Off a closeout
+</p>
+            </div>
+        </div>
+		
+		
+			 <div class="slide">
+            <div class="content">
+        <h1 style="postition: relative; bottom: 210px;">Consistency is key to long-term improvement</h1>
+                 <p>If you really want to become a great basketball player, you have to commit to working on your game long-term.
+<br />
+It always amazes me how many kids I see start a basketball training routine full of excitement and looking towards achieving big goals... 
+<br />
+...but then they quit after 1 or 2 weeks because they haven't seen any significant results yet.
+<br />
+You will not see overnight improvements.
+<br />
+In fact, your rate of improvement will be so small that you probably won't even realise it at first.
+<br />
+But this doesn't mean improvement isn't happening...
+<br />
+After a few months of training, you'll be able to look back on your basketball training log and you'll realise just how far you've come and how much better you are now than before.
+<br />
+Small improvements add up remarkably quickly.</p>
+            </div>
+        </div>
+		
+		
+    </div>
+        <div class="buttons">
+            <button id="prev"><i class="fas fa-arrow-left"></i></button>
+            <button id="next"><i class="fas fa-arrow-right"></i></button>
+        </div>
+				<br />	<iframe width="720" height="450" src="https://www.youtube.com/embed/xXApfyHFAG8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br /> <iframe width="720" height="450" src="https://www.youtube.com/embed/Qt63IN30DPs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br /><iframe width="720" height="450" src="https://www.youtube.com/embed/mbLzAYaITns" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+<br /><iframe width="720" height="450" src="https://www.youtube.com/embed/xxxqaS-An0Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+	</div>
+
 
     </div>
 
@@ -1745,6 +2312,7 @@ $('.captionText').animate({
 
 
 
+  <script  src="./script1.js"></script>
 
 
 <br />
