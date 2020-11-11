@@ -4,7 +4,9 @@
 
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=0.7, user-scalable=yes" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700'>
 
 
 
@@ -143,13 +145,23 @@ left: 3px;
 .rightsidediv
 {
 position: relative;
-height: 540px;
+height: 1440px;
 width: 460px;
 background:rgba(37, 116, 169, 0.30);
 top: 1575px;
 left: 886px;
 }
 
+.rightsidediv2 {
+
+position: relative;
+height: 540px;
+width: 460px;
+background:rgba(0, 0, 0, 0.30);
+bottom: 975px;
+left: 886px;
+
+}
 
 
 .facebookpagerightsidediv
@@ -412,6 +424,199 @@ transform:scale(0.955);
 
 }
 
+
+<style>
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+
+.music-player {
+  position: relative;
+  width: 350px;
+  height: 290px;
+  margin: 150px auto;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background: #222;
+  overflow: hidden;
+  z-index: 0;
+}
+.music-player img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  z-index: -1;
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+}
+.music-player .info {
+  width: 100%;
+  height: 100px;
+  background: #222;
+  background: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+}
+.music-player .info .jp-playlist li {
+  display: none;
+}
+.music-player .info .jp-playlist li a {
+  font-size: 30px;
+  font-weight: 300;
+  text-decoration: none;
+  color: #fff;
+  color: rgba(225, 225, 225, 0.1);
+}
+.music-player .info .jp-playlist li a span {
+  font-size: 14px;
+  display: block;
+  margin-top: 10px;
+}
+.music-player .info .jp-playlist li.jp-playlist-current {
+  display: block;
+}
+.music-player .info .jp-playlist li .jp-free-media, .music-player .info .jp-playlist li .jp-playlist-item-remove {
+  display: none;
+}
+.music-player .info .left, .music-player .info .right {
+  width: 25px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.music-player .info .right {
+  left: auto;
+  right: 30px;
+}
+.music-player .info [class^="icon-"] {
+  margin: 0 0 10px;
+}
+.music-player .info .center {
+  padding: 20px 0 0;
+}
+.music-player .progress, .music-player .volume-level {
+  width: 100%;
+  height: 5px;
+  display: block;
+  background: #000;
+  position: absolute;
+  bottom: 0px;
+  cursor: pointer;
+  border: none;
+}
+.music-player .progress .ui-slider-range, .music-player .volume-level .ui-slider-range {
+  display: block;
+  background: #ed553b;
+  height: 5px;
+  border-radius: 0;
+}
+.music-player .progress .ui-slider-handle, .music-player .volume-level .ui-slider-handle {
+  position: absolute;
+  top: -8px;
+  width: 8px;
+  height: 22px;
+  background: url("//i.imgur.com/tsqwz1N.png") no-repeat center;
+  border: none;
+  outline: none;
+  margin: 0 0 0 -3px;
+  cursor: move;
+}
+.music-player .controls {
+  text-align: center;
+  width: 100%;
+  height: 190px;
+  background: #982e4b;
+  background: rgba(0, 0, 0, 0.3);
+}
+.music-player .controls .current {
+  font-size: 48px;
+  color: #fff;
+  color: rgba(0, 0, 0, 0.2);
+  padding: 15px 0 20px;
+}
+.music-player .controls .play-controls a {
+  display: inline-block;
+  width: 35px;
+  height: 40px;
+  margin: 0 30px;
+}
+.music-player .controls .volume-level {
+  position: relative;
+  bottom: auto;
+  width: 200px;
+  height: 2px;
+  margin: 30px auto 0;
+  background: rgba(225, 225, 225, 0.2);
+}
+.music-player .controls .volume-level .ui-slider-range {
+  height: 2px;
+}
+.music-player .controls .volume-level .ui-slider-handle {
+  top: -8px;
+  margin-left: -9px;
+  width: 22px;
+  height: 22px;
+  background-image: url("//i.imgur.com/V5i67V2.png");
+}
+.music-player .controls .volume-level .icon-volume-up, .music-player .controls .volume-level .icon-volume-down {
+  position: absolute;
+  right: -34px;
+  top: -8px;
+  width: 22px;
+}
+.music-player .controls .volume-level .icon-volume-down {
+  right: auto;
+  left: -27px;
+}
+
+[class^="icon-"] {
+  width: 18px;
+  height: 18px;
+  background: url("//i.imgur.com/E09T8tf.png") no-repeat center;
+  display: block;
+}
+
+.icon-shuffle {
+  background-image: url("https://i.imgur.com/AQAxRxS.png");
+}
+.icon-heart {
+  background-image: url("https://i.imgur.com/E09T8tf.png");
+}
+.icon-repeat {
+  background-image: url("https://i.imgur.com/338F8MX.png");
+}
+.icon-share {
+  background-image: url("https://i.imgur.com/PGIC6ME.png");
+}
+.icon-previous {
+  background-image: url("https://i.imgur.com/LIqj0nr.png");
+}
+.icon-play {
+  background-image: url("./playbtn.png");
+}
+.icon-pause {
+  background-image: url("https://i.imgur.com/lIhwduj.png");
+}
+.icon-next {
+  background-image: url("https://i.imgur.com/Mb6Nzj5.png");
+}
+.icon-volume-up {
+  background-image: url("https://i.imgur.com/qqdoddi.png");
+}
+.icon-volume-down {
+  background-image: url("https://i.imgur.com/3iirf2f.png");
+}
+
+
+
 </style>
 
 <body>
@@ -434,8 +639,196 @@ transform:scale(0.955);
 <div class="videotransparency"> <iframe width="450" height="410" src="https://www.youtube.com/embed/?listType=playlist&list=PLry_siVAOzpNE8ya_lEhs5xaxP3lBSRXj" gesture="media" allow="autoplay; encrypted-media" frameborder="0" allowfullscreen></iframe>
 </div>
 
+<p>Chill Basketball beats music</p>
+
+<div class="videotransparency"> <iframe width="450" height="410" src="https://www.youtube.com/embed/?listType=playlist&list=PLNLUkXhgh5l_6ShAVV4yJIEtNKKIWO9UH" gesture="media" allow="autoplay; encrypted-media" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<div class="videotransparency"> <iframe width="450" height="410" src="https://www.youtube.com/embed/?listType=playlist&list=RDQMxqARUCymeds" gesture="media" allow="autoplay; encrypted-media" frameborder="0" allowfullscreen></iframe>
+</div>
 
 </div>
+
+
+<div class="rightsidediv2">
+<p>Basketball hip hop beats music mixtape</p>
+<div class="music-player">
+  <!--<div style="background-image: url(https://i.imgur.com/yqB0erk.jpg);" class="album"></div>-->
+  
+  <div class="info">
+    
+    <div class="left">
+      <a href="javascript:;" class="icon-shuffle"></a>
+      <a href="javascript:;" class="icon-heart"></a>
+    </div>
+    
+    <div class="center">
+      <div class="jp-playlist">
+        <ul>
+          <li></li>
+        </ul>
+      </div> 
+    </div>
+    
+    <div class="right">
+      <a href="javascript:;" class="icon-repeat"></a>
+      <a href="javascript:;" class="icon-share"></a>
+    </div>
+    
+    <div class="progress"></div>
+    
+  </div>
+      
+  <div class="controls">
+    <div class="current jp-current-time">00:00</div>
+    <div class="play-controls">
+      <a href="javascript:;" class="icon-previous jp-previous" title="previous"></a>
+      <a href="javascript:;" class="icon-play jp-play" title="play"></a>
+      <a href="javascript:;" class="icon-pause jp-pause" title="pause"></a>
+      <a href="javascript:;" class="icon-next jp-next" title="next"></a>
+    </div>
+    <div class="volume-level">
+      <a href="javascript:;" class="icon-volume-up" title="max volume"></a>
+      <a href="javascript:;" class="icon-volume-down" title="mute"></a>
+    </div>
+  </div>
+  
+  <div id="jquery_jplayer" class="jp-jplayer"></div>
+  
+</div>
+
+</div>
+
+
+ <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jplayer/2.6.4/jquery.jplayer/jquery.jplayer.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jplayer/2.6.4/add-on/jplayer.playlist.min.js'></script>
+
+
+<script type="text/javascript">
+
+
+$(document).ready(function(){
+
+
+  var playlist = [{
+      title:"Hip Hop beat 1",
+      artist:"Hip Hop beat 1",
+      mp3:"https://www.dropbox.com/s/fm70f0iakq9vk29/basketballbeat1.mp3?dl=1",
+    
+      poster: "https://cutewallpaper.org/21/lebron-james-dunking-wallpapers/39-LeBron-Dunk-Wallpaper-on-WallpaperSafari.jpg"
+    },{
+      title:"Hip Hop beats 2 mixtape",
+      artist:"Hip Hop beats 2 mixtape",
+      mp3:"https://www.dropbox.com/s/081kj06wr79xia6/basketballbeats9mixtape.mp3?dl=1",
+ 
+      poster: "https://sportshub.cbsistatic.com/i/r/2020/03/13/72c3988a-1c48-45bb-a118-268c14877b46/thumbnail/1200x675/80364df95c08a36c8c0ec94869507f71/march-madness-logo.jpg"
+    },{
+      title:"Hip Hop beat 3",
+	  rtist:"Hip Hop beat 3",
+
+      mp3: "https://www.dropbox.com/s/nnaecdsox3n6x8k/basketballbeat3.mp3?dl=1",
+   
+      poster: "https://i.pinimg.com/originals/09/6c/b1/096cb1f6e1a029dfb20596a9f55e1b67.jpg"
+	  },{
+      title:"Hip Hop beat 4",
+	  rtist:"Hip Hop beat 4",
+
+      mp3: "https://www.dropbox.com/s/na7x6uhddx8j5h8/basketballbeat4.mp3?dl=1",
+   
+      poster: "https://www.logolynx.com/images/logolynx/b7/b725b58f8efde8f0650de06e3f3e6fcb.jpeg"
+	  },{
+      title:"Hip Hop beat 5",
+	  rtist:"Hip Hop beat 5",
+
+      mp3: "https://www.dropbox.com/s/n60s2qvtoyjxaik/basketballbeat2.mp3?dl=1",
+   
+      poster: "https://images-na.ssl-images-amazon.com/images/I/8187hZohcmL.jpg"
+	   },{
+      title:"Hip Hop beat 6",
+	  rtist:"Hip Hop beat 6",
+
+      mp3: "https://www.dropbox.com/s/s3wnnwcnwbl0997/basketballbeat6.mp3?dl=1",
+   
+      poster: "https://wallpapercave.com/wp/yTJHsZ3.jpg"
+	   },{
+      title:"Hip Hop beat 7",
+	  rtist:"Hip Hop beat 7",
+
+      mp3: "https://www.dropbox.com/s/q1j1bm3l4c59ukz/basketballbeat7.mp3?dl=1",
+   
+      poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTc0SZElNcmrjJqdgSWUv3sSTPPvEB0Gg9sYA&usqp=CAU"
+	   },{
+      title:"Hip Hop beat 8 - mixtape",
+	  rtist:"Hip Hop beat 8 - mixtape",
+
+      mp3: "https://www.dropbox.com/s/uthl7x5lsiwhvi7/basketballbeats8mixtape.mp3?dl=1",
+   
+      poster: "https://www.nekoosasd.net/cms_files/slideshow94_3.jpg"
+  }];
+  
+  var cssSelector = {
+    jPlayer: "#jquery_jplayer",
+    cssSelectorAncestor: ".music-player"
+  };
+  
+  var options = {
+    swfPath: "https://cdnjs.cloudflare.com/ajax/libs/jplayer/2.6.4/jquery.jplayer/Jplayer.swf",
+    supplied: "ogv, m4v, oga, mp3",
+    volumechange: function(event) {
+      $( ".volume-level" ).slider("value", event.jPlayer.options.volume);
+    },
+    timeupdate: function(event) {
+      $( ".progress" ).slider("value", event.jPlayer.status.currentPercentAbsolute);
+    }
+  };
+  
+  var myPlaylist = new jPlayerPlaylist(cssSelector, playlist, options);
+  var PlayerData = $(cssSelector.jPlayer).data("jPlayer");
+  
+  
+  // Create the volume slider control
+  $( ".volume-level" ).slider({
+     animate: "fast",
+        max: 1,
+        range: "min",
+        step: 0.01,
+        value : $.jPlayer.prototype.options.volume,
+        slide: function(event, ui) {
+            $(cssSelector.jPlayer).jPlayer("option", "muted", false);
+            $(cssSelector.jPlayer).jPlayer("option", "volume", ui.value);
+        }
+  });
+  
+  // Create the progress slider control
+  $( ".progress" ).slider({
+        animate: "fast",
+        max: 100,
+        range: "min",
+        step: 0.1,
+        value : 0,
+        slide: function(event, ui) {
+            var sp = PlayerData.status.seekPercent;
+            if(sp > 0) {
+                // Move the play-head to the value and factor in the seek percent.
+                $(cssSelector.jPlayer).jPlayer("playHead", ui.value * (100 / sp));
+            } else {
+                // Create a timeout to reset this slider to zero.
+                setTimeout(function() {
+                     $( ".progress" ).slider("value", 0);
+                }, 0);
+            }
+        }
+    });
+
+  
+});
+
+</script>
+
+
+
 
 <div class="facebookpagerightsidediv">
 
