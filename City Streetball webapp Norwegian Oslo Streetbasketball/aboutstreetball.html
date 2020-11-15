@@ -1295,6 +1295,379 @@ button#prev {
 
 </style>
 
+<style>
+.image3 {
+ -webkit-transition: all 1.1s ease;
+ transition: all 1.1s ease;
+} 
+.image3:hover {
+-webkit-transform:scale(1.36);
+transform:scale(1.36);
+}
+
+
+
+
+span.reference{
+				position:fixed;
+				left:80px;
+				bottom:500px;
+				font-size:12px;
+			}
+			span.reference a{
+				color:#aaa;
+				text-transform:uppercase;
+				text-decoration:none;
+				text-shadow:1px 1px 1px #000;
+				margin-right:30px;
+			}
+			span.reference a:hover{
+				color:#ddd;
+			}
+			ul.sdt_menu{
+				margin-top:150px;
+				
+			}
+			
+			
+			ul.sdt_menu{
+			position: relative;
+			left: 100px;
+	margin:0;
+	padding-top:100px;
+	list-style: none;
+	font-family:"Myriad Pro", "Trebuchet MS", sans-serif;
+	font-size:12px;
+       height:900px;
+	width:1520px;
+}
+ul.sdt_menu a{
+	text-decoration:none;
+	outline:none;
+}
+ul.sdt_menu li{
+	float:left;
+	width:210px;
+	height:295px;
+	position:relative;
+	bottom: 100px;
+	cursor:pointer;
+}
+ul.sdt_menu li > a{
+	position:absolute;
+
+	top:90px;
+	left:0px;
+	width:170px;
+	height:250px;
+	z-index:12;
+	
+	background:transparent url(../images/overlay.png) no-repeat bottom right;
+	-moz-box-shadow:0px 0px 2px #000 inset;
+	-webkit-box-shadow:0px 0px 2px #000 inset;
+	box-shadow:0px 0px 2px #000 inset;
+}
+ul.sdt_menu li a img{
+	border:none;
+	position:absolute;
+	width:0px;
+	height:500px;
+	bottom:120px;
+	left:85px;
+		opacity: 0.94;
+			 -webkit-filter: saturate(1.6);
+             filter: saturate(1.6);
+	z-index:500;
+
+	   transform:scale(1.3);
+    -ms-transform:scale(1.3); /* IE 9 */
+    -moz-transform:scale(1.3); /* Firefox */
+    -webkit-transform:scale(1.3); /* Safari and Chrome */
+    -o-transform:scale(1.3); /* Opera */
+	-moz-box-shadow:0px 0px 4px #000;
+	-webkit-box-shadow:0px 0px 4px #000;
+	box-shadow:0px 0px 4px #000;
+}
+ul.sdt_menu li span.sdt_wrap{
+	position:absolute;
+	bottom:20px;
+	left:0px;
+	width:170px;
+	height:200px;
+	z-index:15;
+}
+ul.sdt_menu li span.sdt_active{
+	position:absolute;
+	background:#9999ff;
+	top:95px;
+	width:170px;
+	height:0px;
+	left:0px;
+	z-index:14;
+	-moz-box-shadow:0px 0px 4px #000 inset;
+	-webkit-box-shadow:0px 0px 4px #000 inset;
+	box-shadow:0px 0px 4px #000 inset;
+}
+
+
+
+ul.sdt_menu li span span.sdt_link,
+ul.sdt_menu li span span.sdt_descr,
+ul.sdt_menu li div.sdt_box a{
+	position: relative;
+	top: 45px;
+	margin-left:15px;
+	text-transform:uppercase;
+	text-shadow:1px 1px 1px #000;
+	    opacity: 0.99;
+		height: 65px;
+
+}
+ul.sdt_menu li span span.sdt_link{
+	color:#fff;
+	font-size:14.5px;
+	float:left;
+	clear:both;
+	height: 60px;
+
+}
+ul.sdt_menu li span span.sdt_descr{
+	color:#0B75AF;
+	float:left;
+	clear:both;
+	width:155px; /*For dumbass IE7*/
+	height: 100px;
+	font-size:13px;
+	letter-spacing:1px;
+	position:relative;
+	top: 89px;
+
+}
+ul.sdt_menu li div.sdt_box{
+	display:block;
+	position:absolute;
+	width:170px;
+	overflow:hidden;
+	height:490px;
+	top:85px;
+	left:0px;
+	display:none;
+	background:#C8FBCA;
+}
+ul.sdt_menu li div.sdt_box a{
+	float:left;
+	clear:both;
+	line-height:10px;
+	color:#C8FBCA;
+	height: 200px;
+
+}
+ul.sdt_menu li div.sdt_box a:first-child{
+	margin-top:15px;
+}
+ul.sdt_menu li div.sdt_box a:hover{
+		background:#C8FBCA;
+
+
+}
+
+.gradient-multiline {
+  position: relative;
+  width: 600px;
+  margin: 40px auto;
+ background: linear-gradient(60deg, #3629a2, #00ceff);
+  text-align: center;
+  line-height: 1.5em;
+  overflow:hidden;
+}
+  
+.gradient-multiline span {
+  color: #fff;
+ background: linear-gradient(60deg, #3629a2, #00ceff);
+
+  padding: 0.325rem 0.6rem;
+
+  /* Needs prefixing */
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+  
+  .gradient-multiline::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    background: linear-gradient(60deg, #3629a2, #00ceff);
+
+    mix-blend-mode: lighten;
+  }
+
+
+
+
+
+
+
+#img-zoomer-box {
+left: 220px;
+
+  width: 400px;
+  height: auto;
+  position: absolute;
+}
+
+#img1 {
+position: absolute;
+  width: auto;
+  height: auto;
+  -webkit-filter: saturate(1.2);
+  filter: saturate(1.2);
+  opacity: 0.94;
+
+}
+
+#img-zoomer-box:hover, #img-zoomer-box:active {
+  cursor: zoom-in;
+  display: block;
+}
+
+#img-zoomer-box:hover #img2, #img-zoomer-box:active #img2 {
+  cursor: zoom-in;
+  display: block;
+}
+
+#img2 {
+bottom: 300px;
+  width: 500px;
+  height: 500px;
+  background-image: url('https://1.bp.blogspot.com/-sXBzW3oB-kg/XcnMTQNB-wI/AAAAAAAADMU/jEqQalqKBRMZoE4JNieWh5Gigd69yXqRACLcBGAsYHQ/s640/3.jpg');
+  box-shadow: 0 5px 10px -2px rgba(0,0,0,1.2);
+  pointer-events: none;
+  position: static;
+  border: 0px solid whitesmoke;
+  z-index: 99;
+  border-radius: 100%;
+  transition: opacity .4s;
+  -webkit-filter: saturate(1.6);
+  filter: saturate(1.6);
+    transform: scale(1.4);
+    background-size: cover;
+
+
+}
+
+#img2 p {
+top: 70px;
+left: 20px;
+
+  color: white;
+background: rgba(0, 0, 0, 0.35);
+  width: 100%;
+  padding: 10px;
+    font-size: 14px;
+  text-transform: normal;
+  font-family: Calibri;
+  position: absolute;
+  display: inline-block;
+  line-height: normal; 
+  transform: scale(0.85);
+}
+	
+
+
+#img2-zoomer-box {
+left: 120px;
+  width: 600px;
+  height: auto;
+  position: absolute;
+}
+
+#img3 {
+position: absolute;
+  width: auto;
+  height: auto;
+  -webkit-filter: saturate(1.2);
+  filter: saturate(1.2);
+  opacity: 0.9;
+
+}
+
+
+#img4 {
+bottom: 300px;
+  width: 700px;
+  height: 740px;
+  background-image: url('https://1.bp.blogspot.com/-cRAAg0DM19E/XcnMTUQQWUI/AAAAAAAADMQ/L08wKO71nuEPQRDGbQCpP7GJRKExx-0NgCLcBGAsYHQ/s640/2.jpg');
+  box-shadow: 0 5px 10px -2px rgba(0,0,0,1.2);
+  pointer-events: none;
+  position: static;
+  border: 0px solid whitesmoke;
+  z-index: 99;
+  border-radius: 100%;
+  transition: opacity .4s;
+  -webkit-filter: saturate(1.6);
+  filter: saturate(1.6);
+    transform: scale(1.2);
+    background-size: cover;
+
+
+
+}
+
+#img4 p {
+top: 70px;
+left: 20px;
+  color: white;
+background: rgba(0, 0, 0, 0.35);
+ width: 100%;
+    font-size: 15px;
+  text-transform: normal;
+  font-family: Verdana;
+  position: absolute;
+  display: inline-block;
+  line-height: normal; 
+  transform: scale(0.83);
+}
+
+
+div.transparent {  
+background-color: rgba(34, 167, 240, 0.43); 
+  }
+
+div.transparent span {
+
+color: white;
+font-family: Verdana; 
+font-style: normal;
+font-weight: bold;
+font-size: 19px;
+}
+
+
+.image-container {
+  position: relative;
+  max-width: 100%; /* Maximum width */
+  margin: 0 auto; /* Center it */
+}
+
+.image-container .text-content {
+  position: absolute; /* Position the background text */
+  bottom: 3px; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.35); /* Black background with 0.5 opacity */
+  color: white; 
+  width: 98%; 
+  height: 100%;
+  padding: 20px; /* Some padding */
+  font-size: 24px;
+  font-family: Calibri;
+}
+</style>
+
 
 
 <div class="backbtn">
@@ -1307,18 +1680,76 @@ button#prev {
 <body>
 
 
- <!-- Trigger/Open The Modal -->
-    <button class="myBtn_multi">When? Wich time of the day and week is usally for playing outdoor Pick-Up Basketball together? When do athletes arrive and at what times do people come to play on courts with others?  </button>
-    
-	
 		
-		    <button class="myBtn_multi">Basic rules of the Streetbasket game</button>
+			<ul id="sdt_menu" class="sdt_menu">
+				<li>
+					<a class="myBtn_multi">
+						<img src="images/modalimages/whenplayerscome.jpg" height="400px" width="500px" alt=""/>
+						<span class="sdt_active"></span>
+						<span class="sdt_wrap">
+							<span class="sdt_link">When do athletes arrive in the week and at what times do people come to play on courts with others?</span>
+							<span class="sdt_descr"></span>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a class="myBtn_multi">
+						<img src="images/modalimages/basicrules.jpg" alt=""/>
+						<span class="sdt_active"></span>
+						<span class="sdt_wrap">
+							<span class="sdt_link">Basic rules of the Streetbasket game</span>
+							<span class="sdt_descr"></span>
+						</span>
+					</a>
+				</li>
+					<li>
+					<a class="myBtn_multi">
 
+						<img src="images/modalimages/basketballsecrets.jpg" alt=""/>
+						<span class="sdt_active"></span>
+						<span class="sdt_wrap">
+							<span class="sdt_link">Basketball Training Talk Tips, and Secrets of Improving</span>
+							<span class="sdt_descr"></span>
+						</span>
+					</a>
+				</li>
+					<li>
 
-			    <button class="myBtn_multi">Basketball Training Talk Tips, and Secrets of Improving</button>
-
+					<a class="myBtn_multi">
+						<img src="images/modalimages/whatisapicupgamesteetball.jpg" alt=""/>
+						<span class="sdt_active"></span>
+						<span class="sdt_wrap">
+							<span class="sdt_link">Pickup Basketball training and benefits</span>
+							<span class="sdt_descr"></span>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a class="myBtn_multi">
+						<img src="images/modalimages/pickupbasketballbenefits.jpg" alt=""/>
+						<span class="sdt_active"></span>
+						<span class="sdt_wrap">
+							<span class="sdt_link">What is a pickup game in Streetbasketball?</span>
+							<span class="sdt_descr"></span>
+						</span>
+					</a>
+				
+				</li>
+			
 	
-	<button class="myBtn_multi">Pickup Basketball training and benefits</button>
+
+				
+	
+			
+				</ul>
+        <div>
+
+
+            <span class="reference">
+            </span>
+		</div>
+
+
 
 
     <!-- The Modal -->
@@ -1826,7 +2257,7 @@ Fun factor - at the end of the day, kids should have fun playing basketball in t
 
     </div>
 	
-	    <button class="myBtn_multi">What is a pickup game in Streetbasketball?</button>
+	    
   <!-- The Modal -->
     <div class="modal modal_multi">
 
@@ -2316,5 +2747,201 @@ $('.captionText').animate({
 
 
 <br />
+
+
+       <!-- The JavaScript -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script type="text/javascript">
+
+// t: current time, b: begInnIng value, c: change In value, d: duration
+jQuery.easing['jswing'] = jQuery.easing['swing'];
+
+jQuery.extend( jQuery.easing,
+{
+	def: 'easeOutQuad',
+	swing: function (x, t, b, c, d) {
+		//alert(jQuery.easing.default);
+		return jQuery.easing[jQuery.easing.def](x, t, b, c, d);
+	},
+	easeInQuad: function (x, t, b, c, d) {
+		return c*(t/=d)*t + b;
+	},
+	easeOutQuad: function (x, t, b, c, d) {
+		return -c *(t/=d)*(t-2) + b;
+	},
+	easeInOutQuad: function (x, t, b, c, d) {
+		if ((t/=d/2) < 1) return c/2*t*t + b;
+		return -c/2 * ((--t)*(t-2) - 1) + b;
+	},
+	easeInCubic: function (x, t, b, c, d) {
+		return c*(t/=d)*t*t + b;
+	},
+	easeOutCubic: function (x, t, b, c, d) {
+		return c*((t=t/d-1)*t*t + 1) + b;
+	},
+	easeInOutCubic: function (x, t, b, c, d) {
+		if ((t/=d/2) < 1) return c/2*t*t*t + b;
+		return c/2*((t-=2)*t*t + 2) + b;
+	},
+	easeInQuart: function (x, t, b, c, d) {
+		return c*(t/=d)*t*t*t + b;
+	},
+	easeOutQuart: function (x, t, b, c, d) {
+		return -c * ((t=t/d-1)*t*t*t - 1) + b;
+	},
+	easeInOutQuart: function (x, t, b, c, d) {
+		if ((t/=d/2) < 1) return c/2*t*t*t*t + b;
+		return -c/2 * ((t-=2)*t*t*t - 2) + b;
+	},
+	easeInQuint: function (x, t, b, c, d) {
+		return c*(t/=d)*t*t*t*t + b;
+	},
+	easeOutQuint: function (x, t, b, c, d) {
+		return c*((t=t/d-1)*t*t*t*t + 1) + b;
+	},
+	easeInOutQuint: function (x, t, b, c, d) {
+		if ((t/=d/2) < 1) return c/2*t*t*t*t*t + b;
+		return c/2*((t-=2)*t*t*t*t + 2) + b;
+	},
+	easeInSine: function (x, t, b, c, d) {
+		return -c * Math.cos(t/d * (Math.PI/2)) + c + b;
+	},
+	easeOutSine: function (x, t, b, c, d) {
+		return c * Math.sin(t/d * (Math.PI/2)) + b;
+	},
+	easeInOutSine: function (x, t, b, c, d) {
+		return -c/2 * (Math.cos(Math.PI*t/d) - 1) + b;
+	},
+	easeInExpo: function (x, t, b, c, d) {
+		return (t==0) ? b : c * Math.pow(2, 10 * (t/d - 1)) + b;
+	},
+	easeOutExpo: function (x, t, b, c, d) {
+		return (t==d) ? b+c : c * (-Math.pow(2, -10 * t/d) + 1) + b;
+	},
+	easeInOutExpo: function (x, t, b, c, d) {
+		if (t==0) return b;
+		if (t==d) return b+c;
+		if ((t/=d/2) < 1) return c/2 * Math.pow(2, 10 * (t - 1)) + b;
+		return c/2 * (-Math.pow(2, -10 * --t) + 2) + b;
+	},
+	easeInCirc: function (x, t, b, c, d) {
+		return -c * (Math.sqrt(1 - (t/=d)*t) - 1) + b;
+	},
+	easeOutCirc: function (x, t, b, c, d) {
+		return c * Math.sqrt(1 - (t=t/d-1)*t) + b;
+	},
+	easeInOutCirc: function (x, t, b, c, d) {
+		if ((t/=d/2) < 1) return -c/2 * (Math.sqrt(1 - t*t) - 1) + b;
+		return c/2 * (Math.sqrt(1 - (t-=2)*t) + 1) + b;
+	},
+	easeInElastic: function (x, t, b, c, d) {
+		var s=1.70158;var p=0;var a=c;
+		if (t==0) return b;  if ((t/=d)==1) return b+c;  if (!p) p=d*.3;
+		if (a < Math.abs(c)) { a=c; var s=p/4; }
+		else var s = p/(2*Math.PI) * Math.asin (c/a);
+		return -(a*Math.pow(2,10*(t-=1)) * Math.sin( (t*d-s)*(2*Math.PI)/p )) + b;
+	},
+	easeOutElastic: function (x, t, b, c, d) {
+		var s=1.70158;var p=0;var a=c;
+		if (t==0) return b;  if ((t/=d)==1) return b+c;  if (!p) p=d*.3;
+		if (a < Math.abs(c)) { a=c; var s=p/4; }
+		else var s = p/(2*Math.PI) * Math.asin (c/a);
+		return a*Math.pow(2,-10*t) * Math.sin( (t*d-s)*(2*Math.PI)/p ) + c + b;
+	},
+	easeInOutElastic: function (x, t, b, c, d) {
+		var s=1.70158;var p=0;var a=c;
+		if (t==0) return b;  if ((t/=d/2)==2) return b+c;  if (!p) p=d*(.3*1.5);
+		if (a < Math.abs(c)) { a=c; var s=p/4; }
+		else var s = p/(2*Math.PI) * Math.asin (c/a);
+		if (t < 1) return -.5*(a*Math.pow(2,10*(t-=1)) * Math.sin( (t*d-s)*(2*Math.PI)/p )) + b;
+		return a*Math.pow(2,-10*(t-=1)) * Math.sin( (t*d-s)*(2*Math.PI)/p )*.5 + c + b;
+	},
+	easeInBack: function (x, t, b, c, d, s) {
+		if (s == undefined) s = 1.70158;
+		return c*(t/=d)*t*((s+1)*t - s) + b;
+	},
+	easeOutBack: function (x, t, b, c, d, s) {
+		if (s == undefined) s = 1.70158;
+		return c*((t=t/d-1)*t*((s+1)*t + s) + 1) + b;
+	},
+	easeInOutBack: function (x, t, b, c, d, s) {
+		if (s == undefined) s = 1.70158; 
+		if ((t/=d/2) < 1) return c/2*(t*t*(((s*=(1.525))+1)*t - s)) + b;
+		return c/2*((t-=2)*t*(((s*=(1.525))+1)*t + s) + 2) + b;
+	},
+	easeInBounce: function (x, t, b, c, d) {
+		return c - jQuery.easing.easeOutBounce (x, d-t, 0, c, d) + b;
+	},
+	easeOutBounce: function (x, t, b, c, d) {
+		if ((t/=d) < (1/2.75)) {
+			return c*(7.5625*t*t) + b;
+		} else if (t < (2/2.75)) {
+			return c*(7.5625*(t-=(1.5/2.75))*t + .75) + b;
+		} else if (t < (2.5/2.75)) {
+			return c*(7.5625*(t-=(2.25/2.75))*t + .9375) + b;
+		} else {
+			return c*(7.5625*(t-=(2.625/2.75))*t + .984375) + b;
+		}
+	},
+	easeInOutBounce: function (x, t, b, c, d) {
+		if (t < d/2) return jQuery.easing.easeInBounce (x, t*2, 0, c, d) * .5 + b;
+		return jQuery.easing.easeOutBounce (x, t*2-d, 0, c, d) * .5 + c*.5 + b;
+	}
+});		
+		
+		
+		
+		</script>
+        <script type="text/javascript">
+            $(function() {
+			
+                $('#sdt_menu > li').bind('mouseenter',function(){
+					var $elem = $(this);
+					$elem.find('img')
+						 .stop(true)
+						 .animate({
+							'width':'289px',
+							'height':'184px',
+							'left':'0px'
+						 },800,'easeOutBack')
+						 .andSelf()
+						 .find('.sdt_wrap')
+					     .stop(true)
+						 .animate({'top':'120px'},1000,'easeOutBack')
+						 .andSelf()
+						 .find('.sdt_active')
+					     .stop(true)
+						 .animate({'height':'220px'},1000,function(){
+						var $sub_menu = $elem.find('.sdt_box');
+						if($sub_menu.length){
+							var left = '270px';
+							if($elem.parent().children().length == $elem.index()+1)
+								left = '-170px';
+							$sub_menu.show().animate({'left':left},2000);
+						}	
+					});
+				}).bind('mouseleave',function(){
+					var $elem = $(this);
+					var $sub_menu = $elem.find('.sdt_box');
+					if($sub_menu.length)
+						$sub_menu.hide().css('left','0px');
+					
+					$elem.find('.sdt_active')
+						 .stop(true)
+						 .animate({'height':'0px'},1000)
+						 .andSelf().find('img')
+						 .stop(true)
+						 .animate({
+							'width':'0px',
+							'height':'0px',
+							'left':'85px'},900)
+						 .andSelf()
+						 .find('.sdt_wrap')
+						 .stop(true)
+						 .animate({'top':'25px'},1200);
+				});
+            });
+        </script>
+
 </body>
 </html>
