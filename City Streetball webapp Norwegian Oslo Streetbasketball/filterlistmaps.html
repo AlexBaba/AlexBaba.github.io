@@ -2,7 +2,7 @@
 
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=0.5, user-scalable=yes" />
+<meta name="viewport" content="width=device-width, initial-scale=0.4, user-scalable=yes" />
 
 <title>Oslo Courts Location Page  </title>
   <link rel='stylesheet' href='https://github.com/stephenhutchings/typicons.font/blob/master/src/font/typicons.css'>
@@ -27,9 +27,9 @@ body {
    -moz-background-size: cover;
   -o-background-size: cover;
   background-size: 100%;
-height: 100&;
+height: 100%;
 width: 100%;  -webkit-transform:scale(0.95);
-transform:scale(0.95);
+transform:scale(0.93);
 opacity: 1.5;
 
 }
@@ -58,7 +58,67 @@ bottom: 100px;
 right: 290px;
 }
 
+
+
+.mapalloslocourts {
+position: relative;
+left: 1px;
+
 }
+
+.googlemapsandriodmobiledeviceapptutorialimage img {
+
+position: relative;
+left: 410px;
+
+bottom: 150px;
+}
+
+
+.vid-container-bakgrunnsynlighet {
+position: relative;
+left: 760px;
+
+
+}
+
+.trainingplacesinosloparksmap {
+
+position: relative
+
+}
+
+
+
+
+}
+
+
+
+
+
+
+@media screen and (min-width:100px) and (max-width:400px), 
+   screen and (min-device-width:140px) and (max-device-width:400px)
+{
+
+.placeselectionimage {
+position: relative;
+top: 0px;
+
+}
+
+
+.onebyonecourtsselector {
+position: relative;
+left: 200px;
+
+
+}
+
+}
+
+
 
     .title {
      width: 120%;
@@ -112,19 +172,19 @@ right: 290px;
  .vid-container-bakgrunnsynlighet
  {
  	  	height: 700px;
-		width: 115%;
+		width: 100%;
 position: relative;
-right: 300px;
- top: 180px;
+right: 650px;
+ top: 162px;
 	  text-align; left;
 
  }
  
  
   .vid-list-container {
-   width: 65%;
-   left: 300px;
-   bottom: 240px;
+  max-width: 500px;
+   left: 50px;
+   bottom: 200px;
       height:690px;
    overflow: hidden;
       float:right;
@@ -135,6 +195,8 @@ right: 300px;
 
     .vid-list-container:hover, .vid-list-container:focus {
        overflow-y: auto;
+	   position: relative;
+	
      }
 	 
 	
@@ -267,7 +329,7 @@ bottom: 30px;
 .placeselectionimage {
 
 position: relative;
-bottom: 279px;
+bottom: 209px;
 left: 130px;
 height: 375px;
 width: 760px;
@@ -283,7 +345,7 @@ box-shadow: 0 5px #666;
 
 
 
-  @media (max-width: 524px) {
+  @media (max-width: 600px) and (min-width: 100px) {
    body {
     margin: 0px;
    }
@@ -293,6 +355,11 @@ box-shadow: 0 5px #666;
    .vid-list-container {
     padding-bottom: 0px;
    }
+
+
+
+
+
 
   }
 
@@ -783,11 +850,11 @@ bottom: 30px;
 }
 
 
-.googlemapsandriodmobiledeviceapptutorialimage {
+.googlemapsandriodmobiledeviceapptutorialimage img {
 
 position: relative;
-top: 0px;
-left: 450px;
+bottom: 80px;
+left: 650px;
 
 }
 </style>
@@ -928,9 +995,10 @@ $(document).ready(function () {
 </div>
 <!-- THE PLAYLIST -->
       <br />
+	  <div class="onebyonecourtsselector">
 <div class="vid-list-container">
 <ol id="vid-list">
-<ul>
+<ul class="ul-vid-list">
 <li>
                 <a href="javascript:void();" onclick="document.getElementById('vid_frame').src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27360.630443052796!2d10.723236393194014!3d59.93296902852685!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5af5ea78156f7e0b!2sGr%C3%BCnerhagen%20Ballplass!5e1!3m2!1sen!2sus!4v1583703014466!5m2!1sen!2sus'>
                   <span class="vid-thumb"><img height="250" src="./images/ballbaner/Kubaparken.jpg" width="380" /></span>
@@ -1092,6 +1160,7 @@ Hasle Løren basketbane
 </ol>
 </div>
 </div>
+</div>
 <br />
 <br />
 <br />
@@ -1099,7 +1168,7 @@ Hasle Løren basketbane
 
 <div class="googlemapsandriodmobiledeviceapptutorialimage">
 
-<img src="images/Googlemapstravelroutes/googlemaps2.jpg" />
+<img src="images/Googlemapstravelroutes/googlemaps2.jpg" width="200px" height="800px" />
 
 </div>
 
