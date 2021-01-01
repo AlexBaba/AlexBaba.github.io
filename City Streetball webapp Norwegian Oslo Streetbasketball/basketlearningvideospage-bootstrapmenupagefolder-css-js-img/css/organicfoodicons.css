@@ -1,0 +1,109 @@
+
+@font-face {
+	font-family: 'organicfoodicons';
+	src:url('../fonts/organicfoodicons/organicfoodicons.eot?56tr8g');
+	src:url('../fonts/organicfoodicons/organicfoodicons.eot?56tr8g#iefix') format('embedded-opentype'),
+		url('../fonts/organicfoodicons/organicfoodicons.woff2?56tr8g') format('woff2'),
+		url('../fonts/organicfoodicons/organicfoodicons.ttf?56tr8g') format('truetype'),
+		url('../fonts/organicfoodicons/organicfoodicons.woff?56tr8g') format('woff'),
+		url('../fonts/organicfoodicons/organicfoodicons.svg?56tr8g#organicfoodicons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.foodicon {
+	font-family: 'organicfoodicons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.foodicon--jam::before {
+	
+}
+.foodicon--radish::before {
+	
+}
+.foodicon--carrot::before {
+
+}
+.foodicon--coconut::before {
+	
+}
+.foodicon--corn::before {
+
+}
+.foodicon--cucumber::before {
+
+}
+.foodicon--eggplant::before {
+
+}
+.foodicon--ekobag::before {
+	
+}
+.foodicon--grain::before {
+	
+}
+.foodicon--grape::before {
+	
+}
+.foodicon--leaf::before {
+	
+}
+.foodicon--lemon::before {
+	
+}
+.foodicon--lettuce::before {
+
+}
+.foodicon--mylk::before {
+}
+.foodicon--mushrooms::before {
+	
+}
+.foodicon--onion::before {
+	
+}
+.foodicon--pear::before {
+	
+}
+.foodicon--pepper::before {
+	
+}
+.foodicon--smoothie::before {
+
+}
+.foodicon--squeezer::before {
+	
+}
+.foodicon--tomato::before {
+	
+}
+.foodicon--watermelon::before {
+	
+}
+.foodicon--apple::before {
+	
+}
+.foodicon--banana::before {
+	
+}
+.foodicon--basket::before {
+	
+}
+.foodicon--blender::before {
+	
+}
+.foodicon--bread::before {
+	
+}
+.foodicon--broccoli::before {
+
+}
