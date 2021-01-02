@@ -47,7 +47,7 @@ body {
 transform:scale(0.96);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	  background: url("../img/pagebackground.jpg");
+	  background-image: url("../img/pagebackground.jpg");
 filter: saturate(1.3);
 }
 
