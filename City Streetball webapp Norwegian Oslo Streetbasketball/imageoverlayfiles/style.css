@@ -1,0 +1,83 @@
+@info-width: 20px;
+@info-height: 30px;
+@overlay-alpha: 0.8;
+
+.divforaltinnhold {
+ display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.cell {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+ width: 90%;
+  height: 520px;
+  margin: 0 10px;
+  box-shadow: 0px 3px 20px grey;
+  transition: transform 0.3s ease;
+}
+.cell:hover {
+  transform: translateY(-10px);
+}
+.cell img {
+   display: block;
+  position: relative;
+  max-width: 490px;
+  height: auto;
+
+}
+.cell img:hover + article {
+  left: 0px;
+}
+.cell article {
+  position: absolute;
+  left: -80%;
+  top: 0;
+  color: white;
+ width: inherit;
+  height: inherit;
+  transition: left 0.4s ease;
+}
+.cell article h2 {
+ 
+
+  font-weight: bold;
+  text-shadow: 0px 2px 6px #555;
+  	 font-family: Tahoma;
+  font-size: 18px;
+color: white;
+
+}
+.cell article hr {
+  width: 420px;
+
+}
+.cell article sub {
+  padding: 1em 0 0 2em;
+  text-shadow: 0px 0px 4px #222;
+  position: relative;
+  left: 0px;
+  font-size: 14px;
+    background-color:rgba(0,0,0,0.055);
+	 font-family: Tahoma;
+height: auto;
+color: white;
+width: 390px;
+
+ 
+}
+.cell article:hover {
+  left: 0px !important;
+   width: 430px;
+  
+}
+.red {
+  background-color: rgba(200, 120, 120, 0.5);
+
+}
+.green { background-color: rgba(90, 200, 120, 0.7); }
+.blue {
+  background-color: rgba(90, 120, 200, 0.8);
+}
