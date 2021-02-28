@@ -87,7 +87,7 @@ a:hover {
 	overflow-y: auto;
 	height: 100vh;
 	width: auto;
-background:rgba(0, 0, 0, 0.1);
+background:rgba(0, 0, 0, 0.14);
 }
 
 .container::-webkit-scrollbar {
