@@ -2526,8 +2526,197 @@ The game is played by real champions who are not doing it for the money and don'
 <br />
 <br />
 
+  <style>
+  
+#myVideo1 {
+position: relative;
+  right: 0;
+  top: 300px;
+  width: 1300px;
+}
+
+/* Add some content at the bottom of the video/page */
+.content1 {
+position: relative;
+  bottom: 670px;
+  left: 100px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+
+  height: 697px; 
+  padding: 20px;
+  max-width: 1190px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn1 {
+  width: 240px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  bottom: 90px;
+    transition: 0.6s;
+  border: none;
+  margin: 20px;
+  font-family: "montserrat",sans-serif;
+  text-transform: uppercase;
+  border-radius: 6px;
+  background-image: linear-gradient(to left,#FFC312,#EE5A24,#FFC312); 
+
+  
+}
+
+#myBtn1:hover {
+ background-position: right;
+}
+  
+  /* Second video div */
+  
+  
+  #myVideo2 {
+position: relative;
+  right: 0;
+  bottom: 0px;
+  width: 1300px;
+}
+
+/* Add some content at the bottom of the video/page */
+.content2 {
+position: relative;
+  bottom: 690px;
+  left: 100px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  height: 669px; 
+  max-width: 1190px;
+  padding: 20px;
+}
+
+ 
+
+
+/* Style the button used to pause/play the video */
+#myBtn2 {
+  width: 240px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  bottom: 50px;
+  background-image: linear-gradient(to left,#C4E538,#009432,#C4E538);
+}
+
+#myBtn2:hover {
+ background-position: right;
+
+}
+  
+  </style>
+<br />
+<br />
+<br />
 <br />
 
+
+
+
+<!-- The video -->
+<video autoplay loop id="myVideo1" onloadstart="this.volume=0.1">
+  <source src="aboutstreetballpage-files/video.mp4" type="video/mp4">
+</video>
+
+<!-- Optional: some overlay text to describe the video -->
+<div class="content1">
+  <h1 style="position: relative; bottom: 40px;">Streetball is a lifestyle. Lessons is earned on the Asphalt.</h1>
+  <p style="font-size: 19px; position: relative; bottom: 95px;"> Steetbasket is the great leveller. No matter what you look like or who you are, if you can show you can play you're going to get respect. Streetball dates back to America in the 50s and became popular because you could play it anywhere, anytime and it was free. It spread worldwide and across America popularised by attracting media coverage. One simple thing that you could do to earn other’s respect on the basketball court is that if you play clean, others will enjoy playing with you. Just learn the rules and play clean. To earn respect on the court, you have to prove to the other players that you deserve that respect. <br /> <br /> If you’re playing with competitive people and throwing up bricks, they’re not going to want you on their team next game. It also works vice versa; if you show them that you’re good enough to keep playing, then they’ll respect you more. Let your play speak for itself. Go hard on every single play. Leave it all out there. Help up the other team when they fall, but don’t be afraid to knock them down. Play clean, fair, and hard. You don’t have to be the best, but your effort, your hustle, that will speak volumes to your coach, your teammates, and your opponents.
+ <br /> <br /> In streetball, most often, technical and high-speed qualities come out on top. The large role is played by technical skill of each certain player. Local tournaments and events are also held some times in summer offseason on city courts or street parks. It is really great because they give players an opportunity to showcase their skills outside the traditional channels of the basket game. In streetball you put everyone on an equal playing field. Streetball is about developing as a sport athlete. This game is the next level of the game evolving, and if you look at the NBA now, while it's definitely not streetball, there are many elements of streetball getting mixed up with the fundamentals of the game.
+  </p>
+  <!-- Use a button to pause/play the video with JavaScript -->
+  <button id="myBtn1" onclick="myFunction()">Pause</button>
+</div>
+
+
+
+<script>
+// Get the video
+var video = document.getElementById("myVideo1");
+
+// Get the button
+var btn = document.getElementById("myBtn1");
+
+// Pause and play the video, and change the button text
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+
+<!-- The video -->
+<video autoplay loop id="myVideo2" onloadstart="this.volume=0.2">
+  <source src="aboutstreetballpage-files/video2.mp4" type="video/mp4">
+</video>
+
+<!-- Optional: some overlay text to describe the video -->
+<div class="content2">
+  <h1 style="position: relative; bottom: 30px;">Streetbasketball Is Life. Street Credit, Respect and that you got game is Earned. Take your skills to the street.</h1>
+  <p style="font-size: 19px; position: relative; bottom: 55px;">Basketball is a game of the streets with street culture in the background including rap music, breakdancing and hip-hop.. It’s one of the rare sports that anyone can play—all you need is a hoop and the ball. Streetball is about flair, about winning at any cost and mind games. Unlike traditional basketball, streetball is self-governed, meaning the players call the fouls. If someone makes a call you have to respect it as a player, but, you know, you get some soft players who start calling weak fouls, and we'll accept it and give them the ball back, but we'll let them know that it's soft. 
+<br /> <br />The opponents you play against will not going to give you anything easy. We come from the defence-first mentality. If you're going to beat us then you're going to have to earn it. Streetball is mostly played with two teams of three on a half court with one basket. That's the real streetball and the most fun to play. Anyone can show up and play. You can roll up from 10am on the day - either as a team or an individual - and enter the park or the street court. <br /> <br /> There's more room for individual creativity (than in regular basketball) and the showmanship comes through because a lot of it is about looking good and putting on a show.
+The 2 types of streetbasket players are: There are those who want to look good, do tricks and have fun, and then there's the hardest ballers who really don't care how they look, they just want to win in serious competition in a competitive way. 
+  
+  </p>
+  <!-- Use a button to pause/play the video with JavaScript -->
+  <button id="myBtn2" onclick="myFunction2()">Pause</button>
+</div>
+
+
+
+<script>
+// Get the video
+var video2 = document.getElementById("myVideo2");
+
+// Get the button
+var btn2 = document.getElementById("myBtn2");
+
+// Pause and play the video, and change the button text
+function myFunction2() {
+  if (video2.paused) {
+    video2.play();
+    btn2.innerHTML = "Pause";
+  } else {
+    video2.pause();
+    btn2.innerHTML = "Play";
+  }
+}
+</script>
+
+
+
+
+
+<br />
+<br />
+<br />
+<br />
 <div class="sidemenubtns">  
  <a href="youtubeplaylists.html"><button id="redirect1">Streetball and Basketball Entertainment Page</button></a> <br /> 
         <a href="aboutstreetball.html"><button id="redirect2">About. The game of Streetbasket and Basketball</button></a> <br />
