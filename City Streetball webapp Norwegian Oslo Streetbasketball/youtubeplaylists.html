@@ -788,6 +788,18 @@ opacity:1;
 
 }
 
+.pagelinkbtn {
+
+height: auto;
+width:auto;
+
+}
+
+.pagelinkbtn:active {
+
+box-shadow: 0 7px #666;
+  transform: translateY(5px);
+}
 
 </style>
 
@@ -812,6 +824,12 @@ opacity:1;
 </br>
 </br>
 <div class="image"><img src="images/Youtubespillelisterplaylist/entertainmentoverskrift.jpg" width="450px" height="460px" align="top"</img> </div>
+
+<br />
+<div class="image"><div class="pagelinkbtn"><a href="#newvideos"><img src="youtube-playlist-images/buttonlinksamepage.jpg" align="top"</img></a></div></div>
+<br />
+
+
 <div class="rightsidediv">
 <br />
 <br />
@@ -1869,6 +1887,315 @@ var clickEvent = false;
 <br/>
 
 <br />
+<br />
+<br />
+<br />
+
+
+<div class="contentdiv">
+
+<script>
+/*JS FOR SCROLLING THE ROW OF THUMBNAILS*/ 
+$(document).ready(function () {
+  $('.vid-item').each(function(index){
+    $(this).on('click', function(){
+      var current_index = index+1;
+      $('.vid-item .thumb').removeClass('active');
+      $('.vid-item:nth-child('+current_index+') .thumb').addClass('active');
+    });
+  });
+});
+</script>
+
+
+<style>
+
+.contentdiv 
+{
+  background: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+  background-repeat: no-repeat;
+   -webkit-background-size: 100% 100%;
+   -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+ 
+
+
+}
+
+    .title {
+     width: 50%;
+     max-width: 500px;
+     margin: 0 auto;
+    }
+
+    .caption {
+     width: 70%;
+     max-width: 500px;
+     margin: 0 auto;
+     padding: 20px 0;
+    }
+
+    .vid-main-wrapper {
+    
+
+
+     background-position: left;
+  background-image: url("youtube-playlist-images/youtubeplaylist-background1.jpg");
+  background-repeat: no-repeat;
+   -webkit-background-size: 100% 100%;
+   -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+ height: 1100px;
+ width: auto;
+  
+    }
+
+
+
+    .vid-container {
+      position: relative;
+      padding-bottom: 52%;
+      padding-top: 30px; 
+      height: 0; 
+        width:70%;
+        float:left;
+  }
+   
+  .vid-container iframe,
+  .vid-container object,
+  .vid-container embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      min-height: 360px;
+  }
+
+
+  /*  VIDEOS PLAYLIST 
+   ############################### */
+  .vid-list-container {
+   width: 30%;
+      height:740px;
+   overflow: hidden;
+      float:right;
+  }
+
+    .vid-list-container:hover, .vid-list-container:focus {
+       overflow-y: auto;
+     }
+	 
+	 .vid-list-container::-webkit-scrollbar {
+    width: 10px;
+	background-color: rgba(0,0,0,0.2);
+
+
+
+}
+
+.vid-list-container::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.07);
+	background-color: rgba(0,0,0,0.6);
+	border-radius: 10px;
+}
+
+.vid-list-container::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+background: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
+}
+
+	 
+
+  ol#vid-list {
+      margin:0px;
+      padding:0;
+      
+  background: #C6FFDD;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+  }
+
+    ol#vid-list li {
+    list-style: none;
+    }
+
+    ol#vid-list li a {
+      text-decoration: none;
+  background: #5433FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      height:185px;
+   width: 302px;
+      display:block;
+      padding:0px;
+margin-left: -20px;
+    }
+
+    ol#vid-list li a:hover {
+      
+ 
+ background: #8470ff;  
+    }
+
+  .vid-thumb {
+      float:left;
+   margin-right: 0px;
+ position:relative;
+  bottom: 7px;
+  }
+
+    .active-vid { 
+      background:lime;
+    }
+
+  #vid-list .desc {
+   color: white;
+   font-size: 18px;
+   font-weight: 0;
+   margin-top:8px;
+   font-family: Raleway, "Open Sans", sans-serif;
+
+  }
+
+
+  @media (max-width: 530px) {
+   body {
+    margin: 0px;
+   }
+   .caption {
+    margin-top: 0px;
+   }
+   .vid-list-container {
+    padding-bottom: 0px;
+   }
+
+  }
+
+</style>
+
+
+
+<br />
+<p id="newvideos"></p>
+<div class="vid-main-wrapper clearfix" style="position: relative; transform: scale(0.954);">
+<!-- THE YOUTUBE PLAYER -->
+      <br />
+<div class="vid-container" style="position: relative; right: 40px; transform: scale(0.84);">
+<iframe allow="accelerometer; autoplay;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="610" id="vid_frame" src="https://www.youtube.com/embed/?listType=playlist&list=UU5zJwsFtEs9WYe3A76p7xIA"></iframe>
+      </div> 
+<!-- THE PLAYLIST -->
+
+
+      <br />
+<div class="vid-list-container" style="position: relative; right: 50px; transform: scale(0.99);">
+<ol id="vid-list" style="position: relative; transform: scale(0.99);">
+<ul>
+<li>
+                <a href="javascript:void();" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/?listType=playlist&list=UU5zJwsFtEs9WYe3A76p7xIA'">
+                  <span class="vid-thumb"><img height="175" src="youtube-playlist-images/theprofessorlive.jpg" width="184" /></span>
+                  <div class="desc">
+Professor Live YouTube Channel (Latest Playlist videos)</div>
+</a>
+              </li>
+<li>
+
+
+</li>
+<li>
+                <a href="javascript:void();" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/playlist?list=UUxEUEkp5y728nY57wg8z3dw'">
+                  <span class="vid-thumb"><img height="175" src="youtube-playlist-images/tristanjass.jpg" width="184" /></span>
+                  <div class="desc">
+Tristan Jass YouTube Channel (Latest Playlist videos)</div>
+</a>
+              </li>
+<li>
+                <a href="javascript:void();" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/playlist?list=UUgP1mu1UXba9r2owhCHo--g'">
+                  <span class="vid-thumb"><img height="175" src="youtube-playlist-images/ilovebasketball.jpg" width="184" /></span>
+                  <div class="desc">I Love Basketball TV (Latest YouTube basket coaching videos)</div>
+</a>
+              </li>
+<li>
+                <a href="javascript:void();" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/playlist?list=PLXvIwEMqt2gCrY6Ynp9zXM-ZtSInL4vQ8'">
+                  <span class="vid-thumb"><img height="175" src="youtube-playlist-images/mikekorzemba.jpg" width="184" /></span>
+                  <div class="desc">
+Mike Korzemba YouTube Basketball Channel (Latest videos)</div>
+</a>
+              </li>
+<li>
+                <a href="javascript:void();" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/playlist?list=UU3L9XPe0_FGfRG-CMGtBvFg'">
+                  <span class="vid-thumb"><img height="175" src="youtube-playlist-images/jxmyhighroller.jpg" width="184" /></span>
+                  <div class="desc">
+Jxmy High Roller YouTube Basketball Channel (latest videos)</div>
+</a>
+              </li>
+<li>
+                <a href="javascript:void();" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/playlist?list=UUQnbF7RWTWa4Tc4C6ACP3rg'">
+                  <span class="vid-thumb"><img height="175" src="youtube-playlist-images/mj2kallday.jpg" width="184" /></span>
+                  <div class="desc">
+MJ 2K ALLDAY YouTube Basketball Channel (latest videos)</div>
+</a>
+              </li>
+<li>
+                <a href="javascript:void();" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/playlist?list=UUD70eD6Ou3tzuntrffOZeSA'">
+                  <span class="vid-thumb"><img height="175" src="youtube-playlist-images/basketballhoops.jpg" width="184" /></span>
+                  <div class="desc">
+Basketball Hoops YouTube Basketball Channel (latest videos)</div>
+</a>
+              </li>
+<li>
+                <a href="javascript:void();" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/playlist?list=UUqjq2Zq6QUwpDR45Ns89YDw'">
+                  <span class="vid-thumb"><img height="175" src="youtube-playlist-images/shotmechanics.jpg" width="184" /></span>
+                  <div class="desc">
+Shot Mechanics YouTube Basketball Channel (latest videos)</div>
+</a>
+              </li>
+<li>
+                <a href="javascript:void();" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/https://www.youtube.com/playlist?list=UU6K-_cvzQldsxdHUvVnX9ug'">
+                  <span class="vid-thumb"><img height="175" src="youtube-playlist-images/byanymeansbasketball.jpg" width="184" /></span>
+                  <div class="desc">
+By Any Means Basketball YouTube Basketball Channel (latest videos)</div>
+</a>
+              </li>
+<li>
+                <a href="javascript:void();" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/playlist?list=UUfggVtD69QiUcDf_44YIeXA'">
+                  <span class="vid-thumb"><img height="175" src="youtube-playlist-images/dunkcity.jpg" width="184" /></span>
+                  <div class="desc">
+Dunk City Basketball YouTube Channel (latest videos)</div>
+</a>
+              </li>
+<li>
+                <a href="javascript:void();" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/playlist?list=UU6yGoFvjKmRAlBfglOxNCGQ'">
+                  <span class="vid-thumb"><img height="175" src="youtube-playlist-images/hooperhighlights.jpg" width="184" /></span>
+                  <div class="desc">
+Hooper Highlights YouTube Channel (latest videos)</div>
+</a>
+              </li>
+<li>
+                <a href="javascript:void();" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/playlist?list=UUoDfZzwJNFJ2lVgF41tUX0A'">
+                  <span class="vid-thumb"><img height="175" src="youtube-playlist-images/goldenhoops.jpg" width="184" /></span>
+                  <div class="desc">
+Golden Hoops YouTube Channel (latest videos)</div>
+</a>
+              </li>
+</ul>
+</ol>
+</div>
+</div>
+
+
+</div>
+
+
+
+
+
+
 <div class="sidemenubtns">  
  <a href="youtubeplaylists.html"><button id="redirect1">Streetball and Basketball Entertainment Page</button></a> <br /> 
         <a href="aboutstreetball.html"><button id="redirect2">About. The game of Streetbasket and Basketball</button></a> <br />
