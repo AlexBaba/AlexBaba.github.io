@@ -2113,12 +2113,12 @@ $(document).ready(function () {
   .vid-list-container {
    width: 30%;
       height:740px;
-   overflow: hidden;
+   overflow: auto;
       float:right;
   }
 
     .vid-list-container:hover, .vid-list-container:focus {
-       overflow-y: auto;
+       overflow: auto;
      }
 	 
 	 .vid-list-container::-webkit-scrollbar {
@@ -2199,6 +2199,27 @@ margin-left: -20px;
   width: 270px;
   position: relative;
   left: 30px;
+  overflow: auto;
+
+  
+  #vid-list .desc::-webkit-scrollbar {
+    width: 10px;
+	background-color: rgba(0,0,0,0.2);
+
+
+
+}
+
+#vid-list .desc::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.07);
+	background-color: rgba(0,0,0,0.6);
+	border-radius: 10px;
+}
+
+#vid-list .desc::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+background: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
+}
 
   }
 
