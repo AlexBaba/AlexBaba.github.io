@@ -947,6 +947,221 @@ left: 650px;
 
 
 
+<style>
+
+
+.dropdownmeny {
+  display: flex;
+  flex-direction: column;
+     position: relative;
+	     bottom: 2px;
+    left: 2px;
+	
+}
+
+ul.navmenu {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  max-width: 30%;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+ul.navmenu > li {
+  position: relative;
+  flex-grow: 1;
+  flex-shrink: 0;
+  height: 60px;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 56px;
+  letter-spacing: 1px;
+  color: #e7e6f1;
+  cursor: pointer;
+   background: rgba(0, 0, 0, 0.08);
+}
+ul.navmenu > li:hover {
+  background: rgba(0, 0, 0, 0.15);
+}
+ul.navmenu > li:hover ul.dropdown {
+  visibility: visible;
+  transform: translate(0, 0);
+  opacity: 1;
+  z-index: 0;
+}
+ul.navmenu > li:hover ul.dropdown > li {
+  -webkit-animation-name: slideInLeft;
+          animation-name: slideInLeft;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+ul.navmenu > li:first-child {
+  border-top-left-radius: 6px;
+}
+ul.navmenu > li:last-child {
+  border-top-right-radius: 6px;
+}
+
+ul.dropdown {
+  visibility: hidden;
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  margin: 0;
+  padding: 5px 0 30px;
+  list-style: none;
+  color: white;
+  background: linear-gradient(to top, #a18cd1, #fbc2eb);
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  box-shadow: 1px 2px 5px -1px rgba(0, 0, 0, 0.15), 0px 4px 14px -1px rgba(0, 0, 0, 0.1);
+  transform: translate(0, -60px);
+  transition: transform 0.2s ease-out, opacity 0.2s, z-index 0s 0.2s;
+  opacity: 0;
+  z-index: -1;
+   text-decoration: none;
+}
+ul.dropdown > a li {
+  font-size: 14px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  
+}
+ul.dropdown > a li:hover {
+  background: rgba(0, 0, 0, 0.06);
+   text-decoration: none;
+}
+
+@-webkit-keyframes slideInLeft {
+  from {
+    transform: translate(-25%, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translate(-25%, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+</style>
+
+
+
+<div class="dropdownmeny">
+<nav class="navbarmenu">
+	<ul class="navmenu"> <img src="images/arrow-down1.gif" height="75px" width="70px" />
+		<li>
+			Home
+			<ul class="dropdown">
+			<a href="indexmenupagemobile.html"><li>Home</li></a>
+				<a href="basketballentertainmentpage.html"><li>Basketball Entertainment page</li></a>
+				<a href="sportsbasketballstreaming.html"> <li>Basketball Sports Streaming</li></a>
+				<a href="basketballlearningvideostutorialspage.html"><li>Basketball Lessons Videos</li></a>
+				<a href="aboutstreetball.html"><li>About streetball page</li></a>
+				<a href="filterlistmaps.html"><li>Norwegian Oslo Streetbasketball Courts Location Page</li></a>
+				<a href="travelroutestutorial.html"><li>Norwegian Oslo Streetbasketball Travel Routes</li></a>
+				
+					<a href="active-in-oslo-norway-cityactivities.html"><li>City Oslo Activity Page</li></a>
+				
+				<a href="topbasketballapplicationsapps.html"><li>Top Basketball Apps page</li></a>
+				
+				<a href="Effectivetrainingpage.html"><li>Effective Training page</li></a>
+				
+			</ul>
+		</li>
+		
+	</ul>
+</nav>
+</div>
+
+
+
+<script>
+
+$( document ).ready(function() {
+	
+	// Loop through each nav item
+	$('nav.navbar').children('ul.nav').children('li').each(function(indexCount){
+		
+		// loop through each dropdown, count children and apply a animation delay based on their index value
+		$(this).children('ul.dropdown').children('li').each(function(index){
+			
+			// Turn the index value into a reasonable animation delay
+			var delay = 0.1 + index*0.03;
+			
+			// Apply the animation delay
+			$(this).css("animation-delay", delay + "s")			
+		});
+	});
+});
+
+</script>
+
+
+<script src='https://codepen.io/CodeBoomer/pen/qaOWJE.js'></script>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
 <div class="backbtn">
 <a href="indexmenupage.html"><img src="images/overskriftsknapperbilder/back.png" style="height: 110px" /></a>
 
