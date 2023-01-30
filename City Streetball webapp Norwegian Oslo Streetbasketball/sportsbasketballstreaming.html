@@ -454,6 +454,8 @@ body {
   border-style: solid;
   border-radius: 30px;
   margin: 30px auto 0;
+    cursor: pointer;
+  
 }
 
 label {
@@ -1433,9 +1435,8 @@ $(document).ready(main);
 
 
 </br>
-<iframe width="800" height="450" src="https://www.youtube.com/embed/sNhVd7ExLyY" title="FREE NBA LIVE STREAM | Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="800" height="450" src="https://www.youtube.com/embed/m9prQcCJ68M" title="How To Watch Any Sports Game LIVE For FREE! (NBA, NFL, MLB, NHL, MLS, and MORE!)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="800" height="450" src="https://www.youtube.com/embed/fH1rryG_t8c" title="NBA Streams | Reddit NBA Streams | How To Watch NBA Games 2021 For Free?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/8HU63lYOJbE" title="FREE NBA LIVE STREAM | Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/c81Qqq2RmTo" title="How To Watch Any Sports Game LIVE For FREE! (NBA, NFL, MLB, NHL, MLS, and MORE!)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe width="800" height="450" src="https://www.youtube.com/embed/9qfN6qpaMJs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
@@ -1898,8 +1899,567 @@ $("input[type='checkbox']").click(function() {
 
 </div>
 
-<br/>
-<br/>
+<br />
+<br />
+<br />
+
+
+
+
+
+
+
+
+<style>
+
+* {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+
+
+.moviesdiv 
+
+{
+  padding: 20px 50px;
+   background-color: #2d3352;
+  font-family: "Quicksand";
+
+} 
+
+
+.dashboard {
+  display: block;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.4);
+}
+.dashboard-title {
+  flex: 1;
+  font-size: 2.5rem;
+  color: white;
+}
+.dashboard-clock {
+  display: flex;
+  align-items: center;
+}
+.dashboard-clock-digital {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+.dashboard-clock-binary {
+  margin-left: 8px;
+  border-collapse: separate;
+}
+.dashboard-clock-binary td {
+  height: 0.4rem;
+  width: 0.4rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+.dashboard-clock-binary .num1 {
+  background-color: #2eb35a;
+}
+
+.server {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  white-space: nowrap;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.server-icon {
+  display: inline-block;
+  font-size: 2.5rem;
+  margin: 0 2rem;
+}
+.server-details {
+  flex: 1;
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.server-details li {
+  display: block;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #7e8794;
+}
+.server-details li:last-child .data {
+  font-weight: normal;
+  color: rgba(230, 245, 255, 0.32);
+}
+.server-details .data {
+  display: block;
+  margin: -1.7rem 0 0 0;
+  padding: 0 1rem 0 0;
+  font-weight: 600;
+  text-align: right;
+  color: #c1c6cb;
+}
+.server-details .signal {
+  color: #2eb35a;
+}
+.server-details .signal::before {
+  content: "";
+  display: inline-block;
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: currentColor;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  margin-top: -0.2rem;
+  vertical-align: middle;
+}
+.server-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  grid-gap: 2rem;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.server.has-failed {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  border-color: #20B2AA;
+  -webkit-animation: alertblink 2s ease-in-out infinite;
+          animation: alertblink 2s ease-in-out infinite;
+}
+.server.has-failed .server-icon,
+.server.has-failed .signal {
+  color: #20B2AA;
+}
+.server.has-failed:hover {
+  background-color: rgba(0,250,154, 0.34);
+  -webkit-animation: none;
+          animation: none;
+}
+
+@-webkit-keyframes alertblink {
+  0% {
+    background: rgba(210, 44, 50, 0);
+  }
+  50% {
+    background: rgba(210, 44, 50, 0.2);
+  }
+  100% {
+    background: rgba(210, 44, 50, 0);
+  }
+}
+
+@keyframes alertblink {
+  0% {
+    background: rgba(210, 44, 50, 0);
+  }
+  50% {
+    background: rgba(210, 44, 50, 0.2);
+  }
+  100% {
+    background: rgba(210, 44, 50, 0);
+  }
+}
+
+
+</style>
+
+<dashboard class="dashboard">
+    <dashboard-header title="Sites Watching Movies & TV Series">
+        <dashboard-clock digital="true" binary="true" />
+    </dashboard-header>
+    <server-list>
+        <server v-for="(server, index) in servers" :class="{ 'has-failed': !server.status }" :type="server.type" @click.native="updateServerStatus(index)">
+            <span slot="name" class="data">{{server.name}}</span>
+            <span slot="status" class="data signal">{{server.status ? 'Available' : 'Recommended Site'}}</span>
+            <span slot="adr" class="data">{{server.adr}}</span>
+        </server>
+    </server-list>
+</dashboard>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vuex/2.0.0/vuex.min.js'></script>
+
+
+<script>
+
+const store = new Vuex.Store({
+  state: {
+    // initial state
+    servers: [
+    { name: 'The Flixer', status: true, adr: 'https://theflixer.tv/home' },
+    { name: 'Soap2Day', status: true, adr: 'https://soap2day.id/home', type: 'database' },
+    { name: 'FMovies', status: true, adr: 'https://ww3.fmovies.co/home/', type: 'database' },
+    { name: 'Putlocker', status: true, adr: 'https://w5.putlocker.to/home' },
+    { name: 'Look Movies', status: true, adr: 'https://lookmovie2.to/' },
+    { name: 'Yes Movies', status: true, adr: 'https://yesmovies.at/home' }] },
+
+
+  mutations: {
+    UPDATE_SERVER_STATUS(state, payload) {
+      state.servers[payload].status ^= true;
+    } },
+
+  actions: {
+    serverStatus({ commit }, server) {
+      commit('UPDATE_SERVER_STATUS', server);
+    } } });
+
+
+
+Vue.component('dashboard-clock', {
+  props: {
+    digital: {
+      default: true,
+      type: Boolean },
+
+    binary: {
+      default: false,
+      type: Boolean } },
+
+
+  data() {
+    return {
+      time: '' };
+
+  },
+  template: `
+    <div class='dashboard-clock'>
+        <div v-if="digital" class="dashboard-clock-digital">{{time}}</div>
+        <table v-if="binary" class="dashboard-clock-binary">
+            <tr class='hours'>
+                <td v-for='n in 6'></td>
+            </tr>
+            <tr class='minutes'>
+                <td v-for='n in 6'></td>
+            </tr>
+            <tr class='seconds'>
+                <td v-for='n in 6'></td>
+            </tr>
+        </table>
+    </div> `,
+  mounted: function () {
+    window.setInterval(this.render, 1000);
+  },
+  methods: {
+    render() {
+      const d = new Date();
+      const h = d.getHours();
+      const m = d.getMinutes();
+      const s = d.getSeconds();
+
+      this.time = `${this.addZero(h)} : ${this.addZero(m)} : ${this.addZero(s)}`;
+
+      this.light(this.convert(s), '.seconds');
+      this.light(this.convert(m), '.minutes');
+      this.light(this.convert(h), '.hours');
+    },
+    convert(num) {
+      let bin = "";
+      let conv = [];
+
+      while (num > 0) {
+        bin = num % 2 + bin;
+        num = Math.floor(num / 2);
+      }
+
+      conv = bin.split('');
+
+      while (conv.length < 6) {
+        conv.unshift("0");
+      }
+
+      return conv;
+    },
+    light(array, type) {
+      $(type + ' td').attr('class', 'num0');
+      for (var i = 0; i < array.length; i++) {
+        $(type + ' td:eq(' + i + ')').attr('class', 'num' + array[i]);
+      }
+    },
+    addZero(i) {
+      if (i < 10) {
+        i = "0" + i;
+      }
+      return i;
+    } } });
+
+
+
+Vue.component('dashboard-header', {
+  props: ['title'],
+  template: `
+    <header class="dashboard-header">
+        <h1 class="dashboard-title">{{title}}</h1>
+        <slot></slot>
+    </header>
+    ` });
+
+
+Vue.component('server-list', {
+  template: '<div class="server-list"><slot></slot></div>' });
+
+
+Vue.component('server', {
+  props: ['type'],
+  template: `
+    <div class="server">
+        <div class="server-icon fa" 
+            :class="'fa-' + (type === 'database' ? 'tasks' : 'globe')">
+        </div>
+        <ul class="server-details">
+            <li>Site Name:<slot name="name"></slot></li>                         
+            <li>Status:<slot name="status"></slot></li>
+            <li>Website Link:<slot name="adr"></slot></li>
+        </ul>
+    </div>` });
+
+
+//Vue.use(Vuex);
+const dashboard = new Vue({
+  el: 'dashboard',
+  data: () => {
+    return {
+      servers: store.state.servers };
+
+  },
+  methods: {
+    updateServerStatus(server) {
+      store.dispatch('serverStatus', server);
+    } },
+
+  mounted() {
+    setInterval(() =>
+    store.dispatch('serverStatus',
+    Math.floor(Math.random() * (this.servers.length - 0) + 0)),
+    5000);
+  } });
+
+
+</script>
+
+
+<br />
+<br />
+
+
+
+
+<style>
+
+.uppercase {
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-size: 18px;
+  color: white;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.container-links {
+  min-height: 100%;
+  margin-left: -150px;
+  padding: 20px 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen {
+  width: 380px;
+  height: 497.7777777778px;
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.3);
+}
+
+.menu-view {
+  background-color: #3E486D;
+  position: relative;
+  transform: scale(0.9);
+  transform-origin: 150% 50%;
+}
+.menu-view .menu-item {
+  height: 76.5811965812px;
+  line-height: 76.5811965812px;
+  color: white;
+  border-left: 2px solid transparent;
+  cursor: pointer;
+}
+.menu-view .menu-item > * {
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+.menu-view .menu-item > *:not(.badge) {
+  opacity: 0.5;
+}
+.menu-view .menu-item .icon {
+  margin: 2px 1.5rem auto 1.5rem;
+}
+.menu-view .menu-item .badge {
+  background-color: #FD7F72;
+  padding: 5px 11px;
+  margin-left: 2rem;
+  border-radius: 999px;
+}
+.menu-view .menu-item:hover {
+  background-color: #373f60;
+}
+.menu-view .menu-item.active {
+  background-color: #313857;
+  border-color: #FD7F72;
+}
+.menu-view .menu-item.active .text {
+  opacity: 1;
+}
+
+.list-view {
+  background-color: white;
+  position: relative;
+  height: auto;
+}
+.list-view header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background: rgba(247, 93, 89, 0.54);
+
+}
+.list-view header .icon {
+  padding: 1.5rem;
+}
+.list-view header h1 {
+  flex-grow: 1;
+  text-align: center;
+}
+.list-view .list-item {
+ 
+  color: white;
+  position: relative;
+}
+.list-view .list-item .regrade {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  line-height: 86px;
+  padding-left: 1.5rem;
+  cursor: pointer;
+   margin: 0 22px;
+}
+.list-view .list-item .card {
+  height: auto;
+  width: 360px;
+   margin: 0 22px;
+  position: relative;
+  background-color: white;
+  color: #555;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: box-shadow 0.5s ease, transform 0.5s ease, transform-origin 0.5s ease, z-index 0.5s ease;
+}
+.list-view .list-item .card .thumbnail {
+  flex: 0 0 62px;
+  margin: 0 32px;
+}
+.list-view .list-item .card .thumbnail img {
+  width: 100%;
+  border-radius: 999px;
+}
+.list-view .list-item .card .details {
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.list-view .list-item .card .details .name {
+  font-size: 15px;
+}
+.list-view .list-item .card .details > *:not(.name) {
+  opacity: 0.6;
+}
+.list-view .list-item .card:hover {
+  background-color: #f2f2f2;
+}
+.list-view .list-item .card.active {
+  z-index: 3;
+  transform: scale(1.2);
+  transform-origin: -180% 50%;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+}
+
+
+
+</style>
+
+
+<div class="container-links">
+  <div class="screen menu-view">
+    <nav>
+      <ul>
+    	<a href="https://theflixer.tv/home" target="_blank"><li class="active menu-item"><span class="icon">o</span><span class="text uppercase">The Flixer</span><span class="badge">5</span> </li> </a>
+        <a href="https://soap2day.id/home" target="_blank">  <li class="menu-item"><span class="icon">o</span><span class="text uppercase">Soap 2 Day</span><span class="badge">5</span>  </li> </a>
+       <a href="https://ww3.fmovies.co/home/" target="_blank">   <li class="menu-item"><span class="icon">o</span><span class="text uppercase">Fmovies</span><span class="badge">5</span>  </li> </a>
+		<a href="https://w5.putlocker.to/home" target="_blank">  <li class="menu-item"><span class="icon">o</span><span class="text uppercase">Putlocker</span><span class="badge">5</span>  </li> </a>
+        <a href="https://lookmovie2.to/" target="_blank">  <li class="menu-item"><span class="icon">o</span><span class="text uppercase">Lookmovie</span><span class="badge">5</span>  </li> </a> 
+		 <a href="https://yesmovies.at/home" target="_blank"> <li class="menu-item"><span class="icon">o</span><span class="text uppercase">Yes movies</span><span class="badge">5</span> </li> </a>
+     
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="screen list-view">
+    <header>
+      <div class="icon menu">o</div>
+      <h1 class="uppercase">Movies Sites (Links)</h1>
+      <div class="icon search"></div>
+    </header>
+   
+  </div>
+</div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  
+  <script>
+  
+  
+  $(document).ready(function() {
+    var $cards = $('.card');
+        $menuItems = $('.menu-item');
+
+    $cards.on('click', function() {
+        $(this).toggleClass('active');
+    });
+
+    $menuItems.on('click', function() {
+        $menuItems.each(function() {
+            $(this).removeClass('active');
+        })
+        $(this).addClass('active');
+    });
+});
+  
+  </script>
+
+
+
+
+
+
 
 <br />
 <br />
@@ -2212,7 +2772,8 @@ $('.captionText').animate({
 
 </script>
 
-<br />
+
+
 
 
 </body>
