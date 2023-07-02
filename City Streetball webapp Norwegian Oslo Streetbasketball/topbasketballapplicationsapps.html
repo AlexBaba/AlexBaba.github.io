@@ -29,6 +29,14 @@ width: 100%;
 
 }
 
+
+#modalbutton:active {
+
+box-shadow: 0 5px #666;
+  transform: translateY(15px);
+
+  }
+
 @media screen and (min-width:140px) and (max-width:580px), 
    screen and (min-device-width:140px) and (max-device-width:580px)
 {
@@ -41,7 +49,15 @@ body {
 opacity: 1.1;
 height: 100%;
 width: 100%;
+
 }
+
+#modal-tabbed.modal {
+
+  width:400%;
+  height:200%;
+
+  }
 
 }
 
@@ -1014,7 +1030,7 @@ background:rgba(0, 0, 0,0.34);
   background:rgba(0,0,0,0.7);
   position:fixed;
   width:100%;
-  height:100%;
+  height:200%;
   top:0px;
   left:0px;
   bottom:0px;
@@ -1023,6 +1039,9 @@ background:rgba(0, 0, 0,0.34);
   z-index:-1;
    font-family: Calibri;
 }
+
+
+
 .modal:target {
   opacity:1;
   transition:all .5s ease-in-out;
@@ -1184,6 +1203,13 @@ background:rgba(0, 0, 0,0.34);
   left:730px;
   width:1230px;
  height: 1000px;
+
+}
+
+.modal {
+
+  width:100%;
+  height:200%;
 
 }
 
@@ -1449,13 +1475,7 @@ $( document ).ready(function() {
 <iframe width="900" height="550" src="https://www.youtube.com/embed/m-mF-YfjBBM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br />
 <iframe width="900" height="500" src="https://www.youtube.com/embed/l-V98AGIzwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br />
-<iframe width="900" height="550" src="https://www.youtube.com/embed/gpKulgED35Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br />
-<iframe width="900" height="550" src="https://www.youtube.com/embed/mBDUoNbFTn0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br />
-<iframe width="900" height="500" src="https://www.youtube.com/embed/KGMTWZaU8tE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br />
+
 
 <br />
 <br />
@@ -1464,7 +1484,7 @@ $( document ).ready(function() {
 
 
 
-<a class="modal-open" href="#modal-tabbed" onclick="document.getElementById('modal-tabbed').style.display='block'"><img src="images/imagesbasketballappspage/modalbuttonimage.jpg"</a>
+<a class="modal-open" id="modalbutton" href="#modal-tabbed" onclick="document.getElementById('modal-tabbed').style.display='block'"><img src="images/imagesbasketballappspage/modalbuttonimage.jpg"</a>
 
 
 
@@ -1605,7 +1625,22 @@ EA Sports has applied a smooth and efficient gameplay for NBA Live Mobile. It do
 
         <br /> <br />
 		
-		<iframe width="670" height="320" src="https://www.youtube.com/embed/5Ao6kjV8oX8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<iframe width="670" height="380" src="https://www.youtube.com/embed/5Ao6kjV8oX8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		
+		<br />
+		<br />
+		
+		<p style="font-size: 23px; color:white; position: relative;  background: transparent; top: 10px;">NBA 2K Basketball Video Games (Series)</p> 
+
+	
+		<br />
+		<iframe width="670" height="320" src="https://www.youtube.com/embed/itRhlCfZ7us" title="Evolution of NBA 2K 1999-2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		<br />
+		<br />
+		
+		<iframe width="670" height="320" src="https://www.youtube.com/embed/?listType=playlist&list=PLry_siVAOzpOEiUU_pbSbZSDnbRG2YlvU" gesture="media" allow="autoplay; encrypted-media" frameborder="0" allowfullscreen></iframe>
+		
+		
 		</p></li>
       </ul>
     </div>
