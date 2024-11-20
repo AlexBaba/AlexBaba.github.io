@@ -43,8 +43,10 @@
 	display: block;
 	color: #333;
 	font-family: "Oswald",Arial,sans-serif;
-	font-size: 17px;
+	font-size: 24px;
 	font-weight: bold;
+	background: rgba(0, 0, 0, 0.44);
+
 }
 
 #amazingaudioplayer-1 .amazingaudioplayer-title-clear {
