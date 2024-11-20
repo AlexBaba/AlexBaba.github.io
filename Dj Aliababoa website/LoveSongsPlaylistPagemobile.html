@@ -6,8 +6,13 @@
 
 <meta http-equiv="Content-Type" name="viewport" content="width=device-width, height=device-height, minimum-scale=0.4, maximum-scale=1.0, initial-scale=0, user-scalable=yes" />
 
-<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css" />
-                                <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    	<script src="audioplaylistengine/jquery.js"></script>
+    <script src="audioplaylistengine/amazingaudioplayer.js"></script>
+    <link rel="stylesheet" type="text/css" href="audioplaylistengine/initaudioplayer-1.css">
+    <script src="audioplaylistengine/initaudioplayer-1.js"></script>
+
+
 <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css" />
   <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'>
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
@@ -16,71 +21,12 @@
        <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'>
                                 <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
 
-	
-	
-	    <script src="audioplaylistengine/jquery.js"></script>
-    <script src="audioplaylistengine/amazingaudioplayer.js"></script>
-    <link rel="stylesheet" type="text/css" href="audioplaylistengine/initaudioplayer-1.css">
-    <script src="audioplaylistengine/initaudioplayer-1.js"></script>
-	
+
 
 <title>Classic and Oldschool Love Songs Playlist Page</title>
 
 
 </head>
-
-<style>
-
-html {
-
-height: 100%;
-width: 100%;
-
-}
-
-body {
-
-  background-image: url('Bakgrunn.jpg');
-     -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-  background-size: 100% 100%;
-height: auto;
-width: auto;
-background-repeat: no-repeat;
-background-attachment: fixed;
-
-
-}
-
-
-@media screen and (min-width:140px) and (max-width:3000px), 
-   screen and (min-device-width:140px) and (max-device-width:3000px)
-{
-body {
-  background-image: url('Bakgrunn.jpg');
-   -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-  background-size: 100% 100%;
-height: auto;
-width: auto;
-background-repeat: no-repeat;
-background-attachment: fixed;
-
-}
-}
-
-
-
-span {
-color: white;
-}
-
-
-</style>
-
-
 
 
 
@@ -90,202 +36,14 @@ color: white;
 
 
 
-<style>
-
-
-.dropdownmeny {
-  display: flex;
-  flex-direction: column;
-     position: relative;
-	     top: 40px;
-    left: 60px;
-	
-}
-
-ul.nav {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: center;
-  width: 400px;
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
-  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-}
-ul.nav > li {
-  position: relative;
-  flex-grow: 1;
-  flex-shrink: 0;
-  height: 60px;
-  font-size: 18px;    
-  font-family: Calibri;
-  text-align: center;
-  text-transform: uppercase;
-  line-height: 56px;
-  letter-spacing: 1px;
-  color: #e7e6f1;
-  cursor: pointer;
-   background: rgba(0, 0, 0, 0.08);
-}
-ul.nav > li:hover {
-  background: rgba(0, 0, 0, 0.15);
-}
-ul.nav > li:hover ul.dropdown {
-  visibility: visible;
-  transform: translate(0, 0);
-  opacity: 1;
-  z-index: 0;
-}
-ul.nav > li:hover ul.dropdown > li {
-  -webkit-animation-name: slideInLeft;
-          animation-name: slideInLeft;
-  -webkit-animation-duration: 0.7s;
-          animation-duration: 0.7s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
-}
-ul.nav > li:first-child {
-  border-top-left-radius: 6px;
-}
-ul.nav > li:last-child {
-  border-top-right-radius: 6px;
-}
-
-ul.dropdown {
-  visibility: hidden;
-  display: flex;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  flex-direction: column;
-  margin: 0;
-  padding: 5px 0 30px;
-  list-style: none;
-  color: white;
-  background: rgba(17, 130, 193, 0.75);
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  box-shadow: 1px 2px 5px -1px rgba(0, 0, 0, 0.15), 0px 4px 14px -1px rgba(0, 0, 0, 0.1);
-  transform: translate(0, -60px);
-  transition: transform 0.2s ease-out, opacity 0.2s, z-index 0s 0.2s;
-  opacity: 0;
-  z-index: -1;
-  text-decoration: none; 
-
-}
-
-
-ul.dropdown a:link { 
-  text-decoration: none; 
-} 
-ul.dropdown a:visited { 
-  text-decoration: none; 
-} 
-ul.dropdown a:hover { 
-  text-decoration: none; 
-} 
-ul.dropdown a:active { 
-  text-decoration: none; 
-}
-
-ul.dropdown > a li {
-  font-size: 19px;
-  cursor: pointer;
-  color: white;    
-  text-decoration: none; 
-
-}
-ul.dropdown > a li:hover {
-  background: rgba(0, 0, 0, 0.32);
-    text-decoration: none; 
-
-}
-
-@-webkit-keyframes slideInLeft {
-  from {
-    transform: translate(-25%, 0);
-    opacity: 0;
-  }
-  to {
-    transform: translate(0, 0);
-    opacity: 1;
-  }
-}
-
-@keyframes slideInLeft {
-  from {
-    transform: translate(-25%, 0);
-    opacity: 0;
-  }
-  to {
-    transform: translate(0, 0);
-    opacity: 1;
-  }
-}
-
-</style>
 
 
 
-
-
-
-
-<div class="dropdownmeny">
-<nav class="navbar">
-	<ul class="nav"> <img src="arrow-down1.gif" height="75px" width="70px" />
-		<li>
-			Quick Menu
-				<ul class="dropdown">
-			<a href="Indexpage.html"><li>Home Menu Page</li></a>
-				<a href="LatestPosts.html"><li>Latest Posts - Latest Playlists, Remixes, DJ Mixtapes + more - Blog Updates</li></a>
-				<a href="LoveSongsPlaylistPage.html"><li>Classic and Oldschool Love Songs Playlist Page</li></a>
-			</ul>
-		</li>
-		
-	</ul>
-</nav>
-</div>
-
-<script>
-
-$( document ).ready(function() {
-	
-	// Loop through each nav item
-	$('nav.navbar').children('ul.nav').children('li').each(function(indexCount){
-		
-		// loop through each dropdown, count children and apply a animation delay based on their index value
-		$(this).children('ul.dropdown').children('li').each(function(index){
-			
-			// Turn the index value into a reasonable animation delay
-			var delay = 0.1 + index*0.03;
-			
-			// Apply the animation delay
-			$(this).css("animation-delay", delay + "s")			
-		});
-	});
-});
-
-</script>
-
-
-<br />
-<br />
-<br />
-
-
-
-<div style="margin:12px;">
+<div style="margin:9px auto;">
     
-   
-    <div id="amazingaudioplayer-1" style="display:block;position:relative; top: 80px; left: 100px; width:100%; max-width:400px; height:auto; margin:0px auto;">
-        <ul class="amazingaudioplayer-audios">
+    <!-- Insert to your webpage where you want to display the audio player -->
+    <div id="amazingaudioplayer-1" style="display:block;position:relative;width:100%;max-width:300px;height:auto;margin:0px auto 0px;">
+        <ul class="amazingaudioplayer-audios" style="display:none;">
             <li data-artist="" data-title="Taron Egerton - I&apos;m Gonna Love Me Again (Lyrics) Feat. Elton John" data-album="" data-info="" data-image="" data-live="true">
                 <div class="amazingaudioplayer-source" data-src="https://www.dropbox.com/s/jmhd6ifc42wwxvx/1%20Taron%20Egerton%20-%20I%27m%20Gonna%20Love%20Me%20Again%20%28Lyrics%29%20Feat.%20Elton%20John.mp3?dl=1" data-type="audio/mpeg" ></div>
             </li>
@@ -1145,12 +903,261 @@ $( document ).ready(function() {
                 <div class="amazingaudioplayer-source" data-src="https://www.dropbox.com/s/p4ahu9kwfgj8nyq/karpe%20-%20lett%20%C3%A5%20v%C3%A6re%20rebell%20i%20kjellerleiligheten%20din%20%28remix%29.mp3?dl=1" data-type="audio/mpeg" ></div>
             </li>
         </ul>
-        <div class="amazingaudioplayer-engine">Music Playlist</div>
+        <div class="amazingaudioplayer-engine"><a title="html5 music player">Music Playlist</a></div>
     </div>
     <!-- End of body section HTML codes -->
 
 </div>
 
+
+
+
+<style>
+
+html {
+
+height: 100%;
+width: 100%;
+
+}
+
+body {
+
+  background-image: url('Bakgrunn.jpg');
+     -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+height: auto;
+width: auto;
+background-repeat: no-repeat;
+background-attachment: fixed;
+
+
+}
+
+
+@media screen and (min-width:140px) and (max-width:3000px), 
+   screen and (min-device-width:140px) and (max-device-width:3000px)
+{
+body {
+  background-image: url('Bakgrunn.jpg');
+   -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+height: auto;
+width: auto;
+background-repeat: no-repeat;
+background-attachment: fixed;
+
+}
+}
+
+
+
+span {
+color: white;
+}
+
+
+</style>
+
+
+
+
+
+
+<style>
+
+
+.dropdownmeny {
+  display: flex;
+  flex-direction: column;
+     position: relative;
+	     top: 40px;
+    left: 60px;
+	
+}
+
+ul.nav {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  width: 400px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+ul.nav > li {
+  position: relative;
+  flex-grow: 1;
+  flex-shrink: 0;
+  height: 60px;
+  font-size: 18px;    
+  font-family: Calibri;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 56px;
+  letter-spacing: 1px;
+  color: #e7e6f1;
+  cursor: pointer;
+   background: rgba(0, 0, 0, 0.08);
+}
+ul.nav > li:hover {
+  background: rgba(0, 0, 0, 0.15);
+}
+ul.nav > li:hover ul.dropdown {
+  visibility: visible;
+  transform: translate(0, 0);
+  opacity: 1;
+  z-index: 0;
+}
+ul.nav > li:hover ul.dropdown > li {
+  -webkit-animation-name: slideInLeft;
+          animation-name: slideInLeft;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+ul.nav > li:first-child {
+  border-top-left-radius: 6px;
+}
+ul.nav > li:last-child {
+  border-top-right-radius: 6px;
+}
+
+ul.dropdown {
+  visibility: hidden;
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  margin: 0;
+  padding: 5px 0 30px;
+  list-style: none;
+  color: white;
+  background: rgba(17, 130, 193, 0.75);
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  box-shadow: 1px 2px 5px -1px rgba(0, 0, 0, 0.15), 0px 4px 14px -1px rgba(0, 0, 0, 0.1);
+  transform: translate(0, -60px);
+  transition: transform 0.2s ease-out, opacity 0.2s, z-index 0s 0.2s;
+  opacity: 0;
+  z-index: -1;
+  text-decoration: none; 
+
+}
+
+
+ul.dropdown a:link { 
+  text-decoration: none; 
+} 
+ul.dropdown a:visited { 
+  text-decoration: none; 
+} 
+ul.dropdown a:hover { 
+  text-decoration: none; 
+} 
+ul.dropdown a:active { 
+  text-decoration: none; 
+}
+
+ul.dropdown > a li {
+  font-size: 19px;
+  cursor: pointer;
+  color: white;    
+  text-decoration: none; 
+
+}
+ul.dropdown > a li:hover {
+  background: rgba(0, 0, 0, 0.32);
+    text-decoration: none; 
+
+}
+
+@-webkit-keyframes slideInLeft {
+  from {
+    transform: translate(-25%, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translate(-25%, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+</style>
+
+
+
+
+
+
+
+<div class="dropdownmeny">
+<nav class="navbar">
+	<ul class="nav"> <img src="arrow-down1.gif" height="75px" width="70px" />
+		<li>
+			Quick Menu
+				<ul class="dropdown">
+			<a href="Indexpage.html"><li>Home Menu Page</li></a>
+				<a href="LatestPosts.html"><li>Latest Posts - Latest Playlists, Remixes, DJ Mixtapes + more - Blog Updates</li></a>
+				<a href="LoveSongsPlaylistPage.html"><li>Classic and Oldschool Love Songs Playlist Page</li></a>
+			</ul>
+		</li>
+		
+	</ul>
+</nav>
+</div>
+
+<script>
+
+$( document ).ready(function() {
+	
+	// Loop through each nav item
+	$('nav.navbar').children('ul.nav').children('li').each(function(indexCount){
+		
+		// loop through each dropdown, count children and apply a animation delay based on their index value
+		$(this).children('ul.dropdown').children('li').each(function(index){
+			
+			// Turn the index value into a reasonable animation delay
+			var delay = 0.1 + index*0.03;
+			
+			// Apply the animation delay
+			$(this).css("animation-delay", delay + "s")			
+		});
+	});
+});
+
+</script>
+
+
+<br />
+<br />
+<br />
+    
+   
 
 
 
@@ -2533,7 +2540,6 @@ left: 20px;
 </div>
 
 <script src='https://assets.codepen.io/191814/lazysizes-v5.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
 
 <script>
 
