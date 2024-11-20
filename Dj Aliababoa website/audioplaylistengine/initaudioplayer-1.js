@@ -19,7 +19,7 @@ jQuery(document).ready(function(){
         showprogress:true,
         random:false,
         titleformat:"%TITLE%",
-        height:600,
+        height:650,
         loopimage:"loop-24-24-0.png",
         prevnextimage:"prevnext-24-24-0.png",
         showinfo:false,
