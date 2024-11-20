@@ -32,6 +32,9 @@
 	overflow: hidden;
 	padding: 4px 12px;
 	height: 100px;
+	font-size: 17px;
+	color: white;
+	background: rgba(0, 0, 0, 0.47);
 }
 
 #amazingaudioplayer-1 .amazingaudioplayer-text-clear {
@@ -57,7 +60,7 @@
 	display: block;
 	color: #333;
 	font-family: Arial, sans-serif;
-	font-size: 12px;
+	font-size: 19px;
 	font-style: italic;
 }
 
@@ -95,6 +98,14 @@
 	font-size: 12px;
 	line-height: 24px;
 	margin: 0 8px;
+}
+
+
+.amazingaudioplayer-bar-title-text {
+	
+	color: #333333;
+	background: rgba(0, 0, 0, 0.35);
+	
 }
 
 #amazingaudioplayer-1 .amazingaudioplayer-playpause {
