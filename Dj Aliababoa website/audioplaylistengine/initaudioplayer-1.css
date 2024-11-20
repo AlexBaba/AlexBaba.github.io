@@ -43,7 +43,7 @@
 	display: block;
 	color: #333;
 	font-family: "Oswald",Arial,sans-serif;
-	font-size: 20px;
+	font-size: 17px;
 	font-weight: bold;
 }
 
@@ -98,6 +98,7 @@
 #amazingaudioplayer-1 .amazingaudioplayer-playpause {
 	position: relative;
 	float: left;
+	background: rgba(0, 0, 0, 0.74);
 }
 
 #amazingaudioplayer-1 .amazingaudioplayer-play {
