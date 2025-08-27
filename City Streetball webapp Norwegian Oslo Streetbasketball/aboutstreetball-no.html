@@ -1,6 +1,6 @@
 
 
-<html>
+<html lang="no">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=0.7, user-scalable=yes" />
 
@@ -56,6 +56,8 @@ width: 100%;
 width: 100%;
 }
 
+
+
 }
 
 
@@ -76,6 +78,7 @@ height: 100%;
 width: 100%;
 
 }
+
 
 
 }
@@ -352,6 +355,25 @@ width: 290px;
 height: 130px;
 bottom: 30px;
 }
+
+.languageswitcherdiv {
+
+position: relative;
+left: 10px;
+background:rgba(0,0,0,0.2);
+width: 290px;
+height: 130px;
+bottom: 127px;
+
+}
+
+
+.languageswitcherdiv:hover {
+
+cursor: pointer;
+
+}
+
 
 .overskriftheadertopp {
 
@@ -1234,7 +1256,7 @@ max-height: 560px;
 min-width: 700px;
   font-size: 32px;
    position: relative;
-  bottom: 100px;
+  bottom: 165px;
 right: 300px;
 
   background:rgba(0,0,0,0.1); 
@@ -1246,10 +1268,10 @@ right: 300px;
  .slide .content p {
     margin-left: 10px;
 max-height: 500px;
-  font-size: 19px;
+  font-size: 17px;
   position: relative;
 right: 990px;
-  bottom: -25px;
+  top: 35px;
   min-width:700px;
   background:rgba(0,0,0,0.4); 
 
@@ -1758,23 +1780,6 @@ font-size: 19px;
   font-size: 24px;
   font-family: Calibri;
 }
-
-.languageswitcherdiv {
-
-position: relative;
-left: 10px;
-background:rgba(0,0,0,0.12);
-width: 290px;
-height: 130px;
-bottom: 127px;
-
-}
-
-.languageswitcherdiv:hover {
-cursor: pointer;
-
-}
-
 </style>
 
 
@@ -1784,21 +1789,18 @@ cursor: pointer;
 
 </div>
 
-
 <link rel="stylesheet" href="aboutstreetballpage-files/style-aboutstreetballpage.css">
 
+
 <div class="languageswitcherdiv">
-	 
+		
+	<img class="no-lang-page" />
 	
-	<img class="en-lang-page" />
-
-    <button class="no-lang" onclick="changeLanguage('no')"></button>
-
+    <button class="en-lang" onclick="changeLanguage('en')"></button>
+		
 	<script src="aboutstreetballpage-files/script-aboutstreetballpage.js"></script>
 
 </div>
-
-
 
 </header>
 
@@ -2006,7 +2008,7 @@ $( document ).ready(function() {
 						<img src="images/modalimages/whenplayerscome.jpg" height="400px" width="500px" alt=""/>
 						<span class="sdt_active"></span>
 						<span class="sdt_wrap">
-							<span class="sdt_link">When do athletes arrive in the week and at what times do people come to play on courts with others?</span>
+							<span class="sdt_link">Hvilken tid er når folk og basket utøvere kommer for å spille på ball parkene utendørs med andre i uken?</span>
 							<span class="sdt_descr"></span>
 						</span>
 					</a>
@@ -2016,7 +2018,7 @@ $( document ).ready(function() {
 						<img src="images/modalimages/basicrules.jpg" alt=""/>
 						<span class="sdt_active"></span>
 						<span class="sdt_wrap">
-							<span class="sdt_link">Basic rules of the Streetbasket game</span>
+							<span class="sdt_link">Grunnleggende regler for Streetbasket-spillet</span>
 							<span class="sdt_descr"></span>
 						</span>
 					</a>
@@ -2027,7 +2029,7 @@ $( document ).ready(function() {
 						<img src="images/modalimages/basketballsecrets.jpg" alt=""/>
 						<span class="sdt_active"></span>
 						<span class="sdt_wrap">
-							<span class="sdt_link">Basketball Training Talk Tips, and Secrets of Improving</span>
+							<span class="sdt_link">Tips om basketballtrening og hemmeligheter for å forbedre seg som en spiller</span>
 							<span class="sdt_descr"></span>
 						</span>
 					</a>
@@ -2038,7 +2040,7 @@ $( document ).ready(function() {
 						<img src="images/modalimages/whatisapicupgamesteetball.jpg" alt=""/>
 						<span class="sdt_active"></span>
 						<span class="sdt_wrap">
-							<span class="sdt_link">Pickup Basketball training and benefits</span>
+							<span class="sdt_link">Pickup Basketball-trening og fordeler</span>
 							<span class="sdt_descr"></span>
 						</span>
 					</a>
@@ -2048,7 +2050,7 @@ $( document ).ready(function() {
 						<img src="images/modalimages/pickupbasketballbenefits.jpg" alt=""/>
 						<span class="sdt_active"></span>
 						<span class="sdt_wrap">
-							<span class="sdt_link">What is a pickup game in Streetbasketball?</span>
+							<span class="sdt_link">Hva er pickup i Streetbasketball?</span>
 							<span class="sdt_descr"></span>
 						</span>
 					</a>
@@ -2077,9 +2079,23 @@ $( document ).ready(function() {
         <!-- Modal content -->
         <div class="modal-content">
             <span class="close close_multi">×</span>
-            <p>The outdoor season at outdoor parks around the city starts in the spring and lasts through the summer until the fall when the season is out. Pick-up basketball is open to anyone who wants to try playing ball at public courts and popular ballparks (open from 9 a.m. to 10 p.m.). Some public parks are outdoor meeting places and often popular with full packed court. Times for pickup ex. below:   </p>
-			 <img src="aboutstreetballpage-files/timesforpickupbball.jpg" width="668px" height="420px"></img>
-				<br />
+            <p> Hva er Gate basketball? Hvilken tid er når folk og basket utøvere kommer for å spille på ball parkene utendørs med andre i uken?
+        <br />		
+		Ute sesongen i utendørs parker rundt byen starter fra våren og varer igjennom sommeren til høsten er årstiden ute. Å møte opp til pickup basketball er åpent for alle som ønsker å prøve å spille ball på offentlige baner og populære ball parker i Oslo og rundt byen (åpent fra morgen kl. 9 til kveld 22:00) som er møteplasser utendørs. 
+		    <img src="aboutstreetballpage-files/timesforpickupbball.jpg" width="668px" height="420px"></img>			
+			<br />
+<br />
+Streetbasket er en uformell variant og en gateversjon av basketballsporten, som vanligvis kan spilles utendørs på asfalt, i parker, på lekeplasser eller på en halv basketballbane innendørs mm. Det spilles vanligvis på en kurv, men ellers ligner streetball på vanlig basketball. Antall spillere på hvert lag kan variere fra individuell og solospill til 4-5 spillere. Det mindre baneområdet gir mindre rom ofte på korte distanser. Det mindre antallet spillere åpner for nærkamp, teknikk, raske ferdigheter, show og triksing, for eksempel dribling og dunking.
+<br />
+<br />
+ Vanligvis spilt på utendørs baner uformelt og med mindre fokus på struktur og regler. Er kjent for å la spillere vise frem sine egne individuelle ferdigheter. Streetbasket er idretten som foregår i bakgårder, i skolegården, i parker og foran garasjen. Rett og slett alle steder du kan henge opp en kurv. Å spille basketball på amatørnivå krever lite utstyr, kun en ball og en kurv. Det handler om utendørs baner som sosiale møteplasser i byen. Sporten og kulturen rundt b.la. gatekunsten har siden 1980-tallet vokst seg å bli populær i både klesstil mote, musikk, film, TV og annen populærkultur.
+<br />
+<br />
+I USA kalles streetbasketball ofte rett og slett for streetball. Spillet er relativt nytt i Norge. Tidligere var det et storbyfenomen, som var utbredt i USA. Streetbasket var et typisk utrykk for en ung og urban livsstil i de største amerikanske byene. Streetbasket har utviklet seg til en selvstendig sport etter hvert, med egne regler og en fairplay-kultur. Dette har gjort spillet populært blant alle aldersgrupper, kjønn og samfunnslag. Men selv om spillet er blitt en egen sport og noen spiller seriøse turneringer er nok streetbasket noe som forsatt er mest utbredt som en lek med venner på åpne plasser og løkker med en basketballkurv. Streetbasket spilles med bare en kurv. Du trenger derfor ikke så stor plass, eller så mange spillere. Noen spiller med to spillere på hvert lag, andre med tre. Ellers er regelene ganske like dem i vanlig basket.
+
+			</p>
+				
+				<br />       			 
 				<img src="images/Bakgrunner/pickupgames5.jpg"></img>
 
 	   </div>
@@ -2092,43 +2108,73 @@ $( document ).ready(function() {
         <!-- Modal content -->
         <div class="modal-content">
             <span class="close close_multi">×</span>
-            <p>  Half-court play <br /> <br /> 
+            <p>  Grunnleggende regler for Streetbasket-spillet<br /> <br /> 
 			Fouls <br /> <br /> 
-         Streetball rules vary widely from different court to court. Rules of what plays that are legal and illegal are decided by the word fouls (a foul in basketball). 
+Reglene for streetball varierer mye fra bane til bane. Regler for hvilke spill som er lovlige og ulovlige avgjøres av ordet en feil (eng: en foul i basketball).
+<br />
+I gate basketball betyr «feil» et regelbrudd, ofte en ulovlig fysisk kontakt eller usportslig oppførsel. Personlige feil blir dømt for ulovlig kontakt eller usportslig kontakt.
+<br />
+Personlige feil (eng: foul) i pickup oppstår ved urettmessig fysisk kontakt med en motspiller. Eks. ved hard fysisk kontakt som å dytte med armer eller holde, slå, eller rive i en motspiller, og overdreven kroppskontakt kan regnes også som en feil. 
+
 <br /><br /> 
 			  <img src="images/Bakgrunner/pickupgames16.jpg" width="500px" height="250px"></img>
 
-<br /><br /> 
-No referees are employed, so all players of both teams usually go by the rule to “call your own foul”. When a player who believes he has been fouled, simply needs to call out “Foul!” in exact moment, and play will be stopped, with the ball awarded to the fouled player’s team on the top of court (free throws after foul are usually not awarded in streetball, also difference to organized indoor basketball). 
+<br />
+<br /> 
+
+Street basketball spilles vanligvis med kun én kurv og på en halv bane, der to lag med 2-3 elelr 4 spillere konkurrerer. Poeng kan tildeles for skudd innenfor eller utenfor en trepoengslinje, avhengig av reglene. Etter en scoring må det angripende laget rulle ballen inn på banen fra utenfor trepoengslinjen, og det er ingen dommer eller poengteller involvert i det hele tatt. Kampen kan vinnes ved å nå en viss poengsum (f.eks. 7, 11 eller 21) eller ved å lede etter en bestemt tidsperiode. 
+<br />
+<br />
+Pickup kamper foregår uten noe dommere helt uformelt, så alle spillere på begge lag følger vanligvis regelen om å «dømme sin egen feil». Når en spiller mener det har skjedd en feil på motstander laget for eks. en takling, trenger spillere rope «Feil!» i nøyaktig øyeblikk, spillet vil bli stoppet, og ballen tildeles den felte spillerens lag på oversiden i midten av banen (straffekast etter feil tildeles vanligvis ikke i streetball, som i vanlig basketball som er organisert innendørs).
+<br />
+
 <br /> <br /> 
   <img src="images/Bakgrunner/pickupgames15.jpg" width="550px" height="310px"></img>
-<br /><br /> In some cases of competitive and experienced streetball games are the continuous calling of fouls generally disfavored.  That can be because of the amount of pauses and protestations scenario against such a call in groups of players. About the seriousness of a particular game. <br /> 
+<br /><br /> 
+Halvbane:
+<br />
+Vanligvis spilles street basket med 2 mot 2 eller 3 mot 3, med én kurv og en halv bane.
+<br /> 
+Start av spillet:
+<br />
+Kampen starter med at det angripende laget sjekker ballen under kurven, men det ikke-scorende laget kan ikke forsvare innenfor den avgrensede halvsirkelen. 
+Poeng for mål scoring er at et skudd innenfor trepoengslinjen gir 1 poeng, mens et skudd fra utsiden gir 2 poeng.
+Når et lag blir feilet, får det ikke-scorende laget eller vinner-laget som scoret ballen utenfor trepoengslinjen ved toppunktet. 
+<br />
+<br />
+Struktur på kamper med noen regler i gatebasket
+ <br /> <br />
+Kun på en bane eller en kurv. <br />
+For at det forsvarende laget skal begynne å angripe, må laget ha kontroll på ballen utenfor trepoengslinjen. <br />
+På mål får laget 1 poeng, eller, hvis skuddet tas utenfor trepoengslinjen, 2 poeng. <br />
+Etter et mål beholder det scorende laget ballen.
+<br />
+<br />
+
+
+ <br /> 
 <br /><br />
 <img src="images/Bakgrunner/pickupgames17.jpg" width="300px" height="150px"></img>
 <br /><br />
-  Other violations in basketball which are usual include traveling, double-dribble, carrying, kicking, goaltending, and backcourt violation.
+Regler for tekniske ferdigheter er de samme som i vanlig basketball, dvs. regler som handler om kontroll av ballen og bevegelsene dine, mens reglene spesifiserer hva du ikke kan gjøre, for eksempel dobbelstuss, eller ta for mange steg uten å drible. Viktige tekniske ferdigheter inkluderer dribling, pasninger, skudd og evnen til å endre retning, mens reglene forhindrer ulovlige handlinger som for eksempel dobbel dribling. 
   
   <br /><br />
  <img src="images/Bakgrunner/pickupgames18.jpg" width="600px" height="390px"></img>
-<br /><br />
-  Structure of games
-    <br />   	<br />		       			
-At the beginning of the game and after each made basket, play begins at the top of the key. A "checking" system is used to ensure that both teams are ready to begin play. This involves the offensive player saying "check" while throwing the ball to his defender. The defender then makes sure his/her team is ready and then throws the ball back to begin play.
- <br />   	<br />	
+<br />
+<br />
+   
  	<img src="images/Bakgrunner/pickupgames20.jpg" width="500px" height="250px"></img>
+	  
+	  <br />  
+	  
  <img src="images/Bakgrunner/pickupgames22.png" width="500px" height="250px"></img>
-
  
-  <br />   	<br />	
- If the ball goes out of bounds during play, the ball can either be checked from out of bounds near where the ball went out or at the top of the key, depending on the rules established before the game.
-  	  <br />   	<br />		<img src="images/Bakgrunner/pickupgames14.jpg" width="400px" height="200px"></img>
+  <br />   
+	  
+	  <img src="images/Bakgrunner/pickupgames14.jpg" width="400px" height="200px"></img>
 	<br />	
 
-  <br />   	<br />	
-  
-  If the defending team gains possession of the ball, they must take the ball out to beyond the three-point line before they can score a basket. This does not need to be at the top of the key (one leg crossing the line is enough) and no checking is required. This is analogous to taking the ball to the other side of the court in a full-court game.
-  
-   <br />   	<br />	
+
 	<img src="images/Bakgrunner/pickupgames21.jpg" width="400px" height="250px"></img>
 
 		 </p>
@@ -2154,77 +2200,63 @@ At the beginning of the game and after each made basket, play begins at the top 
        </div>
        <div class="slide">
             <div class="content">
-                <h1>Basketball Training Hints, and Secrets</h1>
-                 <p>Effective basketball training is essential for all players.
-
-Whether you're a young player still learning the game, a college athlete attempting to turn pro, or a coach looking to help out their team, you should always be on the search for new basketball training tips to improve your game.
-
-Forward we want to share 37 important basketball training tips that will help you develop skills and elevate your game to the next level.</p>
+                <h1>Tips om basketballtrening og hemmeligheter for å forbedre seg som en spiller</h1>
+		
+                 <p>Effektiv basketballtrening er viktig for alle spillere. 
+Enten du er en ung spiller som fortsatt lærer seg spillet, en erfaren eller talentfull spiller som prøver å bli proff, eller en trener coach som ønsker å hjelpe laget sitt, bør man alltid være på jakt etter nye basketballtreningstips for å forbedre spillet ditt. Fremover ønsker vi å dele 37 viktige basketballtreningstips som kan hjelpe til det neste nivået strategisk.
+</p>
             </div>
         </div>
        <div class="slide">
             <div class="content">
-                <h1 style="postition: relative; bottom: 180px;">1. Always Have a Workout Plan</h1>
-                 <p>There is nothing more important than having a plan of what you want to accomplish every time you step in the gym or the streetcourt.
+                <h1 style="postition: relative; bottom: 180px;">1. Alltid ha en treningsplan</h1>
+                 <p>
+				 Det er ingenting viktigere enn å ha en plan for hva du vil oppnå hver gang du går inn i sportshallen, på gate parken ute eller treningsstudio. Dette krever at du har brukt tid på å evaluere dine styrker og svakheter, og at du forstår hvilke områder av spillet ditt du bør fokusere på.
 <br />
-This requires that you've spent time evaluating your strengths and weaknesses and you understand what areas of your game you should be focusing on.
+Hvilke skyteøvelser vil du øve på? Hvor mange skudd vil du ta? Trenger du å jobbe med ball ferdighetene og din ballkontroll? Svarene på alle disse spørsmålene bør være klare for alle som ser på treningsøkten du har planlagt for dagene. 
 <br />
-​What shooting drills do you want to use? 
-​How many shots do you want to take? 
-​Do you need to work on your ball handling? 
-The answers to all these questions should be clear to anyone who looks at the workout you have planned for the day.
-<br />
-Players can list their workouts on an electronic device like their phone or iPad, or be 'old school' by using traditional printed out paper with a pen to track your results (which I prefer).
-Having a plan will allow you to stick to a schedule and be efficient.
-You know exactly what to do and you go in and do it.</p>
+Å ha en plan handler om målsetting i sport som i livet og tillate en å holde seg til en tidsplan og være effektiv. Du vet nøyaktig hva du skal gjøre, og du går inn for å øve og gjøre det.
+
+</p>
             </div>
         </div>
        <div class="slide">
             <div class="content">
-                 <h1 style="postition: relative; bottom: 180px;">2. Treat your workouts like appointments</h1>
-                 <p>Similar to how people schedule doctors appointments and work commitments, players must be schedule their basketball training workouts too.
-
-Because if you don't schedule them, they probably won't happen.
-
-Schedule your basketball workouts into your calendar at the start of the week and then hold yourself accountable to going to them.
+                 <h1 style="postition: relative; bottom: 180px;">2. Behandle treningsøktene dine som arbeid og avtale i livet</h1>
+                 <p>
+				 
 <br />
-How many times have you planned on working out, but other things came up.
+På samme måte som folk planlegger legetimer og arbeidsforpliktelser, må spillere også planlegge basketballtreningene sine. For hvis man ikke planlegger dem, vil målene sannsynligvis ikke skje. Planlegg basketballtreningene dine i kalenderen din i starten av uken, og hold deg selv ansvarlig for å gå på dem.
+<br />
+Hvor mange ganger har du planlagt å trene, men andre ting har dukket opp? Man mister mye tid på skjermen på underholdning og mens man spiller videospill for. eks.
+<br />
+Og når du så ser på klokka, tenker noen det er for sent å rekke økten hverdagen, så du glemmer det bare og sier til seg selv "Jaja men. Jeg gjør det i morgen». Dette kan ikke skje, for holdninger og motivasjon med innsats er viktig hvis man vil utvikle deg som basketballspiller på sikt. Man burde prioritere basketball ofte og jevnlig hvis man vil lykkes.
 
-
-​You lose track of time while playing video games...<br />
-And then by the time you look at the clock, it's too late to work out so you just forget about it and say "Oh well. I'll do it tomorrow".
-
-This can't happen if you want to develop as a basketball player.
-You have to make workouts a priority if you want to be successful.</p>
+				 
+				 </p>
             </div>
         </div>
 		<div class="slide">
             <div class="content">
-                 <h1 style="postition: relative; bottom: 210px;">3. Shooting is one of the important skills in the game</h1>
-                 <p>Players must understand this.
-
-When you're in the gym, a lot of your workout time must be spent developing your ability to shoot the basketball.
-
-Every other skill is secondary to shooting.
-
-
-To give yourself the best chance for success, focus on shooting.
-
-Your goal should always be to become the best shooter to improve.
-
-
+                 <h1 style="postition: relative; bottom: 210px;">3. Skyting med ball og skudd teknikker er en av de viktige ferdighetene i spillet</h1>
+                 <p>Spillere burde forstå dette. Når du er i hallen eller ute, må mye av treningstiden din brukes på å utvikle evnen din til å skyte med ballen på kurv. Alle andre ferdigheter er sekundære til skudd på mål. For å gi deg selv best mulig sjanse for suksess, fokuser på skyting. Målet til spiller bør alltid være å bli den beste skytteren for å forbedre seg.
 <br />
-Your goal should be 1,500 made shots per week.
-​Elite Shooter = 1,500 made shots per week
-​Great Shooter = 1,000 made shots per week 
-​Poor Shooter = 500 made shots per week 
-
+Målet kan være 1500 scorede skudd per uke.
 <br />
-Let’s be real about the numbers to see how much time 1,500 shots a week takes…
-If player makes 1 game-shot every fifteen seconds (4 made shots per minute).<br />
-Good - 500 made shots would take 125 minutes = 2 hours and 5 minutes.
-Great - 1000 made shots would take 250 minutes = 4 hours and 10 minutes.<br />
-Elite-1,500 made shots=6 hours,15 minutes.
+Eliteskytter = 1500 truffede skudd per uke.
+<br />
+God skytter = 1000 truffede skudd per uke.
+<br />
+Dårlig skytter = > 500  truffede skudd per uke.
+<br />
+La en være ærlig med tall og  beregne for å se hvor mye tid 1500 skudd i uken tar ... Hvis spilleren skyter 1 skudd i mål i kamp hvert femtende sekund (4 skudd per minutt).
+<br />
+Middels god - 500 skudd ville ta 125 minutter = 2 timer og 5 minutter.
+<br />
+God (eng: great) - 1000 skudd ville ta 250 minutter = 4 timer og 10 minutter.
+<br />
+Elite – 1500 skudd gjort = 6 timer og 15 minutter.
+
 
 
 </p>
@@ -2233,26 +2265,15 @@ Elite-1,500 made shots=6 hours,15 minutes.
 		
 		<div class="slide">
             <div class="content">
-               <h1 style="postition: relative; bottom: 210px;">4. Perfect your shooting technique</h1>
-                 <p>It is important for all players to develop a fundamentally sound, consistent, and repeatable shot.
-
-And the sooner a player can develop this, the better.
+               <h1 style="postition: relative; bottom: 210px;">4. Perfeksjoner skudd teknikken din</h1>
+                 <p>
+				 Det er viktig for spillere å utvikle et fundamentalt godt skudd. Og jo før en spiller kan utvikle dette, desto bedre.
 <br />
-It's much faster and easier for players to improve when they're using correct shooting technique.
+Det er mye raskere og enklere for spillere å forbedre seg når de bruker en riktig skyteteknikk.
 <br />
-Here are the 10 steps for a player to follow: <br />
-​ Shot preparation.
-​ Hand placement on the ball.
- ​Balanced base.
-​ Feet direction (the turn).
-​ Consistent shot pocket.
-​ Eyes on target.
-​ Wrinkle the wrist.
-​ Elbow under the basketball.
-​ Balance hand.
-​ Rhythm shot + follow through.
- For a more in-depth look into each of the steps in the video below on how to shoot a basketball example​​​.
-<br/><img src="images/basketcoachingtips/shootingaball.jpg" width="540px" height`="100px"></img>
+Skuddforberedelse.​ Håndplassering på ballen.​ Balansert base.​ Føttenes retning (vendingen).​ Konsekvent skuddlomme.​ Øynene på mål.​ Rynke håndleddet.​ Albuen under basketballen.​ Balansehånden.​ Rytmeskudd + gjennomføring. For en mer grundig titt på hvert av trinnene i videoen nedenfor om hvordan du skyter en basketball (eksempel).​​
+<br/>
+<img src="images/basketcoachingtips/shootingaball.jpg" width="540px" height`="100px"></img>
 </p> 
             </div>
 
@@ -2260,144 +2281,149 @@ Here are the 10 steps for a player to follow: <br />
 
 			<div class="slide">
             <div class="content">
-                 <h1 style="postition: relative; bottom: 180px;">Always train at a game speed</h1>
-                 <p>One of the biggest mistakes a player can make during workouts is only putting in 50% effort when practicing.
+                 <h1 style="postition: relative; bottom: 230px;">Trene alltid i fullt kamp-tempo</h1>
+                 <p>En av de største feilene en spiller kan gjøre under treningsøkter er å bare legge ned 50 % innsats når de trener. I stedet for å spurte rundt på banen, jogger de. I stedet for å heve seg på hvert skudd, forlater de knapt bakken. Å kunne skyte avslappet og å kunne skyte etter å ha løpt av en screen (eng) og deretter hoppe høyt opp i luften for å unngå at forsvareren blokkerer skuddet ditt er helt forskjellige nivåer av øvelse på  ferdigheter.
 
-Instead of sprinting around the court, they jog.
-
-Instead of raising up on each shot, they barely leave the ground.
-
-Being able to shoot casually and being able to shoot after running off a screen and then jumping up high into the air to avoid the defender blocking your shot are completely different skills.
  <br />
+Hvis du vil forbedre skuddene dine som spiller, må du øve på skudd i fullt spill tempo i raskt kamp tempo.
 
-If you want to improve your in-game shooting, you need to be practicing game shots at game speed.</p>
+</p>
             </div>
         </div>
 		
        <div class="slide">
             <div class="content">
-                <h1 style="postition: relative; bottom: 180px;">Work on your shot fake</h1>
-                 <p>The key points of a shot fake you need to remember:
+                <h1 style="postition: relative; bottom: 260px;">Øv på skudd finter</h1>
+                 <p style="postition: relative; bottom: 145px;">Fremgangsmåter for en skuddfinte (eng: shot fake) man trenger å ha fokus på:
  <br /> <br />
-a. Stay low - If the defender jumps on the shot fake, the offensive player needs to be low to explode past them and attack the rim.
+a. Holde seg lavt - Hvis forsvareren hopper på skudd finten, må  offensive spiller holde seg lavt for å komme forbi motspilleren og angripe kurven eksplosivt.
  <br /> <br />
-b. Raise the basketball to eye level - Any higher and the offensive player will take too long to make the most of their advantage.
+b. Hev basketballen til øyehøyde for offensiv spiller - Om ballen heves høyere enn øyene, vil angrepsspiller bruke for lang tid for å gjøre mest mulig ut av fordel.
  <br /> <br />
-c. Eyes on the rim - To really sell the shot fake, players need to look at the rim. Defenders will often watch the eyes of their opponent.
+c. Øyne på kurven - For å virkelig selge skuddfinten med innlevelse for å lure motspilleren til å tro at du skal skyte. Da må spillerne se på kurven med et blikk fokusert på mål. Forsvarere vil ofte se på motstanderens øyne.
  <br /> <br />
-Once the defender takes the bait, the offensive player can either take one dribble to the left or right and shoot or they can attack the hoop.
+Når forsvareren tar agnet for å gå etter skudd finnten, kan den offensive spilleren enten drible til venstre eller høyre og skyte, eller man kan angripe skuddet rett opp på kurven.
  <br />
-Commit to working on your shot fake and improving it.​</p>
+Man burde forplikte seg til å arbeide med skudd finter (eng: shot fake) er alltid effektivt, øve alene og i kamper for å forbedre den.
+​</p>
             </div>
         </div>
        <div class="slide">
             <div class="content">
-                 <h1 style="postition: relative; bottom: 180px;">Develop a variety of finishes at the rim</h1>
-                 <p>Once you become a lethal outside shooter, opposition players are going to be forced to defend you closer to prevent the outside shot.
+                 <h1 style="postition: relative; bottom: 260px;">Utvikle en variasjon kombinert av avslutninger på mål</h1>
+                 <p style="postition: relative; bottom: 130px;">Når man begynner å bli en kjempe flink, utsoppelig og automatisk trenpongs skytter og langdistanse utsideskytter, vil motstanderspillere bli tvunget til å forsvare deg nærmere for å forhindre det effektive langskuddet til en god angrepspiller. Det vil også være mye mer sannsynlig at de hopper på skudd fintene dine. Dette er når du må angripe kurven og kutte inn fremover med og uten ballen. Å kunne suse forbi motstanderen din, bruke eksploderende fart og deretter avslutte på nære kurven med en rekke bevegelser til mål er avgjørende for å bli en komplett scorer.
 
-It will also be far more likely that they'll jump on your shot fakes.
-
-This is when you need to attack the rim.
- 
-Being able to explode past your opponent and then finish at the rim with a variety of moves is crucial to be a complete scorer.
  <br /> 
-Here are 7 finishing moves all players should be working on:
+Her er 7 avslutinngsbevegelser alle spillere bør arbeide med:
  <br /> <br />
-​Regular layups (overhand) <br />
-​Finger Roll (underhand) <br />
-​Floaters <br />
-​Off-foot layups (example: right foot jump, right foot shot) <br />
-​Euro step <br />
-​Reverse layups <br />
-​Jump stop layups. </p>
+Vanlige layups (overhånd)
+<br />
+Finger Roll (eng)(underhånd)
+<br />
+Floaters (eng) (Fytende skudd) 
+<br />
+Off-foot layups. Layups utenfor foten (eksempel: hopp med høyre fot, skudd med høyre fot)
+<br />
+​Euro step 
+<br />
+Reverse layups (Omvendte layups)
+<br />
+Jump stop layups (Layups med hoppstopp)
+</p>
             </div>
         </div>
 		 <div class="slide">
             <div class="content">
-               <h1 style="postition: relative; bottom: 180px;">Don't forget about defense</h1>
-                 <p>LBecoming one of the best defenders on your team is a smart way for any player to stand out and increase their court time.
+               <h1 style="postition: relative; bottom: 230px;">Ikke glem forsvarspill</h1>
+                 <p>Å bli en av de flinkeste forsvarerne på ditt lag er en smart måte for enhver spiller å skille seg ut og øke bane tiden sin. Hvor mange spillere ønsker egentlig å forbedre seg defensivt? 
+ <br />
+ Ikke mange.
+ <br />
+Den beste måten å forbedre en-mot-en-forsvaret ditt på er å konkurrere mot en  motstander fullt tempo i fullt bevegelse skjør og øve i kamp situasjoner. Helst noen som er en flink offensiv eller rask spiller og bedre enn deg også. Her er hva du bør fokusere på:
 
-How many players really want to improve defensively?
  <br />
-Not many.
+Å holde seg nede i defensiv posisjon for å følge motspiller intensivt med lite rom.
+<br />
+En armlengdes avstand fra motstanderen din.
+<br />
+Å holde dem mellom mann og kurv. Ikke la dem komme forbi i angrep og stoppe motspilleren sin.
  <br />
-The best way to improve your one-on-one defense is to compete against a live opponent. Preferably someone better than you.
-
-Here's what to focus on:
- <br />
-​Staying down in defensive stance.  <br />
-​One arm's length away from your opponent.  <br />
-​Contain them. Don't allow them to get past.  <br />
-​Force them into a difficult shot.  <br />
-Very few players are committed enough to focus on defense - be different.</p>
+Tving dem til et vanskelig skudd.
+<br />
+Svært få spillere er engasjerte nok til å fokusere på forsvar – sikt på forsvarspillet bredt og dypt og jobb videre er en av nøkkelmålene.
+</p>
             </div>
         </div>
 			 <div class="slide">
             <div class="content">
-               <h1 style="postition: relative; bottom: 210px;">Become a beast in the low post</h1>
-                 <p>Being able to catch the basketball in the low post and the score with a variety of moves is a lost art in today's game.
+               <h1 style="postition: relative; bottom: 265px;">Bli et beist ved under kurven (eng: the low post)</h1>
+                 <p style="postition: relative; bottom: 145px;">
+				 Å kunne fange basketballen nære kruven og score med en rekke bevegelser er en tapt kunst i dagens spill.
 
 <br />
 
-It just doesn't happen much anymore.
+Det skjer bare ikke like mye lenger. Vanligvis er yngre utøvere og fra barn for opptatt med å skyte trepoengere i ubalanse. Akkurat som spillere ikke øver på å score nærest kruven i boksen (eng: low post), lærer ikke mange spillerne å forsvare rett under kurv heller..
 
-Usually kids are too busy shooting off-balance three-pointers.
+<br />
+Dette gir spillere som er villige til å bruke tid på å utvikle sine post bevegelser (eng) en stor fordel over konkurrentene. Her er noen bevegelser som kan anbefales å jobbe med: 
 
-Just as players aren't practicing scoring in the low post, then players aren't learning how to defend the low post either...
-<br />
-This gives players who are willing to commit time to developing their post moves a big advantage over the competition.
 
-Here are the post moves I recommend working on:
-
-​Jump hook <br />
-​Up and under <br />
-​Drop step <br />
-​Face up shot <br />
-To be clear, all players (1 - 5) should be working on these low post moves. Not just the tall players who usually hang around the rim.
+Hoppe hook skudd (eng: jump hook)
 <br />
-You never know who's going to have a mismatch against a smaller or weaker opponent. All players must be prepared to take advantage in the low post.</p>
-            </div>
-        </div>
-		
-			 <div class="slide">
-            <div class="content">
-            <h1 style="postition: relative; bottom: 180px;">Improve your level of fitness</h1>
-                 <p>Another fantastic way to improve your basketball training is to incorporate conditioning (sprints, bodyweight exercises) into every workout.
+Oppe og under. Up and under (eng)
 <br />
-This is important for several reasons, but the one we'll talk about now is the importance of improving your fitness.
+Slipp steg (Drop step)
 <br />
-Improving your level of fitness will dramatically improve every single area of your game.
+Skudd med ansiktet opp (Face up shot)
 <br />
-You'll be less fatigued while shooting, you'll be able to sprint back harder on defense, free-throws will be easier, much better defense, etc.
+For å være klar, alle spillere (1-5) bør jobbe med disse ferdighetene og bevegelser rett under kurveni low post (eng:). Ikke bare de høye spillerne, høyere returtakere og i center spillerposisjoner som vanligvis henger rundt, nede og helt nære foran kurven.
 <br />
-It's difficult to be a great player when you're fatigued...
-<br />
-When players are tired, they make mistakes.
-<br />
-And a player who makes mistakes and poor decisions isn't the kind of player that coaches want on the court at the end of games.
-<br />
-Add conditioning to the workuots.</p>
+Du vet aldri hvem som kommer til å ha en mismatch mot en mindre, lavere eller svakere motstander. Alle spillere må være forberedt på å dra nytte av det i den laveste delen av banen.
             </div>
         </div>
 		
 			 <div class="slide">
             <div class="content">
-                <h1 style="postition: relative; bottom: 220px;">Become Ambidexterous</h1>
-                 <p>Apart from shooting, the best players are able to perform all basketball skills equally well with both hands.
+            <h1 style="postition: relative; bottom: 230px;">Forbedre din kondisjon</h1>
+                 <p>
+		 En annen viktig måte å forbedre basketballtreningen din på er å arbeide med kondisjonstrening (sprinter, jogging, jobbe med utholdenhet) i hver treningsøkt og ved siden av ball spilling.
 
-​They can pass with left and right. <br />
-​They can block with left and right. <br />
-​They can dribble with left and right. <br />
-​They can finish with left and right. <br />
-I've watched many young players dominate the game with their preferred hand at a young age. Many are so dominant that they don't even bother working on their opposite hand.
+<br />
+Dette er viktig av flere grunner, men den vi skal snakke om nå er viktigheten av å forbedre kondisjon.
+<br />
+Å forbedre kondisjonen din vil forbedre alle områder av spillet sitt dramatisk.
+<br />
+Man vil være mindre sliten når du skyter, man vil kunne spurte hardere tilbake i forsvar, straffekast vil være enklere, mye bedre forsvar, osv.
+<br />
+Det er vanskelig å være en god spiller når du er sliten..
+<br />
+Når spillere er slitne, gjør de feil.
+<br />
+Og en spiller som gjør feil og tar dårlige avgjørelser er ikke den typen spiller trenere ønsker på banen på slutten av kampene.
+<br />
+Legge til kondisjonstrening i øktene er et nøkkel punkt. Spilleren's utholdenhet og styrke i å mestre sporten trengs i alle kamp situasjoner og i alle deler av spillet så klart.
 
-And here's what happens:
 
-When they get to the next level, defenses get smarter.
+</p>
+            </div>
+        </div>
+		
+			 <div class="slide">
+            <div class="content">
+                <h1 style="postition: relative; bottom: 230px;">Bli like flink på begge hender balansert</h1>
+                 <p>
+Bortsett fra å skyte, er de beste spillerne i stand til å utføre alle ballferdigheter like bra med begge hender.
 
-You'll often hear a coach yell out to 'force him left' which can effectively shut down the player because they don't have the left hand dribbling skills to attack that direction.
+ De kan sentre med venstre og høyre.
+ <br />
+De kan blokkere med venstre og høyre.
+ <br />
+De kan drible med venstre og høyre.
+ <br />
+De kan avslutte med venstre og høyre.
+<br />
+Mange unge spillere dominerer spillet med sin foretrukne hånd i ung alder. Mange er så dominante at de ikke engang gidder å jobbe med den andre, svakere hånden. Og her er hva som skjer: Når de kommer til neste nivå, blir forsvaret smartere. Du vil ofte høre en trener rope ut å «tvinge ham til venstre», noe som effektivt kan stenge ned spilleren fordi de ikke har driblingsferdighetene med venstre hånd til å angripe i den retningen. Det er viktig å jobbe med begge hender slik at spillere kan dra nytte av alt forsvaret gir dem.
 
-It's important to work on both hands so that players are able to take advantage of anything that the defense gives them.
 <img src="images/basketcoachingtips/basketballcoachingtips31.jpg" width="500px" height`="80px"></img>
 </p>
             </div>
@@ -2406,54 +2432,19 @@ It's important to work on both hands so that players are able to take advantage 
 		
 			 <div class="slide">
             <div class="content">
-              <h1 style="postition: relative; bottom: 180px;">Improve your ability of ballhandling</h1>
-                 <p>While dribbling is without a doubt the most overused skill in basketball, it is still important to spend time on developing.
+              <h1 style="postition: relative; bottom: 230px;">Bli bedre på ballhåndtering og ballkontroll</h1>
+                 <p>Selv om dribling uten tvil er den mest brukte ferdigheten i basketball, er det fortsatt viktig å bruke innsats. Dette gjelder for spillere på alle fem posisjoner – ikke bare guardene og ballfører posisjonene. Det å ha en høy spiller som kan ta returer med høy hastighet og deretter umiddelbart dytte basketballen nedover gulvet er uvurderlig for et lag. Det finnes flere måter å forbedre ballbehandlingen sin på: 
+1. Konkurrere mot live-forsvarere:
 
-This is true for players at all five positions -- not just the guards.
-
-The last few years have shown us that having a tall player who can rebound at a high rate and then immediately push the basketball down the floor is invaluable to a team; so encourage everyone to improve!
- 
-There are several ways to improve your ball-handling:
-
-1. Compete against live defenders:
-<br />
- Whether it's 5-on-5 or 1-on-1, playing against live defenders is the best way to improve your ball-handling. 
-The benefit of live competition is that it forces you to learn how to be creative and effective in game-like situations. 
-
-
-2. Full-Court Dribbling:
-<br />
- If you have a full court available to practice (or a driveway), you can use the entire floor to work on different dribbling moves:
-​ Crossovers,
-hesitation dribble, behind-the-back, & through-the-legs</p>
-            </div>
-        </div>
-		
-		
-			 <div class="slide">
-            <div class="content">
-          <h1 style="postition: relative; bottom: 210px;">Play more 1-on-1</h1>
-                 <p>Competing one-on-one is by far one of the best ways to improve your basketball ability.
-<br />
-This is especially true if you're competing against players who are currently better than you.
-<br />
-Offensively, players learn how to create shot opportunities for themselves and score using a variety of moves.
-<br />
-Defensively, players must learn how to play solid on-ball defense as there is no help defense to back them up if the offensive player gets past them.
-
-
-You can vary the games more to start from different positions on the floor ex. 
 <br />
 
-​On the wing <br />
+Enten det er 5 mot 5 eller 1 mot 1, er det å spille mot live-forsvarere den beste måten å forbedre ballbehandlingen din på. Fordelen med live-konkurranse er at det tvinger deg til å lære å være kreativ og effektiv i kamplignende situasjoner i høyt tempo. 
 
-​In the corner <br />
 
-​In the low post <br />
+2. Dribling på full bane:
+<br />
+Hvis du har en hel full-bane tilgjengelig for å øve ute eller inne, kan du bruke hele gulvet til å jobbe med forskjellige driblebevegelser:​ Crossovers, hesitation dribling (eng), drible bak-ryggen og gjennom-beina.
 
-​From the elbow <br />
-
-​Off a closeout
 </p>
             </div>
         </div>
@@ -2461,22 +2452,58 @@ You can vary the games more to start from different positions on the floor ex.
 		
 			 <div class="slide">
             <div class="content">
-        <h1 style="postition: relative; bottom: 210px;">Consistency is key to long-term improvement</h1>
-                 <p>If you really want to become a great basketball player, you have to commit to working on your game long-term.
+          <h1 style="postition: relative; bottom: 230px;">Spill mer en-mot-en</h1>
+                 <p>
+Å konkurrere en-mot-en er uten tvil en av de beste måtene å forbedre basketballferdigheter på.
 <br />
-It always amazes me how many kids I see start a basketball training routine full of excitement and looking towards achieving big goals... 
+Dette gjelder spesielt hvis du konkurrerer mot spillere som for øyeblikket er bedre enn deg.
 <br />
-...but then they quit after 1 or 2 weeks because they haven't seen any significant results yet.
+Offensivt lærer spillerne hvordan de kan skape skuddmuligheter for seg selv og score ved hjelp av en rekke bevegelser.
 <br />
-You will not see overnight improvements.
+Defensivt må spillerne lære å spille solid forsvar på ballen, da det ikke finnes noe hjelpeforsvar som støtter dem hvis den offensive spilleren kommer forbi dem. Du kan variere spillene mer for å starte fra forskjellige posisjoner på banen, f.eks.
+
 <br />
-In fact, your rate of improvement will be so small that you probably won't even realise it at first.
+
+På vingen
 <br />
-But this doesn't mean improvement isn't happening...
+
+I hjørnet
 <br />
-After a few months of training, you'll be able to look back on your basketball training log and you'll realise just how far you've come and how much better you are now than before.
+
+I boksen foran kurven - the low post (eng)
 <br />
-Small improvements add up remarkably quickly.</p>
+
+Fra albuen
+<br />
+
+Etter en closeout (eng)
+</p>
+            </div>
+        </div>
+		
+		
+			 <div class="slide">
+            <div class="content">
+        <h1 style="postition: relative; bottom: 230px;">Konstant innsats over lang sikt er nøkkelen til forbedring</h1>
+                 <p>
+				 Hvis du virkelig ønsker å bli en god basketballspiller, må du forplikte deg til å jobbe med spillet ditt på lang sikt.
+
+<br />
+Det forbløffer meg alltid at talentfulle og unge spillere starter en basketballtreningsrutine full av spenning og håp om å oppnå store mål.. 
+<br />
+men så slutter man etter 1 eller 2 uker fordi man ikke har sett noen betydelige resultater ennå og gidder ikke mer.
+<br />
+Du vil ikke se forbedringer over natten.
+<br />
+Faktisk vil forbedringsnivået dtt være så liten at du sannsynligvis ikke engang vil innse det med det første.
+<br />
+Men dette betyr ikke at forbedring ikke skjer..
+<br />
+Etter noen måneder med trening vil du kunne se tilbake på basketballtreningsloggen din og innse hvor langt du har kommet og hvor mye bedre du er nå enn før.
+<br />
+Små forbedringer blir synlig bemerkelsesverdig raskt i deler av ditt spill.
+
+</p>
             </div>
         </div>
 		
@@ -2502,22 +2529,34 @@ Small improvements add up remarkably quickly.</p>
         <!-- Modal content -->
         <div class="modal-content">
             <span class="close close_multi">×</span>
-            <p>Pickup Basketball has many Benefits. Pickup hoops with days of getting together at the local park to “run” are always popular and accessible. Summer streetball and city playing, the heartbeat of the game. Pickup Basketball Can Aid  Player Development
-Pick Up basketball is necessary for a player’s development. Physically and mentally. Physically, a player needs to know where they stack up with their peers and with players who are older, stronger and better than them. The playground or local rec center is the best place to be able to do this. Also, when a serious player spends a lot of time working out in the weight room, putting up shots or working on their skills; a pick-up game is a safe place to strut their new stuff. The playground is the perfect place to show off what you’ve been working on. Because who cares if you mess up a little bit? There’s no coach to yank you for screwing up or anything like that. It’s just you and a bunch of other hoopers doing their thing. <br />
+            <p>
+		
+		Pickup basketball med dager med spilling med andre likesinnede utøvere i lokale ball parker eller by parker handler om å «være i aktivitet med sport». Spillet er alltid populært med ball spillere og ball parkene er enkelt tilgjengelige med lange åpningstider for drop inn som et lavterksel idretts og treningstilbud. Man kan bare pulle opp når man vil i sin timeplan som etter jobb arbeidstid, studietid eller skoletid. Streetbasket og byspilling er selve hjertet av å drive med basketball sporten på fritiden, enten kun sosialt for gøy, spille som en hobby eller med mål om å konkurrere kamper, og spille i turneringer talentfullt på høyt nivå. 
+Pickup kan hjelpe basket spillere med sin utvikling. Pickup basketball er effektivt og nødvendig for å utvikle seg som spiller. Fysisk og mentalt. Fysisk må en spiller vite hvor de ligger sammenlignet med jevnaldrende utøvere og med erfarene spillere som er eldre, sterkere og bedre enn dem. Park baner, den lokale hallen eller treningssentere er det beste stedet å kunne oppnå å bli en bedre spiller. Når en flinkere og seriøs spiller bruker mye tid på å trene i treningsrom eller med styrke og vekt-trening, putte inn skudd eller øve med ferdighetene sine, er en pick-up-kamp et trygt sted og trygg måte å vise frem sine nye moves (eng) og sine skills (eng). Pickup parker er et perfekt stedet å vise frem hva du kan med innsats og hva du har arbeidet med. 
+For hvem bryr seg om man roter spillet sitt litt til og gjør feil i kamper? Det er ingen trener til stedet som skal veilede eller kjefte på spillere etter at man har rotet i ball spillet sitt eller noe sånt. Mentaliteten er avslappet da det bare er deg og kurven som er utfordringen som er fokuset. Med en gjeng andre basketballspillere som spiller sånn som de vil, alle gjør sine ting og sitt beste.
+
+		
+		<br />
 <img src="images/Bakgrunner/pickupgames13.jpg"></img>
 <br />
-Pick Up Basketball Aids Conditioning <br />
-Also, pick-up is a nice way to stay in shape. Whether it’s during the season or not, whenever you can get a bit of a sweat in and run up and down a bit it is an excellent source of exercise. About the benefit of pickup basketball on the player's heart.  So far as the mental aspect of the game, pick-up basketball has a lot to offer. A pick-up game is a place where a player can easily build confidence. There’s generally not a ton of defense being played so scoring is easy. And nothing builds a players confidence more than seeing that ball go through the hoop. It doesn’t matter who it is against either. Many players report first testing gains in our basketball speed and agility program on the pickup basketball courts.  Plus, like I stated before, young players often get the chance to go against older guys and success there can go a long way for a player’s development.  Conversely, these older guys have the craftiness and tricks that many young players can learn from. Pick Up Basketball Increases The Fun Factor
-			  <img src="images/Bakgrunner/pickupgames3.jpg"></img>
+Pickup basket hjelper til med utholdenhet <br />
+
+Pickup er også en fin måte å holde seg i form på. Enten det er i løpet av den organiserte basket sesongen eller ute på sommeren, når man er i aktivitet og løper litt rundt, opp og ned, er spillet en utmerket kilde til mosjon. Når det gjelder det mentale aspektet av spillet, har pickup mye å tilby. En pick-up-kamp er et sted hvor en spiller enkelt kan bygge selvtillit. Det spilles ofte ikke kjempe mye og sterkt forsvar, så det er enklere å score. Ingenting bygger en spillers selvtillit mer enn å se ballen gå gjennom kurven. Det spiller ingen rolle hvem du scorer mot heller. I tillegg som sagt, får unge spillere ofte sjansen til å spille mot eldre spillere, og suksess der kan bidra mye til en spillers utvikling og selvtillit. I tillegg har eldre spillere mere erfaring, ferdigheter og triksene som mange unge spillere kan lære av. 
+Pickup øker moroen som et viktig punkt.
+
+			 
+			 <img src="images/Bakgrunner/pickupgames3.jpg"></img>
 <br />
-Pick Up basketball is a place where the game remains innocent. A blacktop court is a holy place. There is something magical about a game of pick-up. Or an entire day of pick-up for that matter. To just go out there with a couple of buddies and compete for bragging rights is so much fun. It doesn’t even have to be 5 on 5. It can be 4 on 4 or all the way down to 1 on 1. It can be a game of hunch or a game of 21. It can even be a game of HORSE. It doesn’t make a difference. Pick-up basketball is fun. And it will always remain good fun.
+
+Pick-up er et sted hvor spillet og sporten forblir uskyldig uten noe stress eller press for å prestere. En park bane er et hellig sted. Det er noe ekte å lære fra med pick-up over tid eller flere år. Eller en hel dag med pickup for den saks skyld. Å bare dra ut dit for turer i frisk luft med en vennegjeng og konkurrere er alltid gøy og chill. Det trenger ikke engang å være 5 mot 5 på helbane, du trenger bare en ball og en kurv. Det kan være 4 mot 4 eller helt ned til 1 mot 1. Det kan være en skyteleker som heter 21. Det kan til og med være en spill lek som heter Hest (eng: Horse). Det spiller ingen rolle. Vil alltid forbli gøy.
+
 <br />
 <img src="images/Bakgrunner/pickupgames10.jpg"></img>
 <br />
 
-Sure pickup basketball has it’s problems and characters, but we think there are real life lessons that can be learned in dealing with some of them without having refs around to “settle” everything.  Try to work hard and implement new skills while playing pickup basketball.  
+Pickup basketball har sine problemer med uenigheter som kan oppstå og kjennetegn av spillet også, men jeg tror det finnes ekte livsleksjoner som kan læres ved å håndtere spillet uten å ha dommere rundt for å «avgjøre» alle reglene og alle dømminger av feil. Prøv å jobbe hardt og implementere nye ferdigheter mens man spiller idretten. I disse dager handler det organiserte basket spillet og basketball sporten mye om penger, politikk og press på barn til å prestere. Det gode med pickup basket er at ingen av disse tingene betyr noe. Det eneste som betyr noe på basketballbanen den aktuelle dagen er om du kan spille ute på banen, har dyktighet (eng: skills) og innsats, eller ikke. Husk å prøve å introdusere de nye ferdighetene dine på pickup-banen, deretter øve alene og i kamper, og deretter inn i ferdighetsspillet i håndtverket ditt.
 
-These days the organized game is a lot about money, and politics, and pressure on kids to perform. The good thing about pick-up is that none of those things matter. The only thing that matters on the hoop court that particular day is whether or not you got game.  Remember to try and introduce your new skills on the pickup court, then practice, and then into your game. </p>
+</p>
 			  <img src="images/Bakgrunner/pickupgames4.jpg"></img>
        
 	   </div>
@@ -2530,46 +2569,46 @@ These days the organized game is a lot about money, and politics, and pressure o
         <!-- Modal content -->
         <div class="modal-content">
             <span class="close close_multi">×</span>
-                        <p>A pickup basketball game is merely a group of players showing up at their gym or at a outdoor streetpark and organizing a game between recreational players looking for a game.An impromptu game with friends and strangers in a park or backyard lends itself to variety. Sometimes they don't even know one another but have a mutual desire to play a competitive game of basketball. It is not an organized league or part of any organized group…merely, players looking to play and joining with other likeminded athletes. Most of us agree that pickup basketball is about as good as it gets.</p>
+                        <p>
+Hva er en pickup-kamp?
+En pickup-basketballkamp er rett og slett en gruppe spillere som dukker opp på hallen eller i en utendørs gatepark og grupperer seg for en pickup kamp mellom fritidsspillere som leter etter folk og spille med og mot. En improvisert kamp med venner og fremmede i en basket park eller bakgårdspark. Noen ganger kjenner ikke spillerne engang hverandre, men har et felles ønske om bare å spille en konkurransedyktig basketballkamp på farten helt tilfeldig. Kampen er ikke en organisert liga eller en del av noen organisert gruppe.. bare spillere som ønsker å spille og bli med på litt konkurranse med noen andre likesinnede idrettsutøvere. De fleste av oss er enige om at pickup basketball omtrent er så bra som det kan bli.
+
+						
+						</p>
  <br /> 
 			  <img src="images/Bakgrunner/pickupgames2.jpg"></img>
 
-		<p> Offseason Pickup Basketball Improves Your Game
-All of the offseason drills in the world can’t replace the real thing. And while pickup basketball is not the same as organized ball, the right games can still go a long way towards honing your craft. Youth athletes can benefit from pickup basketball in the following ways:
+		<p> 
+		
+		Pickup i utendørs sesongen forbedrer spillet. Alle basketball driller og ball øvelsene i verden kan ikke erstatte den virkelige tingen og prøve seg i kamp og spille mot folk. Og selv om pickup-basket ikke er det samme som organisert basketball, kan de riktige spillene fortsatt bidra mye til å finpusse ferdighetene dine. Unge og yngre utøvere kan dra nytte av pickup på følgende måter: Få inn repetisjonene sine - skyting, dribling, pasninger, og den fundamentale og grunnleggende forståelsen av basketball IQ krever dedikasjon og repetisjon for å mestre. Ute pickup er en flott mulighet til å få inn repetisjoner uten noe tidsbegrensning eller andre faktorer. Å få erfaring mot varierte motstandere – unge idrettsutøvere møter stort sett bare konkurranse innenfor samme aldersgruppe og generelle ferdighetsnivåer. Noen ganger kan det være en fordel å spille mot større, sterkere og mer talentfulle spillere i det lange løp. Å holde seg i form – selv de mest avslappede pickup kampene gir god trening. Å holde en ball spiller sin kardio utholdenhet, styrke og fleksibilitet på et høyt nivå året rundt er enklere enn å bygge cardio opp igjen hver høst til start på den organiserte basket sesongen i haller.
 
-Getting in their reps - shooting, dribbling, passing, and the fundamentals of basketball require incessant repetition to master. Summer pickup games are a great opportunity to get in quality repetitions without any time limit or other complicating factors.
-
-Getting experience against varied opponents - youth athletes primarily only face competition within their same age range and general ability levels. Sometimes playing against bigger, stronger, and more talented players can be a benefit in the long run.
-
-Staying in shape - even the most relaxed pickup game offers a great workout. Keeping a young basketball player’s cardiovascular endurance, strength, and flexibility at a high level year round is much easier than building it back up each fall.</p>
+</p>
     
 	  <img src="images/Bakgrunner/pickupgames.jpg"></img>
 
 
-	<p> Using Pickup Basketball Games to Build Good Habits
-Along those lines, coaches and parents should tell young players that pickup games are an opportunity to become better by building good habits. It is possible to have fun and use proper fundamentals at the same time. In fact, for those of us who are endlessly competitive, it is the only way to have a great time.
+	<p>
+	
+	Bruk pickup for å bygge gode vaner. Som foreldre og idrettstrenere burde fortelle unge spillere at pcikup er en mulighet til å bli bedre ved å bygge gode vaner er en viktig innstilling. Det er mulig å ha det gøy og øve på de riktige grunnleggende ferdighetene samtidig. Faktisk, er det mange som er typen spillere som er uendelig fokusert på konkurranse også. Mange yngre spillere er raske til å gi pasninger og nøler med å skyte. En annen type spillere trives på utsiden og vil ta langdistanse skudd uten å drive til kurven. Pickup gir gode muligheter til å bygge selvtillit hos yngre og unge idrettsutøvere også.
 
-Many youth players are quick to pass and hesitant to shoot. Still others will take outside shots without driving to the basket. Pickup games are great opportunities to build real basketball skills and confidence in young athletes. 
+	
 <br />
 <img src="images/Bakgrunner/pickupgames11.jpg"></img>
 <img src="images/Bakgrunner/pickupgames9.jpg"></img>
 
 <br />
-Summer basketball offers a freedom and a fun factor which allows many ballers to come out of their shell.
+Sommer basketball gir en frihet og en morro faktor som lar mange ballspillere komme ut av sonen sin og ha det gøy uten å være stresset eller redd for å feile. Noen spillere kan også trenge å jobbe med noe spesifikt for å forbedre spillet sitt. Hvis en spiller for eksempel er en god scorer, men mangler evnen til å skape rom eller bevegelse uten ball, kan han eller hun bruke pickup som en arena med blanke ark. Denne utøveren kan prøve å drive og kutte, gjøre stuss pasninger og andre teknikker de kanskje aldri har prøvd før uten risiko for konsekvenser i bakhodet.
 
-Some players may also need to work on something specific to improve their game. For example, if a player is a great scorer but lacks in play creation, he or she can use pickup games as a blank canvas. This athlete can try to drive and dish, make skip passes, and other techniques they may have never tried before without risk of repercussion. </p>
+</p>
+
 <br />
 <img src="images/Bakgrunner/pickupgames7.jpg"></img>
 <img src="images/Bakgrunner/pickupgames12.jpg"></img>
 
 <br />
-<p> How to Choose the Right Pickup Game for You
-So where should young athletes be playing? Many kids will have a neighborhood hoop down the street or a few blocks over. Yet this might not be the best opportunity for kids who are interested in bettering themselves at players. Young basketball players and their parents should consider the following:
+<p> 
+Hvordan velge riktig pickup kamp eller bane for deg. Så hvor bør unge utøvere spille? Mange barn vil ha en nabolagsbane nede i gaten eller noen kvartaler unna. Likevel er kanskje ikke dette den beste muligheten for unge som er interessert i å forbedre seg som spillere. Unge basketballspillere og foreldrene deres bør vurdere følgende: Trygghet. Spillnivå - for en dyktig basketballspiller kan det være en utfordring å finne konkurranse. Se deg rundt i området og ring noen lagkamerater om nødvendig. Spillernes alder - som vi berørte tidligere, kan det noen ganger være bra å spille mot de eldre barna. Andre ganger kan det være en ulempe. En fysisk mismatch eller ubalansert fysisk kamp mellom svakere og sterkere spillere kan føre til slurvete spill og potensielt til og med skader. Morofaktor – når alt kommer til alt, bør man ha det gøy med å spille basketball om sommeren. Om man bare vil være i litt aktivitet uten å ville konkurrere i det hele tatt. Da kan det å spille med venner være veien å gå. Hvis en yngre utøver spiller basketball med den riktig holdningen og motivasjonen, vil spillere utvikle seg sportslig på sikt og bli bedre. Kampen er kun mot seg selv med ballen og kurven som sin viktige motstander. Øvelse gjør mester. 
 
-Safety - we have not touched on this, but the sad fact is that some basketball courts are not as safe as others. Pick a spot where kids will be comfortable and away from any bad influences.
-Level of play - for a skilled basketball player, finding competition can be a challenge. Look around the area and call up some teammates if necessary.
-Age of players - as we touched on earlier, sometimes playing against the older kids can be great. Other times, it may be a detriment. A physical mismatch can lead to sloppy play and potentially even injury.
-Fun factor - at the end of the day, kids should have fun playing basketball in the summer. If we are splitting hairs between playing with our friends and playing with kids who are a bit better, playing with friends might be the way to go. If a young player is playing basketball with the right attitude, they will improve. 
 
 </p>
 
@@ -2579,56 +2618,7 @@ Fun factor - at the end of the day, kids should have fun playing basketball in t
     </div>
 	
 	    
-  <!-- The Modal -->
-    <div class="modal modal_multi">
 
- 
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close">x</span>
-            <p>A pickup basketball game is merely a group of players showing up at their gym or at a outdoor streetpark and organizing a game between recreational players looking for a game.An impromptu game with friends and strangers in a park or backyard lends itself to variety. Sometimes they don't even know one another but have a mutual desire to play a competitive game of basketball. It is not an organized league or part of any organized group…merely, players looking to play and joining with other likeminded athletes. Most of us agree that pickup basketball is about as good as it gets.</p>
-        <br /> 
-			  <img src="images/Bakgrunner/pickupgames2.jpg"></img>
-
-		<p> Offseason Pickup Basketball Improves Your Game
-All of the offseason drills in the world can’t replace the real thing. And while pickup basketball is not the same as organized ball, the right games can still go a long way towards honing your craft. Youth athletes can benefit from pickup basketball in the following ways:
-
-Getting in their reps - shooting, dribbling, passing, and the fundamentals of basketball require incessant repetition to master. Summer pickup games are a great opportunity to get in quality repetitions without any time limit or other complicating factors.
-
-
-
-<br />
-Getting experience against varied opponents - youth athletes primarily only face competition within their same age range and general ability levels. Sometimes playing against bigger, stronger, and more talented players can be a benefit in the long run.
-
-Staying in shape - even the most relaxed pickup game offers a great workout. Keeping a young basketball player’s cardiovascular endurance, strength, and flexibility at a high level year round is much easier than building it back up each fall.</p>
-    
-	  <img src="images/Bakgrunner/pickupgames.jpg"></img>
-
-	<p> Using Pickup Basketball Games to Build Good Habits
-Along those lines, coaches and parents should tell young players that pickup games are an opportunity to become better by building good habits. It is possible to have fun and use proper fundamentals at the same time. In fact, for those of us who are endlessly competitive, it is the only way to have a great time.
-
-Many youth players are quick to pass and hesitant to shoot. Still others will take outside shots without driving to the basket. Pickup games are great opportunities to build real basketball skills and confidence in young athletes. Summer basketball offers a freedom and a fun factor which allows many ballers to come out of their shell.
-
-Some players may also need to work on something specific to improve their game. For example, if a player is a great scorer but lacks in play creation, he or she can use pickup games as a blank canvas. This athlete can try to drive and dish, make skip passes, and other techniques they may have never tried before without risk of repercussion. </p>
-
-<p> How to Choose the Right Pickup Game for You
-So where should young athletes be playing? Many kids will have a neighborhood hoop down the street or a few blocks over. Yet this might not be the best opportunity for kids who are interested in bettering themselves at players. Young basketball players and their parents should consider the following:
-
-Safety - we have not touched on this, but the sad fact is that some basketball courts are not as safe as others. Pick a spot where kids will be comfortable and away from any bad influences.
-Level of play - for a skilled basketball player, finding competition can be a challenge. Look around the area and call up some teammates if necessary.
-Age of players - as we touched on earlier, sometimes playing against the older kids can be great. Other times, it may be a detriment. A physical mismatch can lead to sloppy play and potentially even injury.
-Fun factor - at the end of the day, kids should have fun playing basketball in the summer. If we are splitting hairs between playing with our friends and playing with kids who are a bit better, playing with friends might be the way to go. If a young player is playing basketball with the right attitude, they will improve. 
-
-</p>
-
-		</div>
-
-    </div>
-	
-	</div>
 	
 
 	
@@ -2755,33 +2745,53 @@ Fun factor - at the end of the day, kids should have fun playing basketball in t
 			            <div class="content-moveup">
             <div class="content">
                 <div class="content-wrapper">
-                    <h1>Learn about the history of streetbasketball</h1>
-                    <p>Streetball is passion. Though it is not always beautiful, one could easily call it streetart. It is a rough sport for tough men which does not allow much of weakness. Streetball means competition including embarassement and sometimes even humiliation of opponents. However, it is a basis for friendships because there is one basic ingredient that connects all players: the love for the game. 
+                    <h1>Lær om historien av Street basketball</h1>
+                    <p>
+Streetball (eng) er lidenskap. Selv om spillet ikke alltid ser like vakkert ut, kan man lett kalle det for gate kunst. Det er en tøff sport for tøffe utøvere som ikke tillater mye svakhet. Streetball handler om konkurranse også, å spille for å vinne og noen ganger til og med ydmykelse av motstandere. Det handler imidlertid også om vennskap fordi det er én grunnleggende ingrediens som forbinder alle spillere: kjærligheten til spillet og en felles lidenskap for sporten basketball.
+					
 					<br /><br />
-					Without any referee the flow of the game completely relies on the respect and the communication between the players. As a matter of fact this established different rules on every court where spectacular tricks count more than accurately obeying the rules of basketball. Traveling is accepted if an opponent-embarassing move is the result. Streetball is a sport that involves every part of your body, even the mouth: If you master trashtalk you master the court. Distracting the counterpart and entertaining the crowd is as much important as the actual game. These various aspects made streetball such an attractive show as it is today. 
+					
+Uten dommer er spillets flyt fullstendig avhengig av respekt og kommunikasjon mellom spillerne. Det er vanligvis etablerte, forskjellige regler på hver bane der spektakulære triks teller mer enn å nøyaktig følge basketballreglene. 
+Streetball er en sport som involverer alle deler av kroppen din, til og med munnen: Hvis du mestrer konkurranse snakk (eng: trashtalk) og kan backe det opp ved å bevise at du har et godt spill, med scoringer, dribling, triksing, dunking og gode bevegelser med ball, mestrer du banen. Å distrahere motparten, show, triksing og underholde publikum er like viktig som selve pickup pillet. Disse forskjellige aspektene og trekkene har gjort street basketball (eng: streetball) til å handle om et attraktivt show som spillet går ut på til den dagen i dag.
+
 					<br /><br />
-					From its beginnings in the 70´s in the big cities of the US untill today the rules haven´t changed much but it´s got more and more influence within the street cultures around the world. Having its roots in the famous Rucker Park in New York City, streetball stepped up to other courts and cities where it was not enough for the boys to play on the team in their highschool. 
+					
+Fra starten på 70-tallet i de store byene i USA og frem til i dag har ikke reglene endret seg mye, men det har fått stadig større innflytelse i gatekulturer rundt om i verden. Med røtter i den berømte Rucker Park i New York City, tok streetball steget til andre baner og byer der det ikke var nok for unge spillere å spille på klubb laget sitt, på skolelag og idrettslag.
+					
 					<br /><br />
-					Having not many opportunities for spending their free time streetball was the only chance to emulate their big idols from the ABA and later the NBA. Rapidly the games attracted a steady audience celebrating the vicious tricks and ankle-breakers of their “court-stars”. 
+Det at man ikke hadde mange muligheter til å bruke fritiden sin på, var den eneste sjansen til å etterligne sine store idoler fra de profesjonelle basketligaene ABA og senere ble til NBA. Kampene tiltrakk seg raskt et stabilt publikum som feiret de ustoppelige triksene, scoringsbevegelsene, de spektakulære, tekniske fintene og finesse driblinger til profesjonelle stjernespillere.
+					
 					<br /><br />
-					These players became local legends and got nicknames within the community like “the Destroyer”, “Helicopter” or “Pee Wee”. Even the famous Julius “Dr. J” Erving showed his talents at the Rucker Park tournament in 1971. Butch Purcell, who kept track of the stats at Rucker Park, said about him: “Man oh man! He was dunking on people like crazy. Back then the games were only held on the weekends, so that next week, the word was spreading like wildfire over the city. When we showed up that next week to play our game, the park was so packed that people couldn’t get in.” After having played for three years in the team of the University of Massachusetts and pulling off tremendous stats there, he was not quite known within the audience at Rucker Park. 
+					
+Disse proffe spillerne ble lokale legender og fikk kallenavn i lokalsamfunnet som «The Destroyer», «Helikopter» eller «Pee Wee». Selv den berømte Julius «Dr. J» Erving viste talentene sine i Rucker Park-turneringen i 1971. Butch Purcell, som holdt oversikt over statistikken på Rucker Park, sa om ham: «Mann, mann! Han dunket folk som gale. Den gangen ble kampene bare holdt i helgene, så den neste uken spredte ordet seg som ild i tørt gress over byen. Da vi dukket opp den neste uken for å spille spillet vårt, var parken så fullpakket at folk ikke kunne komme inn.» Etter å ha spilt i tre år på laget til University of Massachusetts og oppnådd fantastiske resultater der, var han ikke helt kjent blant publikum på den historisk kjente banen Rucker Park.
+					
 					<br /><br />
-	                Nevertheless, Ernie Morris, a witness of the legendary encounter between Julius Erving and Joe Hammond claimed avidly: “I’ve seen so much great basketball in that park, but I’ve never seen anything like it since.” Thus, the legends around “Doc” laid the grounds for the incomparable success of streetball. 
+	                
+Likevel hevdet Ernie Morris, et vitne til det legendariske møtet mellom Julius Erving og Joe Hammond, ivrig: «Jeg har sett så mye flott basketball i den parken, men jeg har aldri sett noe lignende siden.» Dermed la legendene rundt «Doc» grunnlaget for den uforlignelige suksessen til streetball sporten.
+					
 					<br /><br />
-					In the following decades it also got recognized by the dominating basketball brands like Nike and even induced brands like Kickz and AND1 to build their corporate identity on that specific form of basketball. This increasing interest by the economy was further promoted when Allen Iverson made it possible for a sheer streetballer from Philly to succeed in the NBA. 
+					
+I de påfølgende tiårene ble spillet av street basket også anerkjent av de dominerende basketballmerkene som Nike, og det fikk til og med merker som Kickz og AND1 til å bygge sin identitet på denne spesifikke stilformen av basketball. Denne økende interessen og popularitet for street basketball ble ytterligere fremmet da Allen Iverson gjorde det mulig for en begavet, super-talentfull streetbasketball spiller og legende fra Philly å lykkes i proff liga NBA.
+					
 					<br /><br />
-					He was beloved by the whole generation of young streetballers and established the streetstyle within the NBA. Iverson´s popularity made it possible for Reebok who signed him to advertise the streetball culture and gain profit from it. Even today in the commercialized and digitalized environment of the NBA the biggest stars such as Kevin Durant or Kyrie Irving don´t hesitate to come out and demonstrate their skills on the court. One could argue that the pure streetball does not deserve this development because it lacks tradition and identity. 
+					
+Han var elsket av hele generasjonen av unge streetballspillere og etablerte gatebasketball stilen av spillet i NBA. Iversons popularitet gjorde det mulig for Reebok, å reklamere for streetbasket kulturen. Selv i dag, i det kommersialiserte og digitaliserte miljøet i NBA, nøler ikke de største stjernene som Kevin Durant eller Kyrie Irving med å komme ut og demonstrere sine ferdigheter på banen. 
+					
 					<br /><br />
-					However, streetball is still played in its traditional form around the world and the main components sustained: When you dare to play streetball it strenghtens your credibility… even if you lose, you win the respect of everybody on the court.</p>
-                    <p class="try-again" onclick="document.body.classList.remove('active')">Close (X)</p>
+					
+Imidlertid spilles denne stilen av basketball fortsatt i sin tradisjonelle form over hele verden til i dag, og hovedkomponenten er: Når du tør å spille gate basketball (eng: streetball), styrker det troverdigheten din.. selv om du taper, vinner du respekten til alle på banen.
+									
+					
+			</p>
+                    
+					
+					<p class="try-again" onclick="document.body.classList.remove('active')">Close (X)</p>
 					<img src="images/Bakgrunner/streetballhistory.jpg" width="400px" height="300px"></img>
 					<p>
 					<br />
-<br />
 <br /> <br />
-Streetball unites, is about aspiration to victory, team corporation, a healthy lifestyle beauty and about staginess. 
-The game is played by real champions who are not doing it for the money and don't cry on every foul.
-					</p>
+Street basketball forener, handler om seier og konkurranse, tøffhet, om lag samarbeid, en sunn livsstil, triksing og show. 
+Spillet og sporten spilles av ekte vinnere og mestere i livet som ikke gjør det for pengene og som ikke klager over hver eneste takling og feil.					</p>
 					                    <p class="try-again" onclick="document.body.classList.remove('active')">Close (X)</p>
                 </div>
             </div>
@@ -2939,9 +2949,18 @@ position: relative;
 
 <!-- Optional: some overlay text to describe the video -->
 <div class="content1">
-  <h1 style="position: relative; bottom: 40px;">Streetball is a lifestyle. Lessons is earned on the Asphalt.</h1>
-  <p style="font-size: 19px; position: relative; bottom: 95px;"> Steetbasket is the great leveller. No matter what you look like or who you are, if you can show you can play you're going to get respect. Streetball dates back to America in the 50s and became popular because you could play it anywhere, anytime and it was free. It spread worldwide and across America popularised by attracting media coverage. One simple thing that you could do to earn other’s respect on the basketball court is that if you play clean, others will enjoy playing with you. Just learn the rules and play clean. To earn respect on the court, you have to prove to the other players that you deserve that respect. <br /> <br /> If you’re playing with competitive people and throwing up bricks, they’re not going to want you on their team next game. It also works vice versa; if you show them that you’re good enough to keep playing, then they’ll respect you more. Let your play speak for itself. Go hard on every single play. Leave it all out there. Help up the other team when they fall, but don’t be afraid to knock them down. Play clean, fair, and hard. You don’t have to be the best, but your effort, your hustle, that will speak volumes to your coach, your teammates, and your opponents.
- <br /> <br /> In streetball, most often, technical and high-speed qualities come out on top. The large role is played by technical skill of each certain player. Local tournaments and events are also held some times in summer offseason on city courts or street parks. It is really great because they give players an opportunity to showcase their skills outside the traditional channels of the basket game. In streetball you put everyone on an equal playing field. Streetball is about developing as a sport athlete. This game is the next level of the game evolving, and if you look at the NBA now, while it's definitely not streetball, there are many elements of streetball getting mixed up with the fundamentals of the game.
+  <h1 style="position: relative; bottom: 40px;">Gatebasketball er som en livsstil</h1>
+  <p style="font-size: 17px; position: relative; bottom: 95px;"> 
+
+  Uansett hvordan du ser ut eller hvem du er, hvis du kan vise at du kan spille, vil du få respekt. Streetball (eng) stammer fra Amerika på 50-tallet og ble populært fordi du kunne spille det hvor som helst, når som helst, og det var gratis. Det spredte seg over hele verden og ble popularisert over hele Amerika ved å tiltrekke seg mediedekning. En enkel ting du kan gjøre for å fortjene andres respekt på basketballbanen, er at hvis du spiller rent, vil andre like å spille med deg. Bare lær deg reglene og spill rent. For å fortjene respekt på banen må du bevise for de andre spillerne at du fortjener den respekten.
+  
+  <br /> <br /> 
+  
+Hvis du spiller med konkurranseinnstilte folk som vil vinne og gir opp eller ikke prøver med svak innsats, vil man ikke ha deg på laget sitt neste kamp. Det fungerer også omvendt; hvis du viser dem at du er god nok til å fortsette å spille, vil de respektere deg mer. La spillet ditt tale for seg selv. Gå hardt inn i hvert eneste spill. La alt snakke for seg selv der ute på banen. Hjelp opp det andre laget når de faller, men ikke vær redd for å kjøre over dem forbi i kamper. Spill rent, rettferdig og hardt. Du trenger ikke å være best, men innsatsen din og din innsatsvilje vil si mye for medspillerne din, lagkameratene dine og motstanderne dine.
+ 
+ <br /> <br /> 
+I streetball (eng) er det oftest tekniske, raske og individuelle ferdigheter som kommer best ut. Den store rollen spilles av de tekniske ferdighetene til hver enkelt spiller som er et viktig fokus i sporten. Lokale turneringer og arrangementer arrangeres også noen ganger om sommeren i utesesongen på bybaner eller i parker. Arrangerte events og turneringer er et svært flott initativ fordi med arrangementer gir man spillere også en mulighet til å vise frem ferdighetene sine utenfor de tradisjonelle kanalene av basket sporten. I street basket settes alle spillere ute på banen med like muligheter på rettferdig vis. Streetball (eng) handler om å utvikle seg som idrettsutøver. Dette spillet er en kjempe fin arena i spillets utvikling, og hvis du ser på verdensklasse liga NBA nå, selv om det definitivt ikke er streetball på gata, er det mange elementer, likheter og bevegelser av streetbasketball som har blitt kombinert sammen med fundamentale elementer og grunnleggende ferdigheter av basketball sporten også.
+
   </p>
   <!-- Use a button to pause/play the video with JavaScript -->
   <button id="myBtn1" onclick="myFunction()">Pause</button>
@@ -2985,11 +3004,16 @@ function myFunction() {
 
 <!-- Optional: some overlay text to describe the video -->
 <div class="content2">
-  <h1 style="position: relative; bottom: 30px;">Streetbasketball Is Life. Street Credit, Respect and that you got game is Earned. Take your skills to the street.</h1>
-  <p style="font-size: 19px; position: relative; bottom: 55px;">Basketball is a game of the streets with street culture in the background including rap music, breakdancing and hip-hop.. It’s one of the rare sports that anyone can play—all you need is a hoop and the ball. Streetball is about flair, about winning at any cost and mind games. Unlike traditional basketball, streetball is self-governed, meaning the players call the fouls. If someone makes a call you have to respect it as a player, but, you know, you get some soft players who start calling weak fouls, and we'll accept it and give them the ball back, but we'll let them know that it's soft. 
-<br /> <br />The opponents you play against will not going to give you anything easy. We come from the defence-first mentality. If you're going to beat us then you're going to have to earn it. Streetball is mostly played with two teams of three on a half court with one basket. That's the real streetball and the most fun to play. Anyone can show up and play. You can roll up from 10am on the day - either as a team or an individual - and enter the park or the street court. <br /> <br /> There's more room for individual creativity (than in regular basketball) and the showmanship comes through because a lot of it is about looking good and putting on a show.
-The 2 types of streetbasket players are: There are those who want to look good, do tricks and have fun, and then there's the hardest ballers who really don't care how they look, they just want to win in serious competition in a competitive way. 
-  
+  <h1 style="position: relative; bottom: 30px;">Streetbasketball handler om stil. Respekt på idrettsbanen må en gjøre seg fortjent til.</h1>
+  <p style="font-size: 17px; position: relative; bottom: 55px;">Basketball ute på parker er et spill fra gata ofte med gatekultur i bakgrunnen, som inkludert med rap musikk og hip hop. Det er en av de sjeldne sportene alle kan spille – alt du trenger er en kurv og ballen. Streetball (eng) handler om stil, show, triksing, en fri spillstil uten strenge og med færre regler, der fysisk spill og utholdenhet er avgjørene. I motsetning til tradisjonell basketball er streetball selvstyrt, noe som betyr at spillerne dømmer sine feil og regelbrudd. Hvis noen dømmer feil, må du respektere det som spiller. Men du vet, når det kommer noen myke spillere som begynner å dømme svake feil eller som ikke kan basketball regler og er usikre, da aksepterer motspillerne det og gir dem ballen tilbake som oftest, men motspiller lar dem få vite at de er uenig hvis det er for fysisk svakt (eng: soft) og dømme feilen i kamp situasjonen.
+
+<br /> <br />
+
+Motstanderne du spiller mot vil ikke gi deg som motstander noe enkelt i forsvar og angrep. Mange erfarne spillere som vil konkurrere kommer fra en tøff mentalitet. Hvis du skal vinne over oss og slå oss i kampen, må du fortjene det. Streetball (eng) spilles for det meste med to lag på tre på en halv bane med en kurv. Det er den ekte gate basketballen, og den morsomste å spille. Hvem som helst kan møte opp og spille. Du kan bare  komme enten som et lag eller individuelt – og gå ut i parken eller på gatebanen.
+ <br />
+Mye av fokuset handler om å se bra ut og gi et show i spillet sitt. De to typene streetbasket spillere er: Det er de som vil se bra ut, gjøre triks og ha det gøy for chill, og så har du de hardeste, erfarne spillerne som egentlig ikke bryr seg om hvordan de ser ut, som bare vil vinne kamper og kommer for å konkurrere med andre, og vil ha mer seriøs konkurranse.
+
+ 
   </p>
   <!-- Use a button to pause/play the video with JavaScript -->
   <button id="myBtn2" onclick="myFunction2()">Pause</button>

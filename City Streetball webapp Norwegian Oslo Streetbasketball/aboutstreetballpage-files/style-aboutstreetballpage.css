@@ -1,0 +1,92 @@
+
+
+
+.no-lang {
+  background-image: url('no-flag.png');
+   background-repeat: no-repeat; 
+  background-size: 100% 100%; 
+  width: 86px;
+  height: 86px;
+      position: relative;
+    left: 72px;
+ 
+  border-radius: 50%;
+
+}
+
+.no-lang:hover {
+	
+	 transition: all 200ms linear;
+  transform: scale(1.35); 
+  cursor: pointer;
+
+	
+}
+
+
+
+.no-lang-page {
+  background-image: url('no-flag-page.png');
+   background-repeat: no-repeat; 
+  background-size: 100% 100%; 
+  width: 100px;
+  height: 100px;
+      position: relative;
+    left: 72px;
+  top: 10px;
+  border-radius: 50%;
+
+}
+
+.no-lang-page:hover {
+	
+	 transition: all 200ms linear;
+  transform: scale(1.36); 
+  cursor: pointer;
+
+	
+}
+
+
+
+.en-lang {
+  background-image: url('en-flag.png');
+   background-repeat: no-repeat; 
+  background-size: 100% 100%; 
+  width: 86px;
+  height: 86px;
+      position: relative;
+	      left: 72px;
+
+border-radius: 50%;
+}
+
+.en-lang:hover {
+	
+	 transition: all 200ms linear;
+  transform: scale(1.35); 
+  cursor: pointer;
+
+	
+}
+
+.en-lang-page {
+  background-image: url('en-flag-page.png');
+   background-repeat: no-repeat; 
+  background-size: 100% 100%; 
+  width: 95px;
+  height: 95px;
+      position: relative;
+	      left: 72px;
+
+border-radius: 50%;
+
+}
+
+.en-lang-page:hover {
+	
+	 transition: all 200ms linear;
+  transform: scale(1.35); 
+cursor: pointer;
+	
+}
