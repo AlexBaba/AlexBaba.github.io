@@ -2,13 +2,14 @@
 
 <html lang="no">
 <head>
-<meta name="viewport" content="width=device-width, minimum-scale=0.3, initial-scale=1.0, user-scalable=yes" />
+<meta name="viewport" content="width=device-width, minimum-scale=0.2, initial-scale=1.0, user-scalable=yes" />
 
 <title>General about Basketball and Streetball Page  </title>
 
   <link rel="stylesheet" href="./style.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
 
 
 </head>
@@ -29,6 +30,21 @@ width: 100%;
 
 }
 
+.modal_multi {
+
+width: 90%;
+min-width: 700px;
+height: 700px;
+}
+
+.modal-content {
+
+width: 720px;
+
+}
+
+
+
 @media screen and (min-width:140px) and (max-width:580px), 
    screen and (min-device-width:140px) and (max-device-width:580px)
 {
@@ -43,16 +59,6 @@ opacity: 1.1;
 height: 100%;
 width: 100%;
 }
-
-.modal-content {
-width: 100%;
-}
-
-.modal modal_multi {
-
-width: 100%;
-}
-
 
 
 }
@@ -77,6 +83,28 @@ width: 100%;
 
 }
 
+
+.modal_multi {
+
+width: 115%;
+min-width: 900px;
+height: 110%;
+}
+
+.modal-content {
+
+position: relative;
+right: 105px;
+min-width: 650px;
+min-height: 70%;
+
+}
+
+.modal {
+
+width: 90%;
+
+}
 
 
 }
@@ -1227,7 +1255,7 @@ top: 560px;
   position: absolute;
   top: 0;
   left: 0;
-  width: 120%;
+  width: 102%;
   height: 100%;
   opacity: 0;
   transition: opacity 0.6s ease-in-out;
@@ -1241,9 +1269,7 @@ top: 560px;
   position: relative;
   top: 110px;
 max-height: 560px;
-
   width: 870px;
-  max-height: auto;
   color: white;
   padding: 35px;
   right: 200px;
@@ -1309,17 +1335,7 @@ button#prev {
   color: #333;
 }
 
-@media(max-width: 500px) {
-  .slide .content{
-    bottom: -300px;
-    left:0;
-    width: 100%;
-  }
-  
-  .slide.current .content{
-    transform: translateY(-300px);
-  }
-}
+
 
 
 /* Backgorund Images */
@@ -1812,7 +1828,7 @@ font-size: 19px;
   flex-direction: column;
      position: relative;
 	    bottom: 120px;
-right: 50px;
+right: 35px;
 	
 }
 
@@ -3479,5 +3495,7 @@ jQuery.extend( jQuery.easing,
             });
         </script>
 
+
+		
 </body>
 </html>
